@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!--rough draft attempt; still reading over TEI guidelines and working out logistics of the headder-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Title</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Publication Information</p>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Born digitlal; no previous source exists.</p>
+         </sourceDesc>
+      </fileDesc>
+     <profileDesc>
+        <langUsage>
+           <language ident="en">English</language>
+           <language ident="pt">Portuguese</language>
+        </langUsage>
+        <abstract resp="#LB">
+              <p>ABSTRACT GOES HERE.</p>
+           </abstract>
+        <textDesc n="Informal domestic conversation">
+           <channel mode="w">Informal conversation via a cellular messgaing application.</channel>
+           <constitution type="frags">Each text represents a portion of dialogue transcribed and translated from a pair's conversation in Portuguese.</constitution>
+           <derivation type="original"/>
+           <domain type="domestic"/>
+           <factuality type="mixed"/>
+           <interaction type="complete"
+              active="plural" passive="single"/>
+           <preparedness type="spontaneous"/>
+           <purpose type="entertain" degree="high"/>
+           <purpose type="inform" degree="medium"/>
+        </textDesc>
+        <settingDesc>
+           <setting>
+              <name></name>
+              <time></time>
+           </setting>
+        </settingDesc>
+     </profileDesc>
+  </teiHeader>
+  <text>
+      <body>
+         <p>Some text here.</p>
+      </body>
+  </text>
+</TEI>
