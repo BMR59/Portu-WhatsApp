@@ -1,0 +1,42 @@
+Project-to-do-List
+
+http://dh.obdurodon.org/
+--Original Website with guides
+
+-Explore TEI
+	http://www.tei-c.org/release/doc/tei-p5-doc/en/html/CC.html#CCAH
+	Look around, how to code header and tags might want to use.
+
+-Corpus Transcribing/Translating corpus
+	Organize and consider marking up in XML
+
+
+WEBSITE:
+Portu-WhatsApp.newtfire.org
+	Splash [Menu / Intro]
+	About [Members, Project Goals?, Ana Paula's Corpus/Work]
+	Methodology [Motivations. Academic Interests, Research Methods, Tools/Style Used]
+	Corpus
+	Analysis
+	
+[
+-Server-Side-Includes SSIs
+	Boiler Plate Texts - portions of a html file that appear in multiple html files
+	Informations in multiple places is more logical to store informaiton ONE time and applied to other pages.
+	Fragmented HTML - no root element or Doc. declarations
+	Will be 'lifted' and placed into other files
+	Likley will be Menu Bar and placed at top of page
+]
+
+data by Friday 10.05.2017
+
+Brandon->
+TEI Header***********
+Form of communication
+mode
+languages spoken
+
+-----
+To access the server:
+/var/www/html/newtfire/portu-whatsapp
+-----
