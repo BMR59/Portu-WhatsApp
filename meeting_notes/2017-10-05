@@ -1,0 +1,16 @@
+<h3>2017-10-05 Meeting notes</h3>
+
+<hr/>
+
+<ol><li>The corpus of text</li>
+<ol><li>The text is still being compiled; will hopefully be available by the end of the week</li>
+<li>Copyright issues? With a texting app, likely not.</li></ol>
+<li>TEI compliancy</li>
+<ol><li>We will try our hand at TEI; ODD design soon to come.... we will pay close attention to chapter 15 -- language corpora</li></ol>
+<li>Project Assignments</li>
+<ol><li>Brandon, being the only Portuguese speaker in the group, will handle the mark-up of raw data, while Patrick handles most of the website design until work can be more evenly distributed post mark-up</li>
+<li>Zac will float and help at either end whenever needed, and will hopefully tackle the schema</li></ol>
+<li>The Website</li>
+<ol><li>portu-whatsapp.newtfire.org and portuwhatsapp.newtfire.org both redirect to our domain.</li>
+<li>Since we are already transcribing the text messages into XML files, we do not intend right now to upload the raw data, but will maybe upload samples when relevent or to illustrate a point</li>
+<li>We know basic website formats, but it may be too early to determine what our site will actually look like</li></ol>
