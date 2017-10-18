@@ -13,7 +13,7 @@ A: Obrigada! Estou praticando :)
 A: Haha sim! Para estar tão longe, não tem muito diferencia
 A: Voce estuda inglês?
 B: Eu já estudei. Participo das “conversation classes” com a Mary e a Shea, mas ainda acho que meu inglês não é 
-<dmg>
+
 18
 A: Eu estou de acordo.
 A: faz mais o menos um ano e meio
@@ -83,7 +83,7 @@ B: Senão saca me mandar uma parte para você ouvir
 A: Obg por mandar! Eu gostei :) vou procurar o rasqueado.. Para ver se tenha algo que ver 
 
 10
-A: Obg por mandar! Eu gostei :) vou procurar o rasqueado.. Para ver se tenha algo que ver como o nome dele haha
+A: ver como o nome dele haha
 B: Pesquise “Lambadão cuiabano” e “Rasqueado matogrossense” no YouTube
 B: você vai encontrar umas coisas legais e engraçadas hahaha
 A: ah perfeito :) obrigada!
@@ -110,17 +110,38 @@ A: Eu estudo urbanismo que tem algo que ver com a arquitetura... É bem interessa
 B: Não não. Vou estudar arquitetura mesmo, sabendo que tem um enfoque em arte. Na realidade, arquitetura é uma forma de arte
 B: SÉRIO? Meu curso e arquitetura e urbanismo
 B: mas eu falo so arquitetura porque sou preguiçoso
-B: *cry face*
+B: *cry face* 
 
 6
-B: *cry laugh*
+A: Hahah sim, é muito pra escrever
+B: *cry laugh* 
 B: Obrigado pelas felicitações. (Você pode dizer “parabéns” também, que tem o mesmo significado e é mais informal) *cheesy grin emoji*
 A: Ahh obrigada achei que algo pareceu estranho haha
 B: *six cry laugh face emojis*
 B: Normal
 B: Está certo, só que muito polido
+	SATURDAY
 B: Bom dia !
 
+5
+B: Como está sendo seu final de semana? Planejando ‘altos nadas’ ?
+B: Hahahahaha
+A: Bom dia :) hahah eu gosto dessa frase...
+B: Hahahahaha
+A: Eu dormi muit ontem.. Um bom modo de começar o fim de semana haha
+A: Como vai ser o seu fim de semana?
+B: Meu fim de semana parece que vai ser bom. Hoje pela manhã tive curso de francês, almocei na Universidade mesmo (onde é meu curso) e agora estou me preparando
+
+4
+B: para ir na casa de uma amiga. Vamos pra balada mais tarde *pointing up emoji, sunglasses emoji, pointing up emoji*
+B: Hahahahaha
+A: Oo que legal. Eu quero voltar ao francês. Agora estou ajudando a minha irmã que está no processo de abrir um restaurante :)
+A: eu também vou pra balada com uma amiga logo.. Bom sábado
+B: Hahahhaa
+B: Obrigado
+	YESTERDAY
+A: Como foi a balada ontem?!
+B: Sinceramente? Não muito boa 
 
 3
 B: Hahaha
@@ -131,11 +152,9 @@ B: E a sua?
 A: Eu gosto que vc ficou dançando! Haha
 A: o meu tênis era velho, então
 
-B: Sinceramente? Não muito boa 
-
 
 2
-A: O meu tênis era velho, então eu estava confortável :) mas a balada foi tranquila, o meu noite terminou às 2
+A: eu estava confortável :) mas a balada foi tranquila, o meu noite terminou às 2
 B: A minha, apesar de mais ou menos, acabou as 6
 B: Bebi uma bebida típica aqui, não muito comum em baladas, chamada CATUABA
 B: É MALIGNA, SÉRIO
