@@ -4,11 +4,22 @@
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!--rough draft attempt; still reading over TEI guidelines and working out logistics of the headder-->
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-  <teiHeader>
+   <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title>Title</title>
+            <title>Computational Methods of the Humanities Term Project: Portu-WhatsApp</title>
+            <author>American students of Portuguese at the University of Pittsburgh</author>
+            <author>Brazilian students of English</author>
+            <sponsor>University of Pittsburgh</sponsor>
+            <principal><persName ref="#ze">Zachary Enick</persName>, <persName ref="#bmr">Brandon
+                  Rodgers</persName>, <persName ref="#pab">Patrick Murray</persName>, <persName
+                  ref="#ttb">Tyler Botak</persName></principal>
+            <respStmt>
+               <resp>Transcription and markup by</resp>
+               <persName ref="#bmr">Brandon Rodgers</persName>
+            </respStmt>
          </titleStmt>
+
          <publicationStmt>
             <p>Publication Information</p>
          </publicationStmt>
@@ -16,37 +27,43 @@
             <p>Born digitlal; no previous source exists.</p>
          </sourceDesc>
       </fileDesc>
-     <profileDesc>
-        <langUsage>
-           <language ident="en">English</language>
-           <language ident="pt">Portuguese</language>
-        </langUsage>
-        <abstract resp="#LB">
-              <p>ABSTRACT GOES HERE.</p>
-           </abstract>
-        <textDesc n="Informal domestic conversation">
-           <channel mode="w">Informal conversation via a cellular messgaing application.</channel>
-           <constitution type="frags">Each text represents a portion of dialogue transcribed and translated from a pair's conversation in Portuguese.</constitution>
-           <derivation type="original"/>
-           <domain type="domestic"/>
-           <factuality type="mixed"/>
-           <interaction type="complete"
-              active="plural" passive="single"/>
-           <preparedness type="spontaneous"/>
-           <purpose type="entertain" degree="high"/>
-           <purpose type="inform" degree="medium"/>
-        </textDesc>
-        <settingDesc>
-           <setting>
-              <name></name>
-              <time></time>
-           </setting>
-        </settingDesc>
-     </profileDesc>
-  </teiHeader>
-  <text>
+      <profileDesc>
+         <langUsage>
+            <language ident="en">English</language>
+            <language ident="pt">Portuguese</language>
+         </langUsage>
+         <abstract resp="#LB">
+            <p>ABSTRACT GOES HERE.</p>
+         </abstract>
+         <textDesc n="Informal domestic conversation">
+            <channel mode="w">Informal conversation via a cellular messaging application.</channel>
+            <constitution type="frags">Each text represents a portion of dialogue transcribed and/or
+               translated from a pair's conversation in Portuguese.</constitution>
+            <derivation type="original"/>
+            <domain type="domestic"/>
+            <factuality type="mixed"/>
+            <interaction type="complete" active="plural" passive="single"/>
+            <preparedness type="spontaneous"/>
+            <purpose type="entertain" degree="high"/>
+            <purpose type="inform" degree="medium"/>
+         </textDesc>
+         <settingDesc>
+            <setting>
+               <name/>
+               <time/>
+            </setting>
+         </settingDesc>
+      </profileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>Students' spelling, grammar, and punctuation has been retained.</p>
+         </editorialDecl>
+         
+      </encodingDesc>
+   </teiHeader>
+   <text>
       <body>
          <p>Some text here.</p>
       </body>
-  </text>
+   </text>
 </TEI>
