@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg"
+  xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Portu Whats-App Sample ODD</title>
+        <author>Zac Enick</author>
+      </titleStmt>
+      <publicationStmt>
+        <p>Drafted 17 October 2017 by ZME</p>
+      </publicationStmt>
+      <sourceDesc>
+        <p>Born Digital.</p>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <schemaSpec ident="oddex1" start="TEI">
+        <moduleRef key="analysis"/>
+        <!-- added the Analysis module in its entirety -->
+        <moduleRef key="header"/>
+        <moduleRef key="core"
+          include="abbr add author bibl cit corr date del editor emph foreign gap gloss hi index label l meeting mentioned milestone name note orig p pb ptr pubPlace q quote ref reg resp resp respStmt said sp speaker teiCorpus"/>
+        <!-- Wanted to selectively include the Core module. This seems to be a bit verbose..... -->
+        <moduleRef key="tei"/>
+        <moduleRef key="textstructure"/>
+      </schemaSpec>
+      <elementSpec ident="phr" mode="change" module="analysis">
+        <attList>
+          <attDef ident="type" mode="replace">
+            <valList type="closed">
+              <valItem ident="corrective"/>
+              <valItem ident="noncorrective"/>
+              <valItem ident="corrected"/>
+              <valItem ident="incorrected"/>
+              <valItem ident="complete"/>
+              <valItem ident="incomplete"/>
+            </valList>
+            <!-- I *arbitrarily* selected some potential phrase attributes to attach to our elements in our body. I identified the element <phr> within the Analysis module,
+            then I created a closed list of eligible attribute values... I think...-->
+          </attDef>
+          <attDef ident="valueDatcat" mode="delete"/>
+          <!-- Here I think I selected an attribute that is to be deleted entirely from the schema. -->
+        </attList>
+      </elementSpec>
+    </body>
+  </text>
+</TEI>
