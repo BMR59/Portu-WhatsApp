@@ -1,5 +1,5 @@
 21
-A: Oi __! Eu sou __- estou na aula de português na universidade de Pittsburgh. Que vc tenha um bom dia, e estou animada falar com vc :)
+A: <phr who="#a1">Oi __! Eu sou __- estou na aula de português na universidade de Pittsburgh. Que <abbr>vc</abbr> tenha um bom dia, e estou animada falar com vc :)
 B: Olá, __. Tudo bem contigo? Também me sinto muito animado para falar com você :)
 A: tudo bem comigo- especialmente agora que voltei para casa. Tudo bem com você?
 B: Eu estou ótimo. Cheguei em casa tem poucos minutos também. Estou com sono já. Agora são 8:43pm
