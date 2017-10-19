@@ -4,10 +4,7 @@ body {
 .header {
     text-align: center;
 }
-p{
-    color:red;
-}
 img{
-    height: 75px;
-    width: 100px
+    height: 350px;
+    width: 250px
 }
