@@ -1,0 +1,48 @@
+transcriptionDesc describes the set of transcription conventions used, particularly for spoken material.
+
+ident	supplies an identifier for the encoding convention, independent of any version number.
+
+version	supplies a version number for the encoding conventions used, if any.
+
+
+writing contains a passage of written text revealed to participants in the course of a spoken text.
+gradual	indicates whether the writing is revealed all at once or gradually.
+att.global.source provides an attribute used by elements to point to an external source.
+
+ex/
+<u who="#a">look at this</u>
+<writing who="#a" type="newspaper"
+ gradual="false">Government claims economic problems
+<soCalled>over by June</soCalled>
+</writing>
+<u who="#a">what nonsense!</u>
+
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader/>
+ <TEI>
+  <teiHeader/>
+  <text/>
+ </TEI>
+ <TEI>
+  <teiHeader/>
+  <text/>
+ </TEI>
+</teiCorpus>
+
+<pc> (punctuation character) contains a character or string of characters regarded as constituting a single punctuation mark
+
+<sic>
+
+The mechanism provided here consists functionally of two parts:
+
+an element g, which serves as a proxy for new characters or glyphs
+elements char and glyph, providing information about such characters or glyphs; these elements are stored in the charDecl element in the header.
+
+IDEA
+if trouble with concept
+  -use of emotive language?? between brazilians and americans
+	use of emojis and punctuation along with timed responses 
+	use of questions by americans vs questions by brazilians
+<corr>
+
+iberian.obdurodon.org ** Galician-Portuguese past group project
