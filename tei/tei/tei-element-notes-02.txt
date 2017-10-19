@@ -1,0 +1,51 @@
+<charDecl>
+ <glyph xml:id="r1">
+  <glyphName>CRYING LAUGH EMOJI</glyphName>
+  <charProp>
+   <localName>entity</localName>
+   <value>em1</value>
+  </charProp>
+  <figure>
+   <graphic url="<!--emojipic.png-->"/>
+  </figure>
+ </glyph>
+
+</charDecl>
+
+<char xml:id="lacryemo">
+ <charName>LAUGHING CRY EMOJI</charName>
+ <charProp>
+  <localName>entity</localName>
+  <value>yLCMOJI</value>
+ </charProp>
+ <mapping type="composed">&#x0079;&#x0307;&#x0301;</mapping>
+ <mapping type="PUA">U+E0A4</mapping>
+</char>
+
+<placeName>
+ <settlement>Rochester</settlement>
+ <region>New York</region>
+</placeName>
+
+<person role="" sex="" age=""></person>
+<personGrp>Americans</personGrp>
+
+"nobility"
+An inherited or life-time title of nobility such as Lord, Viscount, Baron, etc.
+"honorific"
+An academic or other honorific prefixed to a name e.g. Doctor, Professor, Mrs., etc.
+"office"
+Membership of some elected or appointed organization such as President, Governor, etc.
+"military"
+Military rank such as Colonel.
+"epithet"
+A traditional descriptive phrase or nick-name such as The Hammer, The Great, etc.
+
+<langKnowledge>
+ <langKnown level="fluent" tag="en">English</langKnown>
+ <langKnown level="intermediate" tag="pt">Portuguese</langKnown>
+</langKnowledge>
+
+EX/
+<u who="A1>Eu penso que eu nao gostaria de visitar o(?) <settlement>Rio de Janeiro</settlement>.</u>
+<u who="B1">Por que?</u>
