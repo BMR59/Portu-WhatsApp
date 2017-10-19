@@ -7,3 +7,7 @@ body {
 p{
     color:red;
 }
+img{
+    height: 75px;
+    width: 100px
+}
