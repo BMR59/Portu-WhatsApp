@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:svg="http://www.w3.org/2000/svg"
-  xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0">
+  xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns="http://www.tei-c.org/ns/1.0"
+  xmlns:sch="http://purl.oclc.org/dsdl/schematron">
+  <!-- Any time changes are made to this file, it must be re-processed as an .html and .rng file. This file is *not* our literal schema, so we need to create one every time we make changes.
+    To generate an actual schema from this odd file, click on the wrench and red triangle next to the XPath window. Once there, select the TEI ODD XHTML *and* TEI ODD to RelaxNG XML
+  options and hit Apply Associated. Once that is done, the computer will crunch the odd file and spit out an html page, along with a .rng file, both of which will be deposited 
+  directly into the tei directory in your local drive. The html page has a web rendering of each of the modules and elements in use, and is primarily for referential use, whereas
+  the .rng file is the literal schema that will be used to constrain and validate our XML files. The html file is on the same hierarchical level as the .odd file, but the .rng file
+  was placed in an out directory that was generated after the first application of the .odd. -->
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -19,13 +26,30 @@
     <body>
       <schemaSpec ident="oddex1" start="TEI">
         <moduleRef key="analysis"/>
-        <!-- added the Analysis module in its entirety -->
+        <!-- The syntax behind adding an entire module, or collection of elements. A full list of element modules, with related 
+          elements is available at tei-c.org/Guidelines/Table of Contents/Appendix C: ELements -->
         <moduleRef key="header"/>
         <moduleRef key="core"
           include="abbr add author bibl cit corr date del editor emph foreign gap gloss hi index label l meeting mentioned milestone name note orig p pb ptr pubPlace q quote ref reg resp resp respStmt said sp speaker teiCorpus"/>
-        <!-- Wanted to selectively include the Core module. This seems to be a bit verbose..... -->
+        <!-- Selective inclusion of specific elements within a module. The @include attribute says 'include *only* the specific elements that I list in the values,' and the @except 
+        attribute would obviously have the opposite effect: 'include every element from the module *except* the ones that I list.-->
         <moduleRef key="tei"/>
         <moduleRef key="textstructure"/>
+        <constraintSpec scheme="isoschematron" ident="ref-id">
+          <constraint>
+            <sch:pattern>
+              <sch:rule context="tei:persName['@ref']">
+                <sch:assert test="./starts-with(., '#')">All @ref values must begin with a hashtag.</sch:assert>
+              </sch:rule>
+            </sch:pattern>
+          </constraint>
+        </constraintSpec>
+        <!-- This <constraintSpec> element just above is an example of how to format a schematron rule in the .odd file. Notice a few things... First of all, while operating
+        in the .odd file, you *must* declare the schematron namespace with each element that appears in your schematron pattern. The .odd file is operating in the TEI namespace
+        by default, so you are required to express that namespace with schematron elements, so the odd can parse your mark-up. Alo note the fact that the Schematron namespace
+        was also declared in the <TEI> element at the very top of this file. Both of these steps are vital to drafing functional Schematron rules. Aside from the additional wrapper
+        elements that surround the Schematron rules (and their accompanied attributes whose values you could easily figure out - the value of @scheme is *always* isoschematron
+        in this context) the Schematron writing should be rather familiar territory at this point.-->
       </schemaSpec>
       <elementSpec ident="phr" mode="change" module="analysis">
         <attList>
@@ -38,11 +62,15 @@
               <valItem ident="complete"/>
               <valItem ident="incomplete"/>
             </valList>
-            <!-- I *arbitrarily* selected some potential phrase attributes to attach to our elements in our body. I identified the element <phr> within the Analysis module,
-            then I created a closed list of eligible attribute values... I think...-->
+            <!-- This <elementSpec> element is being used to effectively customize *and* constrain potential attribute values associated with the <phr> element and @type attribute.
+            The stock attribute values will be removed from our personal schema, and the values listed above will replace them. Notice the nesting of elements; in <elementSpec
+            there are three attributes.. the first identifies the element with the @attribute whose values we are adding, changing, or deleting; the second one identifies the
+            modification as "change"; the last one connects the element in question to the module to which it belongs. The <attDef> element has two values, the first of which
+            identifies the @attribute whose values we are modifying; the second attribute says we are replacing the TEI values for our own.-->
           </attDef>
           <attDef ident="valueDatcat" mode="delete"/>
-          <!-- Here I think I selected an attribute that is to be deleted entirely from the schema. -->
+          <!-- Here is the syntax behind attribute deletion. This selection was completely arbitrary, so use this function as you feel compelled! I just put it in here
+          as a little example.-->
         </attList>
       </elementSpec>
     </body>
