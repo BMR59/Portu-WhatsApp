@@ -1,0 +1,34 @@
+TEI Guide 
+<TEI>
+ <text>
+  <body>
+   <u who="#">
+    <abbr type="informal"> - forms like 'tava' instead of EStava; pra for para
+    <abbr type="textese"> - texting conventions (vc for voce/td for tudo/etc)
+    <abbr type="contraction"> - non-grammatical contractions (para + o = pro)
+    <abbr type="acronym"> - i.e. EUA(United States)
+    <sic>
+     <foreign xml:lang="">
+    <corr type="explicit">
+    <corr type="implicit">
+    <pc type="exclamative="" n=""> - ex/ !!! n="3"
+    <pc type="interrogative" n=""> - ?? ex/ n="2"
+    <foreign xml:lang=""> - options = pt en sp
+    <damage>
+   
+
+
+<g>* There is a section for 'glyphs' in the header which will detail the type of emoji or smiley used. For exmaple, :) would be <g ref="#ms">:)</g> 
+(ms stands for MANUAL SMILEY) 
+
+Unsure how to track laughter - appropriate element which can be nested inside <u> is necessary
+***
+Clarify <abbr type=""> when use for pra and pro:
+In speech, the full word "para" is often pronounced "pra" 
+
+Para + a and Para + o becomes pra and pro in speech (this is extremely common, not mandatory per se but expected in speech but too informal for writing.
+
+PARA + VERB =/= PRA - so this <em>could</em> be marked as an error but given the informal nature of texting I'm marking as an <abbr> but for the value of @type being "informal" ?
+
+PRA and PRO before a noun I'm marking as <abbr type="textese">
+***
