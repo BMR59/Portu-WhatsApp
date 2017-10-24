@@ -1,10 +1,22 @@
 body {
-    background-color: #E1F0C4;
+    background-color: #3E6FB1;
 }
 .header {
     text-align: center;
 }
-img{
-    height: 350px;
-    width: 250px
+body {
+    color: #1C233E
+}
+img { 
+    max-width: 100%; 
+    height: auto; 
+}
+a:link {
+    color: #D8D5CC;
+}
+a:visited {
+    color: #B3BCC0;
+}
+a:hover {
+    color: #D6D5D0;
 }
