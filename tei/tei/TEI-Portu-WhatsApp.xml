@@ -28,11 +28,9 @@
          </sourceDesc>
       </fileDesc>
       <profileDesc>
-         <langUsage>
-            <language ident="en">English</language>
-            <language ident="pt">Portuguese</language>
-            <language ident="sp">Spanish</language>
-         </langUsage>
+         <langUsage xml:id="en"><language ident="en">English</language></langUsage>
+         <langUsage xml:id="pt"><language ident="pt">Portuguese</language></langUsage>
+         <langUsage xml:id="sp"><language ident="sp">Spanish</language></langUsage>
          <abstract resp="#LB">
             <p>We are analyzing interactions between American students of Portuguese and Brazilian
                Portuguese L1 speakers via a communication application. Conversations will be tracked
@@ -80,6 +78,27 @@
             <glyph xml:id="mf">
                <glyphName>MANUAL FROWNEY</glyphName>
             </glyph>
+            <glyph xml:id="rcs">
+               <glyphName>ROSEY CHEEK SMILEY</glyphName>
+               <figure>
+                  <!--LOCATE AN IMAGE LINK OF THE EMOJI?-->
+                  <graphic url=""/>
+               </figure>
+            </glyph>
+            <glyph xml:id="ce">
+               <glyphName>CRYING EMOJI</glyphName>
+               <figure>
+                  <!--LOCATE AN IMAGE LINK OF THE EMOJI?-->
+                  <graphic url=""/>
+               </figure>
+            </glyph>
+            <glyph xml:id="cge">
+               <glyphName>CHEESY GRIN EMOJI</glyphName>
+               <figure>
+                  <!--LOCATE AN IMAGE LINK OF THE EMOJI?-->
+                  <graphic url=""/>
+               </figure>
+            </glyph>
          </charDecl>
       </encodingDesc>
    </teiHeader>
@@ -89,24 +108,21 @@
          <u who="#a1">Oi __! Eu sou __- estou na aula de português na universidade de Pittsburgh.
             Que <abbr type="textese">vc</abbr> tenha um bom dia, e estou animada falar com <abbr type="textese">vc</abbr>
             <g ref="#ms">:)</g></u>
-         <u who="#b1">B: Olá, __. Tudo bem contigo? Também me sinto muito animado para falar com
+         <u who="#b1">B: Olá, __. Tudo bem contigo<pc type="interrogative">?</pc> Também me sinto muito animado para falar com
             você <g ref="#ms">:)</g></u>
          <u who="#a1">Tudo bem comigo- especialmente agora que voltei para casa. Tudo bem com
-            você?</u>
+            você<pc type="interrogative">?</pc></u>
          <u who="#b1">Eu estou ótimo. Cheguei em casa tem poucos minutos também. Estou com sono já.
             Agora são 8:43pm</u>
-
-
          <u who="#b1">Seu português é ótimo!</u>
          <u who="#a1">Eu também estou com sono, mas só são 7:50 aqui haha</u>
          <u who="#b1">Só uma hora de diferença. Pensei que fosse mais hahahaha</u>
          <u who="#a1">Obrigada! Estou praticando <g ref="#ms">:)</g></u>
          <u who="#a1">Haha sim! Para estar tão longe, não tem muito <sic><foreign xml:lang="sp"
                   >diferencia</foreign></sic></u>
-         <u who="#b1">Voce estuda inglês?</u>
+         <u who="#b1">Voce estuda inglês<pc type="interrogative">?</pc></u>
          <u who="#b1">Eu já estudei. Participo das “conversation classes” com a Mary e a Shea, mas
             ainda acho que meu inglês não é <damage/></u>
-
          <u who="#a1">Eu estou de acordo.</u>
          <u who="#a1">Faz mais o menos um ano e meio</u>
          <u who="b#1">Pouco tempo para tamanha desenvoltura.</u>
@@ -118,51 +134,51 @@
          <u who="#b1">Principalmente a minha pronúncia que acho horrível</u>
          <u who="#a1">Hahahahah</u>
          <u who="#a1">É verdade.</u>
-         <u who="#a1">Happy Halloween! Is Halloween a thing in Brazil?</u>
-         <u who="#b1">HAPPY HALLOWEEN !!</u>
-         <u who="#b1">Yeah</u>
+         <u who="#a1"><foreign xml:lang="en">Happy Halloween! Is Halloween a thing in Brazil</foreign><pc type="interrogative">?</pc></u>
+         <u who="#b1"><foreign xml:lang="en">HAPPY HALLOWEEN</foreign> !!</u>
+         <u who="#b1"><foreign xml:lang="en">Yeah</foreign></u>
          <u who="#b1">Hoje vai ter algumas festas temáticas pela cidade</u>
-         <u who="#a1">Ah que legal! Você tem uma fantasia? Então, eu não comprei nada. <g>face w
+         <u who="#a1">Ah que legal! Você tem uma fantasia<pc type="interrogative">?</pc> Então, eu não comprei nada. <g>face w
                bead of sweat and closed eyes</g></u>
-         <u who="#a1">Ah, e onde <abbr type="textese">vc</abbr> está no Brasil? Haha uma pergunta básica para que
+         <u who="#a1">Ah, e onde <abbr type="textese">vc</abbr> está no Brasil<pc type="interrogative">?</pc> Haha uma pergunta básica para que
             nós nos conheçamos</u>
          <u who="#b1">Hahahahahahaha</u>
          <u who="#a1">Hah eu também não comprei ou fiz nada <g ref="#md">:/</g></u>
          <u who="#b1">Eu sou de Mato Grosso, um estado no Centro oeste do País.</u>
          <u who="#b1">Sou da mesma cidade onde a Mary está.</u>
-         <u who="#b1">É você é de Pittsburgh, Pensilvânia, certo?</u>
-         <u who="#a1">Ah legal. O pantanal fica aí também?</u>
+         <u who="#b1">É você é de Pittsburgh, Pensilvânia, certo<pc type="interrogative">?</pc></u>
+         <u who="#a1">Ah legal. O pantanal fica aí também<pc type="interrogative">?</pc></u>
          <u who="#a1">Sim eu sou de Pittsburgh <g ref="#ms">:)</g></u>
          <u who="#b1">SIIIIIM</u>
          <u who="#b1">Algumas horas de viagem e chego ao Pantanal</u>
          <u who="#a1">Ahh que bacana. Eu adoraria ir para lá</u>
          <u who="#b1">É fascinante! Algo que temos que fazer ao menos uma vez na vida.</u>
-         <u who="#a1">Então <abbr type="textese">vc</abbr> já foi para lá?!</u>
+         <u who="#a1">Então <abbr type="textese">vc</abbr> já foi para lá<pc type="interrogative">?!</pc></u>
          <u who="#a1">Eu só tenho visto algumas fotos. Mas fique tão impressionada- com a natureza e
             os animais</u>
          <u who="#b1">Já fui algumas vezes. Confesso que é impressionante e apavorante, ao mesmo
             tempo. São muitos animais selvagens juntos. Hahahha</u>
          <u who="#b1">Mudando de assunto, hoje (como de costume nos finais de semana) meus pais
             estão fazendo churrasco. Na maioria dos finais de semana eles convidam alguns parentes,
-            compram algumas cervejas, colocam carnes (frango, linguiças diversas e carne bovina) pra
+            compram algumas cervejas, colocam carnes (frango, linguiças diversas e carne bovina) <abbr>pra</abbr>
             assar e ouvem músicas em alta. Eles sentam no quintal de casa e ficam conversando a
             tarde toda. Isso é um costume bem típico daqui</u>
          <u who="#b1">[recording]</u>
          <u who="#b1">Essa e um gênero musical típico do Brasil chamado Samba/Pagode</u>
          <u who="#b1">Kkkkkkk</u>
          <u who="#b1">Eu, particularmente, não gosto</u>
-         <u who="#a1">Que lindo. Então acontece toda sábado? Eu gosto muito desse costume.. É bom
+         <u who="#a1">Que lindo. Então acontece toda sábado<pc type="interrogative">?</pc> Eu gosto muito desse costume.. É bom
             ver os parentes com frequência</u>
          <u who="#a1">E me parece bem divertido <g ref="#ms">:)</g></u>
          <u who="#b1">Desculpa. Odeio esse botao</u>
-         <u who="#b1"><g>cry laugh emoji</g></u>
+         <u who="#b1"><g ref="#cle"/></u>
          <u who="#a1">Hahah eu sempre faço o mesmo</u>
          <u who="#b1">Sim, todo final de semana, incluindo sábado e domingo</u>
          <u who="#a1">Que legal!</u>
          <u who="#b1">As vezes eles vão para o interior, onde tem rios e piscinas.</u>
          <u who="#b1">É bem divertido, exceto pela bagunça que fica. Hahahah</u>
          <u who="#a1">Hahaha isso sempre é o pior parte <sic>duma</sic> festa</u>
-         <u who="#a1">A música e típica da região? O Brasil entero?</u>
+         <u who="#a1">A música e típica da região<pc type="interrogative">?</pc> O Brasil entero<pc type="interrogative">?</pc></u>
          <u who="#b1">Essa música tem uma abrangência nacional. O Brasil inteiro ouve samba e
             pagode. Mas existem algumas regionais que meus parentes ouvem também. Essas músicas
             regionais são chamadas Lambadão ou Rasqueado (nome feio e estranho, eu sei hahaha).</u>
@@ -174,7 +190,7 @@
          <u who="#b1">Pesquise “Lambadão cuiabano” e “Rasqueado matogrossense” no YouTube</u>
          <u who="#b1">Você vai encontrar umas coisas legais e engraçadas hahaha</u>
          <u who="#a1">Ah perfeito <g ref="#ms">:)</g> obrigada!</u>
-         <u who="#a1">eu também tenho que sair agorinha.. Vou pro aniversário da minha prima- ela
+         <u who="#a1">eu também tenho que sair agorinha.. Vou <abbr type="contraction">pro</abbr> aniversário da minha prima- ela
             tenha 2 anos agora <g ref="#ms">:)</g></u>
          <u who="#a1">Que <abbr type="textese">vc</abbr> curta o churrasco com a família!</u>
          <u who="#b1">Que fofinha! Minha sobrinha tem 2 anos também!</u>
@@ -183,40 +199,39 @@
          <u who="#b1">Agora tenho que ir. Vou passar no shopping para comprar umas coisas para mais
             tarde</u>
          <u who="#b1">Tenha uma ótima tarde e boa festa de aniversário da sua prima.</u>
-         <u who="#b1"><g>smiley emoji w rosy cheeks</g></u>
+         <u who="#b1"><g ref="#rcs"/></u>
          <u who="#a1">Obrigada! <abbr type="textese">Vc</abbr> também tenha uma boa tarde <g ref="#ms">:)</g>
             Tchau!</u>
-         <u who="#a1">Bom dia! Tenho um projeto pra aula sobre a música brasileira no Nordeste, nas
-            Amazonas, no Rio de Janeiro e também na Cuiabá. Você tem alguma sugestão? <g>smiley w
-               rosy cheeks</g> que tenha um dia ótimo!!</u>
+         <u who="#a1">Bom dia! Tenho um projeto <abbr>pra</abbr> aula sobre a música brasileira no Nordeste, nas
+            Amazonas, no Rio de Janeiro e também na Cuiabá. Você tem alguma sugestão<pc type="interrogative">?</pc> <g ref="#rcs"/> que tenha um dia ótimo!!</u>
          <u who="#b1">Bom diia !</u>
-         <u who="#b1">Claro, quer que eu mande links do YouTube ou apenas os nomes das músicas ? No
+         <u who="#b1">Claro, quer que eu mande links do YouTube ou apenas os nomes das músicas <pc type="interrogative">?</pc> No
             caso tenho algumas sugestões de músicas e gêneros, lamabadão, rasqueado e Siriri e
             Cururu (cujas músicas são bem fortes e passam muita energia, algo incrível)</u>
          <u who="#a1">Ah que legal! <sic>Felicitações</sic>! Você vai estudar arte em vez da
-            arquitetura?</u>
+            arquitetura<pc type="interrogative">?</pc></u>
          <u who="#a1">Eu estudo urbanismo que tem algo que ver com a arquitetura... É bem
             interessante.</u>
          <u who="#b1">Não não. Vou estudar arquitetura mesmo, sabendo que tem um enfoque em arte. Na
             realidade, arquitetura é uma forma de arte</u>
-         <u who="#b1">SÉRIO? Meu curso e arquitetura e urbanismo</u>
+         <u who="#b1">SÉRIO<pc type="interrogative">?</pc> Meu curso e arquitetura e urbanismo</u>
          <u who="#b1">mas eu falo so arquitetura porque sou preguiçoso</u>
-         <u who="#b1"><g>cry face</g></u>
+         <u who="#b1"><g ref="#ce"/></u>
          <u who="#a1">Hahah sim, é muito <abbr type="textese">pra</abbr> escrever</u>
-         <u who="#b1"><g>cry laugh</g></u>
+         <u who="#b1"><g ref="#cle"/></u>
          <u who="#b1">Obrigado pelas felicitações. (<corr type="explicit">Você pode dizer “parabéns” também, que tem
-               o mesmo significado e é mais informal</corr>) <g>cheesy grin emoji</g></u>
+               o mesmo significado e é mais informal</corr>) <g ref="cgs"/></u>
          <u who="#a1">Ahh obrigada achei que algo pareceu estranho haha</u>
-         <u who="#b1"><g>six cry laugh face emojis</g></u>
+         <u who="#b1"><g ref="#cle" n="6"/></u>
          <u who="#b1">Normal</u>
          <u who="#b1">Está certo, só que muito polido</u>
          <u who="#b1">Bom dia !</u>
-         <u who="#b1">Como está sendo seu final de semana? Planejando 'altos nadas' ?</u>
+         <u who="#b1">Como está sendo seu final de semana<pc type="interrogative">?</pc> Planejando 'altos nadas' <pc type="interrogative">?</pc></u>
          <u who="#b1">Hahahahaha</u>
          <u who="#a1">Bom dia <g ref="#ms">:)</g> hahah eu gosto dessa frase...</u>
          <u who="#b1">Hahahahaha</u>
          <u who="#a1">Eu dormi muito ontem.. Um bom modo de começar o fim de semana haha</u>
-         <u who="#a1">Como vai ser o seu fim de semana?</u>
+         <u who="#a1">Como vai ser o seu fim de semana<pc type="interrogative">?</pc></u>
          <u who="#b1">Meu fim de semana parece que vai ser bom. Hoje pela manhã tive curso de
             francês, almocei na Universidade mesmo (onde é meu curso) e agora estou me preparando
             para ir na casa de uma amiga. Vamos <abbr type="contraction">pra</abbr> balada mais tarde <g>pointing up
@@ -227,15 +242,15 @@
          <u who="#a1">eu também vou <abbr type="contraction">pra</abbr> balada com uma amiga logo.. Bom sábado</u>
          <u who="#b1">Hahahhaa</u>
          <u who="#b1">Obrigado</u>
-         <u who="#a1">Como foi a balada ontem?!</u>
-         <u who="#b1">Sinceramente? Não muito boa</u>
+         <u who="#a1">Como foi a balada ontem<pc type="interrogative">?!</pc></u>
+         <u who="#b1">Sinceramente<pc type="interrogative">?</pc> Não muito boa</u>
          <u who="#b1">Hahaha</u>
          <u who="#a1">Aw <g ref="#md">:/</g></u>
          <u who="#b1">Meu tênis era novo me deu dor no pé, as músicas que tocaram não foram muito
-            boas, exceto algumas. A minha amiga foi pro carro umas 3 da manhã pra dormir. Fiquei
+            boas, exceto algumas. A minha amiga foi <abbr type="contraction">pro</abbr> carro umas 3 da manhã <abbr>pra</abbr> dormir. Fiquei
             dançando até as 6</u>
-         <u who="#b1"><g>two cry-laugh emojis</g></u>
-         <u who="#b1">E a sua?</u>
+         <u who="#b1"><g ref="#cle" n="2"/></u>
+         <u who="#b1">E a sua<pc type="interrogative">?</pc></u>
          <u who="#a1">Eu gosto que <abbr type="textese">vc</abbr> ficou dançando! Haha</u>
          <u who="#a1">o meu tênis era velho, então eu estava confortável <g ref="#ms">:)</g> mas a
             balada foi tranquila, o meu noite terminou às 2</u>
@@ -244,12 +259,12 @@
          <u who="#b1">É MALIGNA, SÉRIO</u>
          <u who="#b1">Lembra muito o vinho, mas o teor alcoólico é maior</u>
          <u who="#a1">Catuaba.. Vou andar com cuidado se o encontrar</u>
-         <u who="#a1">Como <abbr type="textese">vc</abbr> se sentia hoje de manhã?</u>
-         <u who="#a1">O teor alcoólico.. que significa?</u>
+         <u who="#a1">Como <abbr type="textese">vc</abbr> se sentia hoje de manhã<pc type="interrogative">?</pc></u>
+         <u who="#a1">O teor alcoólico.. que significa<pc type="interrogative">?</pc></u>
          <u who="#a1">Eu só tomei cerveja barata, então nada tão maligna</u>
          <u who="#b1">Desculpa pela demora, meu celular tá dando problema.</u>
          <u who="#b1">teor alcoólico é a quantidade de álcool na bebida</u>
-         <u who="#b1">Hoje de manhã eu tava bem, só com <sic>do</sic> de cabeça fraca e sono</u>
+         <u who="#b1">Hoje de manhã eu <abbr>tava</abbr> bem, só com <sic>do</sic> de cabeça fraca e sono</u>
          <u who="#b1">Kkkkkk</u>
          <u who="#a1">Não tem problema! Eu sempre tenho problemas com <sic>a celular</sic></u>
          <u who="#a1">Ahh ok.. Entendi agora</u>
