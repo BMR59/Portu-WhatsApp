@@ -28,15 +28,21 @@
          </sourceDesc>
       </fileDesc>
       <profileDesc>
-         <langUsage xml:id="en"><language ident="en">English</language></langUsage>
-         <langUsage xml:id="pt"><language ident="pt">Portuguese</language></langUsage>
-         <langUsage xml:id="sp"><language ident="sp">Spanish</language></langUsage>
+         <langUsage xml:id="en">
+            <language ident="en">English</language>
+         </langUsage>
+         <langUsage xml:id="pt">
+            <language ident="pt">Portuguese</language>
+         </langUsage>
+         <langUsage xml:id="sp">
+            <language ident="sp">Spanish</language>
+         </langUsage>
          <abstract resp="#LB">
             <p>We are analyzing interactions between American students of Portuguese and Brazilian
                Portuguese L1 speakers via a communication application. Conversations will be tracked
-               for texting conventions such as punctuation, emoji use, and abbreviations. Errors made
-               by the Portuguese learners will also be tracked in addition to corrections, whether explicit or implicit, made by
-               the native Brazilian students.</p>
+               for texting conventions such as punctuation, emoji use, and abbreviations. Errors
+               made by the Portuguese learners will also be tracked in addition to corrections,
+               whether explicit or implicit, made by the native Brazilian students.</p>
          </abstract>
          <textDesc n="Informal domestic conversation">
             <channel mode="w">Informal conversation via a cellular messaging application.</channel>
@@ -85,6 +91,13 @@
                   <graphic url=""/>
                </figure>
             </glyph>
+            <glyph xml:id="se">
+               <glyphName>SMILEY EMOJI</glyphName>
+               <figure>
+                  <!--LOCATE AN IMAGE LINK OF THE EMOJI?-->
+                  <graphic url=""/>
+               </figure>
+            </glyph>
             <glyph xml:id="ce">
                <glyphName>CRYING EMOJI</glyphName>
                <figure>
@@ -99,175 +112,896 @@
                   <graphic url=""/>
                </figure>
             </glyph>
+            <glyph xml:id="cm">
+               <glyphName>CHECK MARK</glyphName>
+               <figure>
+                  <!--LOCATE AN IMAGE LINK OF THE EMOJI?-->
+                  <graphic url=""/>
+               </figure>
+            </glyph>
+            <glyph xml:id="x">
+               <glyphName>X</glyphName>
+               <figure>
+                  <!--LOCATE AN IMAGE LINK OF THE EMOJI?-->
+                  <graphic url=""/>
+               </figure>
+            </glyph>
+            <glyph xml:id="sge">
+               <glyphName>SUNGLASSES EMOJI</glyphName>
+               <figure>
+                  <!--LOCATE AN IMAGE LINK OF THE EMOJI?-->
+                  <graphic url=""/>
+               </figure>
+            </glyph>
          </charDecl>
       </encodingDesc>
    </teiHeader>
    <text>
       <body>
-         <!--A txt file with some observations and issues (which will be updated continually) will be added into the tei folder-->
-         <u who="#a1">Oi __! Eu sou __- estou na aula de português na universidade de Pittsburgh.
-            Que <abbr type="textese">vc</abbr> tenha um bom dia, e estou animada falar com <abbr type="textese">vc</abbr>
-            <g ref="#ms">:)</g></u>
-         <u who="#b1">B: Olá, __. Tudo bem contigo<pc type="interrogative">?</pc> Também me sinto muito animado para falar com
-            você <g ref="#ms">:)</g></u>
-         <u who="#a1">Tudo bem comigo- especialmente agora que voltei para casa. Tudo bem com
-            você<pc type="interrogative">?</pc></u>
-         <u who="#b1">Eu estou ótimo. Cheguei em casa tem poucos minutos também. Estou com sono já.
-            Agora são 8:43pm</u>
-         <u who="#b1">Seu português é ótimo!</u>
-         <u who="#a1">Eu também estou com sono, mas só são 7:50 aqui haha</u>
-         <u who="#b1">Só uma hora de diferença. Pensei que fosse mais hahahaha</u>
-         <u who="#a1">Obrigada! Estou praticando <g ref="#ms">:)</g></u>
-         <u who="#a1">Haha sim! Para estar tão longe, não tem muito <sic><foreign xml:lang="sp"
-                  >diferencia</foreign></sic></u>
-         <u who="#b1">Voce estuda inglês<pc type="interrogative">?</pc></u>
-         <u who="#b1">Eu já estudei. Participo das “conversation classes” com a Mary e a Shea, mas
-            ainda acho que meu inglês não é <damage/></u>
-         <u who="#a1">Eu estou de acordo.</u>
-         <u who="#a1">Faz mais o menos um ano e meio</u>
-         <u who="b#1">Pouco tempo para tamanha desenvoltura.</u>
-         <u who="#a1">Obrigada! Porém, antes eu estudei espanhol, então me ajudou bastante</u>
-         <u who="#a1">E também estudei no Brasil durante o verão por um pouquinho</u>
-         <u who="#b1">Que fantástico !</u>
-         <u who="#b1">Pretendo ir para a Inglaterra ou para os <abbr type="acronym">EUA</abbr> para poder praticar
-            meu inglês</u>
-         <u who="#b1">Principalmente a minha pronúncia que acho horrível</u>
-         <u who="#a1">Hahahahah</u>
-         <u who="#a1">É verdade.</u>
-         <u who="#a1"><foreign xml:lang="en">Happy Halloween! Is Halloween a thing in Brazil</foreign><pc type="interrogative">?</pc></u>
-         <u who="#b1"><foreign xml:lang="en">HAPPY HALLOWEEN</foreign> !!</u>
-         <u who="#b1"><foreign xml:lang="en">Yeah</foreign></u>
-         <u who="#b1">Hoje vai ter algumas festas temáticas pela cidade</u>
-         <u who="#a1">Ah que legal! Você tem uma fantasia<pc type="interrogative">?</pc> Então, eu não comprei nada. <g>face w
-               bead of sweat and closed eyes</g></u>
-         <u who="#a1">Ah, e onde <abbr type="textese">vc</abbr> está no Brasil<pc type="interrogative">?</pc> Haha uma pergunta básica para que
-            nós nos conheçamos</u>
-         <u who="#b1">Hahahahahahaha</u>
-         <u who="#a1">Hah eu também não comprei ou fiz nada <g ref="#md">:/</g></u>
-         <u who="#b1">Eu sou de Mato Grosso, um estado no Centro oeste do País.</u>
-         <u who="#b1">Sou da mesma cidade onde a Mary está.</u>
-         <u who="#b1">É você é de Pittsburgh, Pensilvânia, certo<pc type="interrogative">?</pc></u>
-         <u who="#a1">Ah legal. O pantanal fica aí também<pc type="interrogative">?</pc></u>
-         <u who="#a1">Sim eu sou de Pittsburgh <g ref="#ms">:)</g></u>
-         <u who="#b1">SIIIIIM</u>
-         <u who="#b1">Algumas horas de viagem e chego ao Pantanal</u>
-         <u who="#a1">Ahh que bacana. Eu adoraria ir para lá</u>
-         <u who="#b1">É fascinante! Algo que temos que fazer ao menos uma vez na vida.</u>
-         <u who="#a1">Então <abbr type="textese">vc</abbr> já foi para lá<pc type="interrogative">?!</pc></u>
-         <u who="#a1">Eu só tenho visto algumas fotos. Mas fique tão impressionada- com a natureza e
-            os animais</u>
-         <u who="#b1">Já fui algumas vezes. Confesso que é impressionante e apavorante, ao mesmo
-            tempo. São muitos animais selvagens juntos. Hahahha</u>
-         <u who="#b1">Mudando de assunto, hoje (como de costume nos finais de semana) meus pais
-            estão fazendo churrasco. Na maioria dos finais de semana eles convidam alguns parentes,
-            compram algumas cervejas, colocam carnes (frango, linguiças diversas e carne bovina) <abbr>pra</abbr>
-            assar e ouvem músicas em alta. Eles sentam no quintal de casa e ficam conversando a
-            tarde toda. Isso é um costume bem típico daqui</u>
-         <u who="#b1">[recording]</u>
-         <u who="#b1">Essa e um gênero musical típico do Brasil chamado Samba/Pagode</u>
-         <u who="#b1">Kkkkkkk</u>
-         <u who="#b1">Eu, particularmente, não gosto</u>
-         <u who="#a1">Que lindo. Então acontece toda sábado<pc type="interrogative">?</pc> Eu gosto muito desse costume.. É bom
-            ver os parentes com frequência</u>
-         <u who="#a1">E me parece bem divertido <g ref="#ms">:)</g></u>
-         <u who="#b1">Desculpa. Odeio esse botao</u>
-         <u who="#b1"><g ref="#cle"/></u>
-         <u who="#a1">Hahah eu sempre faço o mesmo</u>
-         <u who="#b1">Sim, todo final de semana, incluindo sábado e domingo</u>
-         <u who="#a1">Que legal!</u>
-         <u who="#b1">As vezes eles vão para o interior, onde tem rios e piscinas.</u>
-         <u who="#b1">É bem divertido, exceto pela bagunça que fica. Hahahah</u>
-         <u who="#a1">Hahaha isso sempre é o pior parte <sic>duma</sic> festa</u>
-         <u who="#a1">A música e típica da região<pc type="interrogative">?</pc> O Brasil entero<pc type="interrogative">?</pc></u>
-         <u who="#b1">Essa música tem uma abrangência nacional. O Brasil inteiro ouve samba e
-            pagode. Mas existem algumas regionais que meus parentes ouvem também. Essas músicas
-            regionais são chamadas Lambadão ou Rasqueado (nome feio e estranho, eu sei hahaha).</u>
-         <u who="#b1">Acho que daqui a pouco começa a tocar elas, pena que tenho que sair agorinha
-               <g ref="#mf">:(</g></u>
-         <u who="#b1">Senão dava me mandar uma parte para você ouvir</u>
-         <u who="#a1"><abbr type="textese">Obg</abbr> por mandar! Eu gostei <g ref="#ms">:)</g> vou procurar o
-            rasqueado.. Para ver se tenha algo que ver como o nome dele haha</u>
-         <u who="#b1">Pesquise “Lambadão cuiabano” e “Rasqueado matogrossense” no YouTube</u>
-         <u who="#b1">Você vai encontrar umas coisas legais e engraçadas hahaha</u>
-         <u who="#a1">Ah perfeito <g ref="#ms">:)</g> obrigada!</u>
-         <u who="#a1">eu também tenho que sair agorinha.. Vou <abbr type="contraction">pro</abbr> aniversário da minha prima- ela
-            tenha 2 anos agora <g ref="#ms">:)</g></u>
-         <u who="#a1">Que <abbr type="textese">vc</abbr> curta o churrasco com a família!</u>
-         <u who="#b1">Que fofinha! Minha sobrinha tem 2 anos também!</u>
-         <u who="#b1">Obrigado</u>
-         <u who="#a1">Aw que linda!</u>
-         <u who="#b1">Agora tenho que ir. Vou passar no shopping para comprar umas coisas para mais
-            tarde</u>
-         <u who="#b1">Tenha uma ótima tarde e boa festa de aniversário da sua prima.</u>
-         <u who="#b1"><g ref="#rcs"/></u>
-         <u who="#a1">Obrigada! <abbr type="textese">Vc</abbr> também tenha uma boa tarde <g ref="#ms">:)</g>
-            Tchau!</u>
-         <u who="#a1">Bom dia! Tenho um projeto <abbr>pra</abbr> aula sobre a música brasileira no Nordeste, nas
-            Amazonas, no Rio de Janeiro e também na Cuiabá. Você tem alguma sugestão<pc type="interrogative">?</pc> <g ref="#rcs"/> que tenha um dia ótimo!!</u>
-         <u who="#b1">Bom diia !</u>
-         <u who="#b1">Claro, quer que eu mande links do YouTube ou apenas os nomes das músicas <pc type="interrogative">?</pc> No
-            caso tenho algumas sugestões de músicas e gêneros, lamabadão, rasqueado e Siriri e
-            Cururu (cujas músicas são bem fortes e passam muita energia, algo incrível)</u>
-         <u who="#a1">Ah que legal! <sic>Felicitações</sic>! Você vai estudar arte em vez da
-            arquitetura<pc type="interrogative">?</pc></u>
-         <u who="#a1">Eu estudo urbanismo que tem algo que ver com a arquitetura... É bem
-            interessante.</u>
-         <u who="#b1">Não não. Vou estudar arquitetura mesmo, sabendo que tem um enfoque em arte. Na
-            realidade, arquitetura é uma forma de arte</u>
-         <u who="#b1">SÉRIO<pc type="interrogative">?</pc> Meu curso e arquitetura e urbanismo</u>
-         <u who="#b1">mas eu falo so arquitetura porque sou preguiçoso</u>
-         <u who="#b1"><g ref="#ce"/></u>
-         <u who="#a1">Hahah sim, é muito <abbr type="textese">pra</abbr> escrever</u>
-         <u who="#b1"><g ref="#cle"/></u>
-         <u who="#b1">Obrigado pelas felicitações. (<corr type="explicit">Você pode dizer “parabéns” também, que tem
-               o mesmo significado e é mais informal</corr>) <g ref="cgs"/></u>
-         <u who="#a1">Ahh obrigada achei que algo pareceu estranho haha</u>
-         <u who="#b1"><g ref="#cle" n="6"/></u>
-         <u who="#b1">Normal</u>
-         <u who="#b1">Está certo, só que muito polido</u>
-         <u who="#b1">Bom dia !</u>
-         <u who="#b1">Como está sendo seu final de semana<pc type="interrogative">?</pc> Planejando 'altos nadas' <pc type="interrogative">?</pc></u>
-         <u who="#b1">Hahahahaha</u>
-         <u who="#a1">Bom dia <g ref="#ms">:)</g> hahah eu gosto dessa frase...</u>
-         <u who="#b1">Hahahahaha</u>
-         <u who="#a1">Eu dormi muito ontem.. Um bom modo de começar o fim de semana haha</u>
-         <u who="#a1">Como vai ser o seu fim de semana<pc type="interrogative">?</pc></u>
-         <u who="#b1">Meu fim de semana parece que vai ser bom. Hoje pela manhã tive curso de
-            francês, almocei na Universidade mesmo (onde é meu curso) e agora estou me preparando
-            para ir na casa de uma amiga. Vamos <abbr type="contraction">pra</abbr> balada mais tarde <g>pointing up
-               emoji, sunglasses emoji, pointing up emoji</g></u>
-         <u who="#b1">Hahahahaha</u>
-         <u who="#a1">Oo que legal. Eu quero voltar a<sic>o francês</sic>. Agora estou ajudando a
-            minha irmã que está no processo de abrir um restaurante <g ref="#ms">:)</g></u>
-         <u who="#a1">eu também vou <abbr type="contraction">pra</abbr> balada com uma amiga logo.. Bom sábado</u>
-         <u who="#b1">Hahahhaa</u>
-         <u who="#b1">Obrigado</u>
-         <u who="#a1">Como foi a balada ontem<pc type="interrogative">?!</pc></u>
-         <u who="#b1">Sinceramente<pc type="interrogative">?</pc> Não muito boa</u>
-         <u who="#b1">Hahaha</u>
-         <u who="#a1">Aw <g ref="#md">:/</g></u>
-         <u who="#b1">Meu tênis era novo me deu dor no pé, as músicas que tocaram não foram muito
-            boas, exceto algumas. A minha amiga foi <abbr type="contraction">pro</abbr> carro umas 3 da manhã <abbr>pra</abbr> dormir. Fiquei
-            dançando até as 6</u>
-         <u who="#b1"><g ref="#cle" n="2"/></u>
-         <u who="#b1">E a sua<pc type="interrogative">?</pc></u>
-         <u who="#a1">Eu gosto que <abbr type="textese">vc</abbr> ficou dançando! Haha</u>
-         <u who="#a1">o meu tênis era velho, então eu estava confortável <g ref="#ms">:)</g> mas a
-            balada foi tranquila, o meu noite terminou às 2</u>
-         <u who="#b1">A minha, apesar de mais ou menos, acabou <sic>as</sic> 6</u>
-         <u who="#b1">Bebi uma bebida típica aqui, não muito comum em baladas, chamada CATUABA</u>
-         <u who="#b1">É MALIGNA, SÉRIO</u>
-         <u who="#b1">Lembra muito o vinho, mas o teor alcoólico é maior</u>
-         <u who="#a1">Catuaba.. Vou andar com cuidado se o encontrar</u>
-         <u who="#a1">Como <abbr type="textese">vc</abbr> se sentia hoje de manhã<pc type="interrogative">?</pc></u>
-         <u who="#a1">O teor alcoólico.. que significa<pc type="interrogative">?</pc></u>
-         <u who="#a1">Eu só tomei cerveja barata, então nada tão maligna</u>
-         <u who="#b1">Desculpa pela demora, meu celular tá dando problema.</u>
-         <u who="#b1">teor alcoólico é a quantidade de álcool na bebida</u>
-         <u who="#b1">Hoje de manhã eu <abbr>tava</abbr> bem, só com <sic>do</sic> de cabeça fraca e sono</u>
-         <u who="#b1">Kkkkkk</u>
-         <u who="#a1">Não tem problema! Eu sempre tenho problemas com <sic>a celular</sic></u>
-         <u who="#a1">Ahh ok.. Entendi agora</u>
+         <q n="1">
+            <!--A txt file with some observations and issues (which will be updated continually) will be added into the tei folder-->
+            <u who="#a1">Oi __! Eu sou __- estou na aula de português na universidade de Pittsburgh.
+               Que <abbr type="textese">vc</abbr> tenha um bom dia, e estou animada falar com <abbr
+                  type="textese">vc</abbr>
+               <g ref="#ms">:)</g></u>
+            <u who="#b1">B: Olá, __. Tudo bem contigo<pc type="interrogative">?</pc> Também me sinto
+               muito animado para falar com você <g ref="#ms">:)</g></u>
+            <u who="#a1">Tudo bem comigo- especialmente agora que voltei para casa. Tudo bem com
+                  você<pc type="interrogative">?</pc></u>
+            <u who="#b1">Eu estou ótimo. Cheguei em casa tem poucos minutos também. Estou com sono
+               já. Agora são 8:43pm</u>
+            <u who="#b1">Seu português é ótimo!</u>
+            <u who="#a1">Eu também estou com sono, mas só são 7:50 aqui haha</u>
+            <u who="#b1">Só uma hora de diferença. Pensei que fosse mais hahahaha</u>
+            <u who="#a1">Obrigada! Estou praticando <g ref="#ms">:)</g></u>
+            <u who="#a1">Haha sim! Para estar tão longe, não tem muito <sic><foreign xml:lang="sp"
+                     >diferencia</foreign></sic></u>
+            <u who="#b1">Voce estuda inglês<pc type="interrogative">?</pc></u>
+            <u who="#b1">Eu já estudei. Participo das “conversation classes” com a Mary e a Shea,
+               mas ainda acho que meu inglês não é <damage/></u>
+            <u who="#a1">Eu estou de acordo.</u>
+            <u who="#a1">Faz mais o menos um ano e meio</u>
+            <u who="b#1">Pouco tempo para tamanha desenvoltura.</u>
+            <u who="#a1">Obrigada! Porém, antes eu estudei espanhol, então me ajudou bastante</u>
+            <u who="#a1">E também estudei no Brasil durante o verão por um pouquinho</u>
+            <u who="#b1">Que fantástico !</u>
+            <u who="#b1">Pretendo ir para a Inglaterra ou para os EUA para poder praticar meu
+               inglês</u>
+            <u who="#b1">Principalmente a minha pronúncia que acho horrível</u>
+            <u who="#a1">Hahahahah</u>
+            <u who="#a1">É verdade.</u>
+            <u who="#a1"><foreign xml:lang="en">Happy Halloween! Is Halloween a thing in
+                  Brazil</foreign><pc type="interrogative">?</pc></u>
+            <u who="#b1"><foreign xml:lang="en">HAPPY HALLOWEEN</foreign> !!</u>
+            <u who="#b1"><foreign xml:lang="en">Yeah</foreign></u>
+            <u who="#b1">Hoje vai ter algumas festas temáticas pela cidade</u>
+            <u who="#a1">Ah que legal! Você tem uma fantasia<pc type="interrogative">?</pc> Então,
+               eu não comprei nada. <g>face w bead of sweat and closed eyes</g></u>
+            <u who="#a1">Ah, e onde <abbr type="textese">vc</abbr> está no Brasil<pc
+                  type="interrogative">?</pc> Haha uma pergunta básica para que nós nos
+               conheçamos</u>
+            <u who="#b1">Hahahahahahaha</u>
+            <u who="#a1">Hah eu também não comprei ou fiz nada <g ref="#md">:/</g></u>
+            <u who="#b1">Eu sou de Mato Grosso, um estado no Centro oeste do País.</u>
+            <u who="#b1">Sou da mesma cidade onde a Mary está.</u>
+            <u who="#b1">É você é de Pittsburgh, Pensilvânia, certo<pc type="interrogative"
+               >?</pc></u>
+            <u who="#a1">Ah legal. O pantanal fica aí também<pc type="interrogative">?</pc></u>
+            <u who="#a1">Sim eu sou de Pittsburgh <g ref="#ms">:)</g></u>
+            <u who="#b1">SIIIIIM</u>
+            <u who="#b1">Algumas horas de viagem e chego ao Pantanal</u>
+            <u who="#a1">Ahh que bacana. Eu adoraria ir para lá</u>
+            <u who="#b1">É fascinante! Algo que temos que fazer ao menos uma vez na vida.</u>
+            <u who="#a1">Então <abbr type="textese">vc</abbr> já foi para lá<pc type="interrogative"
+                  >?!</pc></u>
+            <u who="#a1">Eu só tenho visto algumas fotos. Mas fique tão impressionada- com a
+               natureza e os animais</u>
+            <u who="#b1">Já fui algumas vezes. Confesso que é impressionante e apavorante, ao mesmo
+               tempo. São muitos animais selvagens juntos. Hahahha</u>
+            <u who="#b1">Mudando de assunto, hoje (como de costume nos finais de semana) meus pais
+               estão fazendo churrasco. Na maioria dos finais de semana eles convidam alguns
+               parentes, compram algumas cervejas, colocam carnes (frango, linguiças diversas e
+               carne bovina) <abbr>pra</abbr> assar e ouvem músicas em alta. Eles sentam no quintal
+               de casa e ficam conversando a tarde toda. Isso é um costume bem típico daqui</u>
+            <u who="#b1">[recording]</u>
+            <u who="#b1">Essa e um gênero musical típico do Brasil chamado Samba/Pagode</u>
+            <u who="#b1">Kkkkkkk</u>
+            <u who="#b1">Eu, particularmente, não gosto</u>
+            <u who="#a1">Que lindo. Então acontece toda sábado<pc type="interrogative">?</pc> Eu
+               gosto muito desse costume.. É bom ver os parentes com frequência</u>
+            <u who="#a1">E me parece bem divertido <g ref="#ms">:)</g></u>
+            <u who="#b1">Desculpa. Odeio esse botao</u>
+            <u who="#b1"><g ref="#cle"/></u>
+            <u who="#a1">Hahah eu sempre faço o mesmo</u>
+            <u who="#b1">Sim, todo final de semana, incluindo sábado e domingo</u>
+            <u who="#a1">Que legal!</u>
+            <u who="#b1">As vezes eles vão para o interior, onde tem rios e piscinas.</u>
+            <u who="#b1">É bem divertido, exceto pela bagunça que fica. Hahahah</u>
+            <u who="#a1">Hahaha isso sempre é o pior parte <sic>duma</sic> festa</u>
+            <u who="#a1">A música e típica da região<pc type="interrogative">?</pc> O Brasil
+                  entero<pc type="interrogative">?</pc></u>
+            <u who="#b1">Essa música tem uma abrangência nacional. O Brasil inteiro ouve samba e
+               pagode. Mas existem algumas regionais que meus parentes ouvem também. Essas músicas
+               regionais são chamadas Lambadão ou Rasqueado (nome feio e estranho, eu sei
+               hahaha).</u>
+            <u who="#b1">Acho que daqui a pouco começa a tocar elas, pena que tenho que sair
+               agorinha <g ref="#mf">:(</g></u>
+            <u who="#b1">Senão dava me mandar uma parte para você ouvir</u>
+            <u who="#a1"><abbr type="textese">Obg</abbr> por mandar! Eu gostei <g ref="#ms">:)</g>
+               vou procurar o rasqueado.. Para ver se tenha algo que ver como o nome dele haha</u>
+            <u who="#b1">Pesquise “Lambadão cuiabano” e “Rasqueado matogrossense” no YouTube</u>
+            <u who="#b1">Você vai encontrar umas coisas legais e engraçadas hahaha</u>
+            <u who="#a1">Ah perfeito <g ref="#ms">:)</g> obrigada!</u>
+            <u who="#a1">eu também tenho que sair agorinha.. Vou <abbr type="contraction">pro</abbr>
+               aniversário da minha prima- ela tenha 2 anos agora <g ref="#ms">:)</g></u>
+            <u who="#a1">Que <abbr type="textese">vc</abbr> curta o churrasco com a família!</u>
+            <u who="#b1">Que fofinha! Minha sobrinha tem 2 anos também!</u>
+            <u who="#b1">Obrigado</u>
+            <u who="#a1">Aw que linda!</u>
+            <u who="#b1">Agora tenho que ir. Vou passar no shopping para comprar umas coisas para
+               mais tarde</u>
+            <u who="#b1">Tenha uma ótima tarde e boa festa de aniversário da sua prima.</u>
+            <u who="#b1"><g ref="#rcs"/></u>
+            <u who="#a1">Obrigada! <abbr type="textese">Vc</abbr> também tenha uma boa tarde <g
+                  ref="#ms">:)</g> Tchau!</u>
+            <u who="#a1">Bom dia! Tenho um projeto <abbr>pra</abbr> aula sobre a música brasileira
+               no Nordeste, nas Amazonas, no Rio de Janeiro e também na Cuiabá. Você tem alguma
+                  sugestão<pc type="interrogative">?</pc>
+               <g ref="#rcs"/> que tenha um dia ótimo!!</u>
+            <u who="#b1">Bom diia !</u>
+            <u who="#b1">Claro, quer que eu mande links do YouTube ou apenas os nomes das músicas
+                  <pc type="interrogative">?</pc> No caso tenho algumas sugestões de músicas e
+               gêneros, lamabadão, rasqueado e Siriri e Cururu (cujas músicas são bem fortes e
+               passam muita energia, algo incrível)</u>
+            <u who="#a1">Ah que legal! <sic>Felicitações</sic>! Você vai estudar arte em vez da
+                  arquitetura<pc type="interrogative">?</pc></u>
+            <u who="#a1">Eu estudo urbanismo que tem algo que ver com a arquitetura... É bem
+               interessante.</u>
+            <u who="#b1">Não não. Vou estudar arquitetura mesmo, sabendo que tem um enfoque em arte.
+               Na realidade, arquitetura é uma forma de arte</u>
+            <u who="#b1">SÉRIO<pc type="interrogative">?</pc> Meu curso e arquitetura e
+               urbanismo</u>
+            <u who="#b1">mas eu falo so arquitetura porque sou preguiçoso</u>
+            <u who="#b1"><g ref="#ce"/></u>
+            <u who="#a1">Hahah sim, é muito <abbr type="textese">pra</abbr> escrever</u>
+            <u who="#b1"><g ref="#cle"/></u>
+            <u who="#b1">Obrigado pelas felicitações. (<corr type="explicit">Você pode dizer
+                  “parabéns” também, que tem o mesmo significado e é mais informal</corr>) <g
+                  ref="cgs"/></u>
+            <u who="#a1">Ahh obrigada achei que algo pareceu estranho haha</u>
+            <u who="#b1"><g ref="#cle" n="6"/></u>
+            <u who="#b1">Normal</u>
+            <u who="#b1">Está certo, só que muito polido</u>
+            <u who="#b1">Bom dia !</u>
+            <u who="#b1">Como está sendo seu final de semana<pc type="interrogative">?</pc>
+               Planejando 'altos nadas' <pc type="interrogative">?</pc></u>
+            <u who="#b1">Hahahahaha</u>
+            <u who="#a1">Bom dia <g ref="#ms">:)</g> hahah eu gosto dessa frase...</u>
+            <u who="#b1">Hahahahaha</u>
+            <u who="#a1">Eu dormi muito ontem.. Um bom modo de começar o fim de semana haha</u>
+            <u who="#a1">Como vai ser o seu fim de semana<pc type="interrogative">?</pc></u>
+            <u who="#b1">Meu fim de semana parece que vai ser bom. Hoje pela manhã tive curso de
+               francês, almocei na Universidade mesmo (onde é meu curso) e agora estou me preparando
+               para ir na casa de uma amiga. Vamos <abbr type="contraction">pra</abbr> balada mais
+               tarde <g>pointing up emoji, sunglasses emoji, pointing up emoji</g></u>
+            <u who="#b1">Hahahahaha</u>
+            <u who="#a1">Oo que legal. Eu quero voltar a<sic>o francês</sic>. Agora estou ajudando a
+               minha irmã que está no processo de abrir um restaurante <g ref="#ms">:)</g></u>
+            <u who="#a1">eu também vou <abbr type="contraction">pra</abbr> balada com uma amiga
+               logo.. Bom sábado</u>
+            <u who="#b1">Hahahhaa</u>
+            <u who="#b1">Obrigado</u>
+            <u who="#a1">Como foi a balada ontem<pc type="interrogative">?!</pc></u>
+            <u who="#b1">Sinceramente<pc type="interrogative">?</pc> Não muito boa</u>
+            <u who="#b1">Hahaha</u>
+            <u who="#a1">Aw <g ref="#md">:/</g></u>
+            <u who="#b1">Meu tênis era novo me deu dor no pé, as músicas que tocaram não foram muito
+               boas, exceto algumas. A minha amiga foi <abbr type="contraction">pro</abbr> carro
+               umas 3 da manhã <abbr>pra</abbr> dormir. Fiquei dançando até as 6</u>
+            <u who="#b1"><g ref="#cle" n="2"/></u>
+            <u who="#b1">E a sua<pc type="interrogative">?</pc></u>
+            <u who="#a1">Eu gosto que <abbr type="textese">vc</abbr> ficou dançando! Haha</u>
+            <u who="#a1">o meu tênis era velho, então eu estava confortável <g ref="#ms">:)</g> mas
+               a balada foi tranquila, o meu noite terminou às 2</u>
+            <u who="#b1">A minha, apesar de mais ou menos, acabou <sic>as</sic> 6</u>
+            <u who="#b1">Bebi uma bebida típica aqui, não muito comum em baladas, chamada
+               CATUABA</u>
+            <u who="#b1">É MALIGNA, SÉRIO</u>
+            <u who="#b1">Lembra muito o vinho, mas o teor alcoólico é maior</u>
+            <u who="#a1">Catuaba.. Vou andar com cuidado se o encontrar</u>
+            <u who="#a1">Como <abbr type="textese">vc</abbr> se sentia hoje de manhã<pc
+                  type="interrogative">?</pc></u>
+            <u who="#a1">O teor alcoólico.. que significa<pc type="interrogative">?</pc></u>
+            <u who="#a1">Eu só tomei cerveja barata, então nada tão maligna</u>
+            <u who="#b1">Desculpa pela demora, meu celular tá dando problema.</u>
+            <u who="#b1">teor alcoólico é a quantidade de álcool na bebida</u>
+            <u who="#b1">Hoje de manhã eu <abbr>tava</abbr> bem, só com <sic>do</sic> de cabeça
+               fraca e sono</u>
+            <u who="#b1">Kkkkkk</u>
+            <u who="#a1">Não tem problema! Eu sempre tenho problemas com <sic>a celular</sic></u>
+            <u who="#a1">Ahh ok.. Entendi agora</u></q>
+         <q n="2">
+            <u who="#a2">Oi! Tudo bem? Eu sou ___. Vou ser o seu partner do Bate-Papo intercultural.
+               Muito prazer</u>
+            <u who="#b2">Olá, tudo bem sim e contigo ? Eu sou ___, o prazer é meu, ___.</u>
+            <u who="#a2">Tudo bem comigo, também. Você tem muitas aulas hoje?</u>
+            <u who="#b2">Ótimo. Hoje eu não tenho aulas, nos podemos combinar algum horário para
+               conversarmos por Skype, assim como também podemos conversar por aqui durante o dia.
+               Certo ?</u>
+            <u who="#a2"><abbr type="informal">Tá</abbr> podemos sim</u>
+            <u who="#a2"><abbr type="textese">vc</abbr> quer aprender inglês?</u>
+            <u who="#b2">Quero sim. Nós podemos conversar um pouco em cada idioma, assim ambos
+               aprendemos.</u>
+            <u who="#a2">Claro! <g ref="#rcs"/></u>
+            <u who="#a2">Da que parte do Brasil você é?</u>
+            <u who="#b2">Do Nordeste, um estado chamado Paraíba. Já ouviu falar ?</u>
+            <u who="#a2">Sim, ouvi. Que legal</u>
+            <u who="#a2"><sic>Eu de</sic> Pennsylvania</u>
+            <u who="#b2">Aqui é muito quente, as vezes temos uma temperatura de 32°C</u>
+            <u who="#b2">Legal, é perto de NY e Washington</u>
+            <u who="#a2">Isso é quente demais haha Aqui é muito menos hoje</u>
+            <u who="#a2">Sim mais ou menos perto</u>
+            <u who="#b2">Qual é a temperatura média aí ?</u>
+            <u who="#a2">No verão geralmente 25° a 30°. No inverno mais o menos 0° e menos</u>
+            <u who="#b2">No inverno aqui fica em torno de 18°</u>
+            <u who="#b2">é muito frio aí</u>
+            <u who="#a2">18° é frio mas confortável<abbr type="contraction">né</abbr></u>
+            <u who="#a2">É demais haha</u>
+            <u who="#b2">Confortável sim</u>
+            <u who="#b2">Que horas São ?</u>
+            <u who="#a2">As 10:42</u>
+            <u who="#b2">Aqui são 11:44</u>
+            <u who="#a2">Você <abbr type="informal">tá</abbr> no futuro</u>
+            <u who="#b2">Kkkk é</u>
+            <u who="#b2">Você quer aprender português por quê?</u>
+            <u who="#a2">Pra poder falar contigo. Para realmente poder conhecer o pais</u>
+            <u who="#b2">Isso é bom</u>
+            <u who="#a2">É você?</u>
+            <u who="#b2">Para poder conversar contigo, por interesse profissional e tenho vontade de
+               morar em outro país.</u>
+            <u who="#a2">Que legal <g ref="#se"/></u>
+            <u who="#b2">Você tem quantos anos?</u>
+            <u who="#a2">Eu tenho 21, e você?</u>
+            <u who="#b2">26</u>
+            <u who="#b2">Você está ocupado agora?</u>
+            <u who="#a2">Eu vou sair para almoçar agora</u>
+            <u who="#b2">Ok</u>
+            <u who="#a2">Você já almoçou?</u>
+            <u who="#b2">Já, almocei cedo hoje, umas 11:30.</u>
+            <u who="#a2">Que você comeu?</u>
+            <u who="#b2">Feijão preto, arroz, batata doce e bife ( carne <damage/></u>
+            <u who="#b2">E você?</u>
+            <u who="#a2"><sic>Muero</sic> por comer isso haha. Adoro arroz e feijão</u>
+            <u who="#a2">Eu <abbr type="informal">tô</abbr> comendo um taco, um hambúrguer, uma
+               salada, porco, arroz, e um wrap</u>
+            <u who="#b2">Muero?</u>
+            <u who="#b2">Aqui todo mundo come arroz e feijão</u>
+            <u who="#a2">Morro*</u>
+            <u who="#a2">Sim eu gosto muito. Comi muito arroz e feijão em Cuba</u>
+            <u who="#b2">Ah sim, é ótimo</u>
+            <u who="#b2">Se Eu não comer isso no almoço eu me sinto estranho, é muito comum</u>
+            <u who="#a2">É, verdade. Eu sempre como salada</u>
+            <u who="#b2">Aqui também comemos.</u>
+            <u who="#a2">O que você estuda?</u>
+            <u who="#b2">Eu estudo engenharia de minas (<foreign xml:lang="en">mining
+                  engineering</foreign>)</u>
+            <u who="#b2">Me formo no próximo mês</u>
+            <u who="#b2">E Você?</u>
+            <u who="#a2">Que legal! Eu estudo como especialidade o espanhol mas estudo português e
+               japonês também</u>
+            <u who="#b2">Qual é o seu curso (<foreign xml:lang="en">major</foreign>)?</u>
+            <u who="#a2">Espanhol</u>
+            <u who="#b2">Entendi</u>
+            <u who="#b2">Quando você vai terminar?</u>
+            <u who="#a2">Eu vou me formar em abril</u>
+            <u who="#a2">É você?</u>
+            <u who="#b2">próximo mês</u>
+            <u who="#a2">Wau, <abbr type="informal">tá</abbr> chegando rápido <abbr
+                  type="contraction">né</abbr></u>
+            <u who="#a2">Como você se sente disso</u>
+            <u who="#b2">Sim, foram 5 anos de curso. estou feliz, mas ao mesmo tempo preocupado em
+               relação a empregos</u>
+            <u who="#b2">Por isso estou pensando em mudar de país</u>
+            <u who="#b2">Eu também gostaria de conhecer novas pessoas e lugares</u>
+            <u who="#a2">Entendo, isso é a preocupação. Eu também me sinto assim mesmo</u>
+            <u who="#a2">Viajar é muito bom</u>
+            <u who="#b2">É sim</u>
+            <u who="#b2"><abbr type="textese">vc</abbr> pensa em morar em outro país?</u>
+            <u who="#a2"><abbr type="textese">tvz</abbr> mas <abbr type="informal">tô</abbr>
+               pensando</u>
+            <u who="#b2">em qual?</u>
+            <u who="#a2">Poderia ser <sic>Brazil</sic>, Japão, Korea do Sul, Espanha</u>
+            <u who="#a2">Agora tem que ter cuidado com Japão e Korea</u>
+            <u who="#b2">Tem que ter cuidado mesmo, <abbr type="textese">vc</abbr> gostaria de fazer
+               um mestrado?</u>
+            <u who="#b2">Eu gostaria a princípio, mas prefiro trabalhar</u>
+            <u who="#a2"><abbr type="textese">tvz</abbr> sim em aprendizagem de segunda língua</u>
+            <u who="#a2">Eu também prefiro trabalhar</u>
+            <u who="#b2">Entendo</u>
+            <u who="#b2">Qual horário você pode conversar por Skype ?</u>
+            <u who="#a2"><abbr type="informal">Tô</abbr> fazendo uma redação agora e ainda tenho que
+               jantar. Podemos amanhã?</u>
+            <u who="#a2">Amanhã seria de noite para mim</u>
+            <u who="#b2">Sim, que horas ?</u>
+            <u who="#a2">As 8:30PM aqui posso eu acho. 20:30</u>
+            <u who="#b2">Combinado <sic/></u>
+            <u who="#a2">Bom dia ___!</u>
+            <u who="#b2">Boa tarde, ___!</u>
+            <u who="#b2">Kkk</u>
+            <u who="#b2"><foreign xml:lang="en">I’m in the futur</foreign>e</u>
+            <u who="#a2">Haha tarde agora no futuro <abbr type="contraction">né</abbr></u>
+            <u who="#b2">Sim haha</u>
+            <u who="#b2">Como você <abbr type="informal">tá</abbr>?</u>
+            <u who="#a2">Tudo bem, com fome mas bem</u>
+            <u who="#a2">E <abbr type="textese">vc</abbr>?</u>
+            <u who="#b2">Mesma coisa, vou almoçar jajá e você?</u>
+            <u who="#a2">Eu as 12:45</u>
+            <u who="#b2">Vai demorar ainda</u>
+            <u who="#a2">Ainda sim <abbr type="informal">pra</abbr> mim haha</u>
+            <u who="#a2">Bom apetite</u>
+            <u who="#b2">[sent a photo of food]</u>
+            <u who="#b2">Vamos almoçar</u>
+            <u who="#b2"><g ref="#se"/> A Que delicia <sic>esa</sic> comida</u>
+            <u who="#b2">Está excelente</u>
+            <u who="#b2">Sabe o que é isso amarelo?</u>
+            <u who="#a2">É de ovo?</u>
+            <u who="#b2">Não, é cuscuz</u>
+            <u who="#b2">Muito comum aqui no Nordeste, as pessoas comem basicamente todo dia</u>
+            <u who="#b2">É uma comida feita a partir do milho</u>
+            <u who="#b2">Você pode comer em qualquer hora do dia, dependendo do acompanhamento</u>
+            <u who="#a2">Ahh que bom, tenho que provar</u>
+            <u who="#a2">Vamos ter um festival brasileiro com comida brasileira feita pela
+               comunidade brasileira aqui em pitt</u>
+            <u who="#b2">Você pode comer com leite, ovo, queijo, carne, etc é muito bom com qualquer
+               coisa</u>
+            <u who="#b2">Espero que façam <abbr type="informal">pra</abbr> você provar</u>
+            <u who="#b2">São estudantes?</u>
+            <u who="#a2">São famílias que moram aqui é donos de restaurantes</u>
+            <u who="#b2">Legal, muito bom saber que tem brasileiros aí</u>
+            <u who="#a2">É temos uma comunidade, não sei de quantas pessoas</u>
+            <u who="#b2">Legal</u>
+            <u who="#a2">Tenho uma aula hoje das 6 até 8:30</u>
+            <u who="#b2">Aula de quê?</u>
+            <u who="#a2">Escritura nos <foreign xml:lang="sp">anuncios</foreign></u>
+            <u who="#b2">tipo jornal, etc?</u>
+            <u who="#a2">Não, de marketing</u>
+            <u who="#b2">Entendo</u>
+            <u who="#b2">Seu curso é espanhol, mas você tem aulas de marketing?</u>
+            <u who="#a2">Só uma aula</u>
+            <u who="#b2">Entendo</u>
+            <u who="#b2">Consertei minha <foreign xml:lang="en">webcam</foreign></u>
+            <u who="#b2">Agora vai ser melhor conservarmos</u>
+            <u who="#a2">Que Bom!! <g ref="#ms">:)</g></u>
+            <u who="#a2">Eu vou para um evento agora até às 10</u>
+            <u who="#b2">Evento de quê?</u>
+            <u who="#a2">Uma festa de Halloween para estudantes internacionais</u>
+            <u who="#b2">Parece muito bom</u>
+            <u who="#b2">Mas termina cedo</u>
+            <u who="#a2">Cedo <abbr type="contraction">né</abbr>, <abbr type="textese">tvz</abbr>
+               vou para a minha cidade natal depois</u>
+            <u who="#b2">Bom, ver seus pais?</u>
+            <u who="#a2">Sim, agora amanhã <damage/></u>
+            <u who="#a2">Bom dia ___, espero que você esteja bem</u>
+            <u who="#b2">Bia tarde ___, obrigado. Estou bem e você?</u>
+            <u who="#a2">Eu também estou bem</u>
+            <u who="#b2">Bom</u>
+            <u who="#b2">Tem feito o quê esses dias</u>
+            <u who="#a2">Eu visitei com a minha família e estou fazendo a aplicação para me
+               formar</u>
+            <u who="#b2">Isso é Bom</u>
+            <u who="#b2">Como é essa aplicação?</u>
+            <u who="#a2">É bastante longa eu acho. Pede muitas informações pessoais</u>
+            <u who="#a2">Tenho que completar a aplicação para amanhã</u>
+            <u who="#b2">Entendo, espero que dê certo</u>
+            <u who="#a2">Obrigado ___. Eu vou completar muito <abbr type="textese">hj</abbr> para
+               estar em cima de todas as responsabilidades por uma vez haha</u>
+            <u who="#a2">Todo mundo te chama de ___?</u>
+            <u who="#b2">Faça isso mesmo.</u>
+            <u who="#b2">Todo mundo me chama sim, <abbr type="textese">pq</abbr>? Haha</u>
+            <u who="#a2">Eu não sabia se você tem uma apelido ou não haha <damage/></u>
+            <u who="#a2">Mas me introduzi assim <abbr type="informal">pra</abbr>
+               <abbr type="textese">vc</abbr></u>
+            <u who="#b2">Sim, mas não tenho apelido haha</u>
+            <u who="#b2">nunca ninguém criou um <abbr type="informal">pra</abbr> mim</u>
+            <u who="#a2">Seria difícil com o seu nome haha</u>
+            <u who="#a2"><abbr type="textese">tvz</abbr> ___ haha</u>
+            <u who="#b2">kkkk</u>
+            <u who="#b2">Soa estranho</u>
+            <u who="#b2">poucos amigos me chamam de ___, <abbr type="textese">pq</abbr> meu nome é
+               ___</u>
+            <u who="#a2">Ahh Entendo, soa legal</u>
+            <u who="#b2">se quiser pode me chamar <abbr type="informal">tbm</abbr></u>
+            <u who="#b2">de ___</u>
+            <u who="#a2">Posso haha</u>
+            <u who="#a2">É como “___” nos vídeos <abbr type="contraction">né</abbr></u>
+            <u who="#b2">é</u>
+            <u who="#b2">kkk</u>
+            <u who="#a2">Que legal mano</u>
+            <u who="#a2">Você diz mano?</u>
+            <u who="#a2">De irmão?</u>
+            <u who="#b2">Não, as pessoas do Sudeste dizem</u>
+            <u who="#a2">Ahh entendo</u>
+            <u who="#b2">poucas pessoas dizem</u>
+            <u who="#a2">Eu uso em espanhol</u>
+            <u who="#b2">Eu diria “que legal cara”</u>
+            <u who="#a2">Cara sim é</u>
+            <u who="#a2">Você tem aulas ou só uma dissertação</u>
+            <u who="#b2">algumas pessoas dizem “que legal <foreign xml:lang="en">boy</foreign>”</u>
+            <u who="#a2"><foreign xml:lang="en">boy</foreign> hahaha</u>
+            <u who="#b2">ou “boe”</u>
+            <u who="#a2"><foreign xml:lang="en">boy</foreign> é engraçado para mim que é inglês</u>
+            <u who="#b2">Eu não digo “<foreign xml:lang="en">boy</foreign>” kkk</u>
+            <u who="#b2">é sim</u>
+            <u who="#b2">kkk</u>
+            <u who="#b2">eu estou no final do curso, já terminei as disciplinas</u>
+            <u who="#b2">já apresentei o TFC (trabalho final de curso) e estou no estágio</u>
+            <u who="#a2">Que bom! Então você trabalha no estágio cada semana?</u>
+            <u who="#b2">é, falta pouco para eu terminar, então irei apresentar o relatório de
+               estágio e em seguida me formar</u>
+            <u who="#a2">Você deve de sentir emocionado <abbr type="contraction">né</abbr></u>
+            <u who="#b2">às vezes sim, formas 5 anos de curso e foi bem difícil</u>
+            <u who="#b2">os professores do meu curso são bem exigentes</u>
+            <u who="#a2">Uyy então você esperava esse momento faz muito tempo</u>
+            <u who="#b2">é</u>
+            <u who="#b2">nunca fui reprovado</u>
+            <u who="#b2"><g ref="#se"/></u>
+            <u who="#b2">mas foi difícil</u>
+            <u who="#b2">minha preocupação agora é conseguir um emprego ou talvez mudar de país</u>
+            <u who="#a2">Mas vai ser muito legal encontrar essas oportunidades</u>
+            <u who="#b2">vai sim, o que eu gostaria mesmo é morar fora</u>
+            <u who="#b2">Como eu já te disse, ter uma experiência em outro país, outra cultura,
+               outras pessoas</u>
+            <u who="#a2">Sim eu acho isso muito interessante. É um modo para <sic>crecer</sic> duma
+               maneira diferente também é da oportunidades para pensar desde outras perspectivas</u>
+            <u who="#b2"><corr type="explicit">É um modo para crescer, ok?</corr></u>
+            <u who="#a2">Como mentalmente</u>
+            <u who="#b2">Pois é, concordo</u>
+            <u who="#a2">Eu acho ótimo</u>
+            <u who="#b2">crecer <g ref="#x"/></u>
+            <u who="#b2">crescer <g ref="#cm"/></u>
+            <u who="#a2"><abbr type="informal">Brigado</abbr>!</u>
+            <u who="#b2">a pronúncia é a mesma</u>
+            <u who="#b2">Disponha</u>
+            <u who="#b2">___, você sabe fazer currículo vitae ?</u>
+            <u who="#b2">do jeito norte-americano</u>
+            <u who="#a2">Eu sei um pouco sim</u>
+            <u who="#a2">E diferente</u>
+            <u who="#a2">É</u>
+            <u who="#a2">Posso mostrar um exemplo</u>
+            <u who="#b2">Eu tenho um em português, preciso de um em inglês para me candidatar a uma
+               vaga</u>
+            <u who="#b2">você está ocupado ?</u>
+            <u who="#a2">Agora sim mas quando você precisa? Podemos o fazer juntos amanhã se
+               quiser</u>
+            <u who="#b2">ok, podemos fazer amanhã então. Que horas ?</u>
+            <u who="#a2"><abbr type="textese">tvz</abbr> as 8 aqui</u>
+            <u who="#a2">Você quer me enviar uma cópia?</u>
+            <u who="#b2">ótimo</u>
+            <u who="#b2">[sent a link to resume]</u>
+            <u who="#b2">preciso melhorar ele</u>
+            <u who="#a2">Me pode enviar o que você tem e posso fazer uma cópia com a formate
+               norteamericano</u>
+            <u who="#b2">Eu agradeço</u>
+            <u who="#a2">O osso é bem diferente haha</u>
+            <u who="#a2">Vou procurar o meu <abbr type="informal">pra</abbr>
+               <abbr type="textese">vc</abbr> ver</u>
+            <u who="#b2">E amanhã nós discutimos melhor sobre isso</u>
+            <u who="#b2">Me envie</u>
+            <u who="#a2">Sim claro. Não tão diferente mas sim diferente</u>
+            <u who="#b2">poe favor</u>
+            <u who="#b2">por*</u>
+            <u who="#a2">com prazer</u>
+            <u who="#a2">[sent a link to resume]</u>
+            <u who="#a2">O meu não é tão grande mas ainda tenho que agregar coisas</u>
+            <u who="#b2">Com um CV em inglês vou poder me candidatar a qualquer vaga do mundo</u>
+            <u who="#b2">Legal</u>
+            <u who="#a2">Vai ser muito usável</u>
+            <u who="#b2">Vou tentar melhorar meu CV, dessa forma podemos criar um bem melhor que o
+               meu atual</u>
+            <u who="#b2">vocês chamam de resumé ?</u>
+            <u who="#b2">bem legal o seu <damage/></u>
+            <u who="#a2"><abbr type="textese">tvz</abbr> é francês haha</u>
+            <u who="#b2">é kkk</u>
+            <u who="#b2">sabe o que significa “kkk”?</u>
+            <u who="#a2">É currículo vitae de latim</u>
+            <u who="#b2">ou “kkkk” ou “kkkkkkkkkkk”</u>
+            <u who="#b2">sabe</u>
+            <u who="#a2">Sim entendo</u>
+            <u who="#a2">É tipo lol</u>
+            <u who="#a2">hahaha</u>
+            <u who="#a2">Assim mesmo</u>
+            <u who="#b2">é</u>
+            <u who="#b2">quanto mais “k” maior a risada</u>
+            <u who="#b2">tem gente que escreve “KKKKKKKKKK”</u>
+            <u who="#b2">Eu não sou assim haha</u>
+            <u who="#a2">É haha mais eu evito “kkk” só pq é o nome do grupo de ódio aqui kkkk</u>
+            <u who="#b2">kkkkkkk</u>
+            <u who="#b2">é, eu pensei nisso</u>
+            <u who="#a2">Para a gente que não sabe que significa o kkkkk <sic>em</sic> Brasil se
+               confunde nas redes no internet vendo comentários de brasileiros dizendo “kkk”</u>
+            <u who="#b2">É, <abbr type="textese">vcs</abbr> devem ficar confusos</u>
+            <u who="#b2">me diga uma música</u>
+            <u who="#a2">Em inglês?</u>
+            <u who="#b2">pode ser</u>
+            <u who="#b2">tenho pensado em qual musica te mostrar, mas estou em dúvida</u>
+            <u who="#a2">Vou pesquisar haha conheço muitas em espanhol haha</u>
+            <u who="#b2">Em espanhol eu sei uma boa</u>
+            <u who="#b2">é “bailando” de Enrique inglesias</u>
+            <u who="#b2">conhece <damage/></u>
+            <u who="#a2">Conheço haha muito popular essa</u>
+            <u who="#b2">gosto dela</u>
+            <u who="#a2">Uma amiga minha me recomendou a banda Kodaline</u>
+            <u who="#a2">Bailando é muito bom</u>
+            <u who="#b2">vou procurar essa banda</u>
+            <u who="#b2">gosto mais de bailando que despacito</u>
+            <u who="#b2">Mas despeito <abbr type="textese">tbm</abbr> é boa</u>
+            <u who="#a2">Eu ouvi as duas tantas vezes que nem posso comparar hahah</u>
+            <u who="#a2">Eu <abbr type="informal">tava</abbr> em Cuba durante a cima da popularidade
+               de Despacito</u>
+            <u who="#b2">Então <abbr type="textese">vc</abbr> ouviu muitas vezes mesmo</u>
+            <u who="#a2">Todo dia varias vezes na rua e todo haha</u>
+            <u who="#b2">Imagino</u>
+         </q>
+         <q n="3">
+            <u who="#a3">Eai, aqui é o ___, aluno da ___. Tudo bem?</u>
+            <u who="#b3">Oi ___!</u>
+            <u who="#b3">Sim <g ref="#se"/>"</u>
+            <u who="#b3">Como você está?</u>
+            <u who="#a3">Boa, só tenho uma aula na quinta!</u>
+            <u who="#b3">Entao você está muito bem</u>
+            <u who="#b3">Kkkk</u>
+            <u who="#b3">___, quais dias você está disponível para conversar?</u>
+            <u who="#a3">Tipo ligar? Sei lá geralmente o <abbr type="textese">fds</abbr>
+            </u>
+            <u who="#a3">por exemplo <abbr type="textese">hj</abbr>
+               <abbr type="textese">n</abbr> tinha <abbr type="textese">mtas</abbr> aulas mas tenho
+               um <sic>exam</sic> cedo amnhã então só <abbr type="informal">tava</abbr> estudando o
+               dia inteiro</u>
+            <u who="#b3">Tipo trocar mensagens pelo WhatsApp</u>
+            <u who="#b3">o final de semana é melhor para mim <abbr type="textese">tb</abbr></u>
+            <u who="#b3">Nos sábado as mensagens podem ser apenas em português e nos domingos em
+               inglês</u>
+            <u who="#b3">Também acho que seria bom usar mensagens de áudio e quem sabe Skype</u>
+            <u who="#a3">haha pode ser, como é o seu inglês?</u>
+            <u who="#b3">É intermediário</u>
+            <u who="#b3">Eu tenho menos de um ano de estudo</u>
+            <u who="#b3">E estudo sozinho <abbr type="textese">tb</abbr></u>
+            <u who="#b3">o mais complicado <abbr type="informal">pra</abbr> mim é falar</u>
+            <u who="#b3">Nunca pude praticar direito</u>
+            <u who="#a3">Entendi, eu fico feliz em poder te ajudar <g ref="#se"/></u>
+            <u who="#b3">Vamos nos ajudar</u>
+            <u who="#b3"><g ref="#se"/></u>
+            <u who="#a3">Boa! Já <abbr type="informal">tô</abbr> falando português por <abbr
+                  type="textese">mto</abbr> tempo mas sei <abbr type="textese">q</abbr>
+               <abbr type="textese">tbm</abbr> faço erros</u>
+            <u who="#b3">Acho que isso é bastante normal</u>
+            <u who="#b3">até eu erro <g ref="#cle"/></u>
+            <u who="#b3">O importante é conseguir se expressar</u>
+            <u who="#b3">E com a prática melhoramos</u>
+            <u who="#a3">é, mas temos <abbr type="textese">q</abbr> corrigir o outro. Senão iríamos
+               praticar sem aprender.</u>
+            <u who="#b3">É claro</u>
+            <u who="#b3">Então, me fale um pouco sobre você</u>
+            <u who="#a3">tenho 20 anos, estudo engenharia de química numa faculdade aqui</u>
+            <u who="#a3">2 anos atrás fiz um intercâmbio no sul de Minas Gerais</u>
+            <u who="#a3">e <abbr type="textese">vc</abbr>?</u>
+            <u who="#b3">Eu também tenho 20 anos e estudo engenharia civil na UFCG</u>
+            <u who="#b3">Tenho muita vontade de fazer intercâmbio</u>
+            <u who="#b3">gostou de Minas?</u>
+            <u who="#a3">legal, <abbr type="textese">vc</abbr> morou perto de lá sua vida
+               inteira?</u>
+            <u who="#a3">intercâmbio é bem legal</u>
+            <u who="#a3">amei Minas!</u>
+            <u who="#b3">se <abbr type="textese">vc</abbr> fala da universidade, não</u>
+            <u who="#b3">Eu sou de uma cidade pequena no interior da Paraíba</u>
+            <u who="#b3">Moro em Campina Grande à quatro anos</u>
+            <u who="#a3">Entendi, eu <abbr type="textese">tbm</abbr> moro longe da minha
+               faculdade</u>
+            <u who="#a3">Os pais ainda moram lá?</u>
+            <u who="#b3">Sim</u>
+            <u who="#b3">Praticamente toda a minha família mora lá</u>
+            <u who="#b3">de onde <abbr type="textese">vc</abbr> é</u>
+            <u who="#a3">nossa deve sentir falta</u>
+            <u who="#a3">Moro em ___. Mas frequento faculdade em Pittsburgh</u>
+            <u who="#b3">sinto, mas já me acostumei</u>
+            <u who="#b3">Ja faz tempo que você estuda em Pittsburgh?</u>
+            <u who="#a3">já é meu segundo ano de faculdade</u>
+            <u who="#a3">Mas realmente <abbr type="textese">n</abbr> moro aqui</u>
+            <u who="#a3">no verão volto <abbr type="contraction">pra</abbr> casa</u>
+            <u who="#b3">como é o curso aí?</u>
+            <u who="#b3">Eu acho <abbr type="textese">q</abbr> muita coisa deve ser diferente
+               daqui</u>
+            <u who="#a3">hmm Eu <abbr type="textese">n</abbr> acho <abbr type="textese">q</abbr>
+               seria <abbr type="textese">mto</abbr></u>
+            <u who="#b3">Tipo</u>
+            <u who="#b3">como é o horário de <abbr type="textese">vcs</abbr></u>
+            <u who="#b3">?</u>
+            <u who="#b3">o tempo do curso</u>
+            <u who="#a3">Tipo, a química e a engenharia são as mesmas em qualquer lugar</u>
+            <u who="#a3">hmm é 4 anos</u>
+            <u who="#b3">Aqui são 5 anos</u>
+            <u who="#a3">por enquanto só <abbr type="informal">tô</abbr> fazendo um pouco de
+               engenharia</u>
+            <u who="#b3">qualquer engenharia</u>
+            <u who="#a3">É, aqui pode ser 5</u>
+            <u who="#b3">pode ser?</u>
+            <u who="#a3">pode ser 6 se quiser trabalhar e fazer mais aulas</u>
+            <u who="#b3">Ahh</u>
+            <u who="#a3">É, na <abbr type="textese">vdd</abbr> a maioria são 4 e <sic>meia</sic></u>
+            <u who="#b3">Entendo</u>
+            <u who="#b3"><abbr type="textese">Vcs</abbr> estudam cálculo é física no começo do
+               curso</u>
+            <u who="#b3">Ou já começam com disciplinas específicas</u>
+            <u who="#a3">É <sic>só o</sic> segundo ano <abbr type="textese">q</abbr> a engenharia
+               começa</u>
+            <u who="#a3">Mas ainda por enquanto faço <abbr type="textese">mto</abbr> matemática</u>
+            <u who="#a3">agora é o último trimestre disso</u>
+            <u who="#a3">a partir do trimestre <sic>seguinte,</sic> vai ser principalmente
+               engenharia e química</u>
+            <u who="#b3">Entendo, então é bem parecido</u>
+            <u who="#b3">Eu tenho alguns amigos que estudam engenharia química aqui</u>
+            <u who="#b3">posso fazer algumas correções</u>
+            <u who="#a3">e <abbr type="textese">oq</abbr> eles acham?</u>
+            <u who="#a3">claro!</u>
+            <u who="#a3">quero ué</u>
+            <u who="#b3">eles sofrem mas gostam <g ref="#cle" n="2"/></u>
+            <u who="#b3"><corr type="explicit">e meio (ano é masculino)</corr></u>
+            <u who="#b3"><corr type="explicit">no segundo ano*</corr></u>
+            <u who="#b3"><corr type="explicit">não usa vírgula*</corr></u>
+            <u who="#b3">só detalhes</u>
+            <u who="#b3">seu português é <abbr type="textese">MT</abbr> bom</u>
+            <u who="#a3">sofremos juntos</u>
+            <u who="#a3">entendi, <abbr type="textese">mto</abbr>
+               <abbr type="informal">brigado</abbr>! <g ref="#sge"/></u>
+            <u who="#b3"><g ref="#cle" n="2"/></u>
+            <u who="#b3">de nada</u>
+            <u who="#b3"><abbr type="textese">vc</abbr> trabalha <abbr type="textese">tb</abbr>?</u>
+            <u who="#a3">ainda <abbr type="textese">n</abbr></u>
+            <u who="#a3">Mas quero</u>
+            <u who="#a3">talvez dá <abbr type="informal">pra</abbr> começar em menos <abbr
+                  type="textese">q</abbr> um ano</u>
+            <u who="#a3">e <abbr type="textese">vc</abbr>?</u>
+            <u who="#b3">Não, eu estudo de manhã e pela tarde</u>
+            <u who="#b3">queria estagiar</u>
+            <u who="#b3">mas <abbr type="textese">tb</abbr>
+               <abbr type="textese">nn</abbr> dá tempo</u>
+            <u who="#a3">estagiar é Tipo aprender no trabalhar sem pagar?</u>
+            <u who="#b3">no trabalho*</u>
+            <u who="#b3">é basicamente isso</u>
+            <u who="#b3">Mas pode ser pago</u>
+            <u who="#a3">tomara <abbr type="textese">q</abbr> é *<g ref="#cle"/></u>
+            <u who="#a3"><abbr type="textese">vc</abbr> tem planos <abbr type="informal">pra</abbr>
+               <abbr type="textese">hj</abbr>?</u>
+            <u who="#b3">Não</u>
+            <u who="#b3">só <abbr type="informal">tô</abbr> estudando</u>
+            <u who="#a3">Aqui tem Halloween <abbr type="textese">vc</abbr> já ouviu dele?</u>
+            <u who="#b3">Sim, é claro</u>
+            <u who="#b3">o dia das bruxas</u>
+            <u who="#a3"><abbr type="textese">hj</abbr> tem uma festa, já viu guerra nas
+               estrelas?</u>
+            <u who="#b3">Não</u>
+            <u who="#b3">não é muito o meu estilo</u>
+            <u who="#b3">acho que <abbr type="textese">hj</abbr> tem festa aqui <abbr type="textese"
+                  >tb</abbr></u>
+            <u who="#b3">ultimamente fazem essas festas de Halloween</u>
+            <u who="#b3">Mas <abbr type="textese">nn</abbr> é algo tão tradicional como nos Estados
+               Unidos</u>
+            <u who="#a3">é, sei <abbr type="textese">q</abbr> quando passei por aí ninguém fez</u>
+            <u who="#b3">as festas por aí são como nos filmes?</u>
+            <u who="#b3">kk</u>
+            <u who="#a3">Kkkkkk depends de qual filme</u>
+            <u who="#b3">kkkkk</u>
+            <u who="#b3">Tipo, acho que American pie deve ser um exagero</u>
+            <u who="#b3">Mas já ouvi algumas histórias</u>
+            <u who="#b3">crazy parties</u>
+            <u who="#b3">não que as nossas <abbr type="textese">tb</abbr>
+               <abbr type="textese">nn</abbr> sejam</u>
+            <u who="#a3">Acho <abbr type="textese">q</abbr> American pie é um bom exemplo, claro
+                  <abbr type="textese">q</abbr> tudo é mais chique lá e com histórias bem melhor
+               <g ref="#cle"/></u>
+            <u who="#a3">é, exatamente como <abbr type="textese">vc</abbr> disse, um pouco exagerado <g ref="#cle" n="2"/></u>
+            <u who="#b3"><g ref="#cle" n="3"/></u>
+            <damage/>
+            <u who="#b3">você gostaria de marcar um dia para fazermos uma chamada de vídeo?</u>
+            <u who="#b3">aliás, um dia em português e outro em inglês</u>
+            <u who="#a3">haha pode ser</u>
+            <u who="#a3">mais tarde qualquer dia eu posso</u>
+            <u who="#a3"><abbr type="textese">vc</abbr> gosta de futebol?</u>
+            <u who="#b3">gosto</u>
+            <u who="#b3">futebol (<foreign xml:lang="en">soccer</foreign>)</u>
+            <u who="#b3">Mas só torço pela seleção</u>
+            <u who="#a3">sério? <abbr type="textese">Tbm</abbr> <sic>só</sic> assim</u>
+            <u who="#a3">só torço pela seleção</u>
+            <u who="#a3">qualquer time daí na <abbr type="textese">vdd</abbr></u>
+            <u who="#b3">
+               <corr type="explicit"><abbr type="textese">tbm</abbr> sou assim</corr>
+            </u>
+            <u who="#a3">Ah kkkkkkk isso foi sem querer</u>
+            <u who="#b3">antes Eu torcia</u>
+            <u who="#b3">ahhh</u>
+            <u who="#b3">Kkkk</u>
+            <u who="#b3">Acontece</u>
+            <u who="#b3">voltando, eu torcia para o Vasco (do Rio de Janeiro)</u>
+            <u who="#b3">Mas eu sempre gostei mesmo da copa do mundo e da seleção</u>
+            <u who="#b3">é bem mais emocionante</u>
+            <u who="#a3">é, bem melhor mesmo</u>
+            <u who="#a3">representa mais</u>
+            <u who="#b3">com certeza</u>
+            <u who="#b3">Mas <abbr type="textese">vc</abbr> deve gostar mais do football</u>
+            <u who="#b3">ou prefere o <foreign xml:lang="en">soccer</foreign></u>
+            <u who="#a3">é mesmo, gosto mais do <foreign xml:lang="en">football</foreign></u>
+            <u who="#a3">só <abbr type="textese">q</abbr> só tem Tipo um máximo de 19 jogos num temporada se conseguir jogar no
+               finais</u>
+            <u who="#a3">ou seja no ano inteiro</u>
+            <u who="#b3">é pouca coisa</u>
+            <u who="#b3">Mas são mega eventos</u>
+            <u who="#b3">tem uns amigos meus que gostam</u>
+            <u who="#b3">Eu acho basketball mais interessante</u>
+            <u who="#a3">é, por isso gosto mais. Cada jogo tem mais importância</u>
+            <u who="#a3">é, <abbr type="textese">tbm</abbr> gosto mas <abbr type="textese">n</abbr> acompanho</u>
+            <u who="#b3">entendo</u>
+            <u who="#b3">Ei, vou dormir</u>
+            <u who="#b3">amanhã tenho aula cedo</u>
+            <u who="#b3">Bia noite</u>
+            <u who="#a3">kkkk bom dia</u>
+            <u who="#b3">kkk</u>
+            <u who="#b3">Bom dia</u>
+            <u who="#a3">nossa eu <abbr type="informal">tava</abbr> cheio de obras <abbr type="textese">hj</abbr></u>
+            <u who="#a3">seus estudos tão difíceis <abbr type="textese">hj</abbr>?</u>
+            <u who="#b3"><abbr type="textese">nn</abbr> seriam trabalhos?</u>
+            <u who="#b3">por enquanto <abbr type="textese">nn</abbr>, estamos no começo do semestre</u>
+            <u who="#b3">Mas nessa fase do curso sempre temos muitas coisas <abbr type="informal">pra</abbr> fazer</u>
+            <u who="#a3">é, isso <abbr type="textese">q</abbr> eu quis dizer</u>
+            <u who="#a3">sério? <abbr type="textese">Vcs</abbr> têm horário diferente <abbr type="textese">doq</abbr> no Sudeste?</u>
+            <u who="#b3">a nossa universidade está com o calendário atrasado por causa de algumas
+               greves de professores</u>
+            <u who="#a3">mm entendi</u>
+            <u who="#a3">é <abbr type="textese">pq</abbr> geralmente o ano <abbr type="informal">tá</abbr> quase acabando agora</u>
+            <u who="#b3">é verdade</u>
+            <u who="#b3">era <abbr type="informal">pra</abbr> estamos no fim do período</u>
+            <u who="#b3"><abbr type="textese">vcs</abbr> tem períodos semestrais</u>
+            <u who="#a3">como assim?</u>
+            <u who="#b3">o período de aula de <abbr type="textese">vcs</abbr> dura quanto tempo</u>
+            <u who="#a3">Ah</u>
+            <u who="#a3">dura de apostolate dezembro</u>
+            <u who="#a3">é Janeiro até abril/maio</u>
+            <u who="#b3">Então o período de <abbr type="textese">vcs</abbr> é dividido</u>
+            <u who="#b3">essas disciplinas que <abbr type="textese">vc</abbr> começou a estudar em agosto só vão ser concluídas
+               em maio?</u>
+            <u who="#a3">kkkkkk não vai terminar em dezembro mesmo</u>
+            <u who="#a3">aí vou ter 4 semanas de férias</u>
+            <u who="#b3">kkkkk</u>
+            <u who="#b3">ahh</u>
+            <u who="#b3">entendi</u>
+            <u who="#b3">Quando é o verão aí?</u>
+            <u who="#a3">Aqui nosso verão é junho até agosto</u>
+            <u who="#a3">Mas minha faculdade acaba no fim de abril e <abbr type="textese">n</abbr> começa até o fim de
+               agosto</u>
+            <u who="#b3">Então é isso</u>
+            <u who="#b3"><abbr type="textese">vcs</abbr> tem férias de verão e de fim de ano</u>
+            <u who="#b3">Aqui são dois períodos</u>
+            <u who="#b3">quando o calendário está normal, começa em março e vai até junho, depois
+               vai de agosto a dezembro</u>
+            <u who="#a3">é, e em novembro <abbr type="textese">q</abbr> tem os vestibulares</u>
+            <u who="#b3">Sim</u>
+            <u who="#b3"><abbr type="textese">vc</abbr> vai sair <abbr type="textese">hj</abbr>?</u>
+            <u who="#a3">kkkk claro <abbr type="textese">q</abbr> saio tenho aula</u>
+            <u who="#b3">ahh kkk</u>
+            <u who="#b3">hoje é feriado aqui</u>
+            <u who="#b3">se você tivesse tempo nos poderíamos fazer uma chamada de vídeo</u>
+            <u who="#a3">ah entendi</u>
+            <u who="#a3">Vamos</u>
+            <u who="#a3">daqui umas horas</u>
+            <u who="#b3"><abbr type="textese">vc</abbr> me avisa</u>
+            <u who="#a3">agora tenho um tempinho</u>
+            <u who="#b3">Desculpa</u>
+            <u who="#b3">Eu estava <foreign xml:lang="en">off</foreign></u>
+            <u who="#b3">me diz um horário</u>
+            <u who="#a3">sei lá tenho mais 20 minutos, pode ser agora?</u>
+            <u who="#b3">pode</u>
+         </q>
+         <q n="4">
+            <damage/>
+            <u who="#b4">vou tentar o mestrado </u>
+            <u who="#a4">ai sério? Deve q ser causa disso q a professora nos junto *cry laugh* </u>
+            <u who="#a4">sou aluno de engenharia química </u>
+            <u who="#a4">o mestrado? Oq é? </u>
+            <u who="#b4">sério?? Que ótimo!! </u>
+            <u who="#b4">mestrado é uma pós graduação </u>
+            <u who="#b4">Masters </u>
+            <u who="#a4">nossa como é q n cansadou de escola </u>
+            <u who="#a4">Vou só trabalhar quando formar </u>
+            <u who="#a4">vou trabalhar aí </u>
+            <u who="#b4">na verdade encestou cansado da universidade, mas tenho que voltar porque não
+               consegui emprego :( </u>
+            <u who="#b4">trabalhar aqui no Brasil? </u>
+            <u who="#a4">ai q isso? N tem cada onde vc mora </u>
+            <u who="#a4">é, mas deixo te explicar </u>
+            <u who="#a4">q eu fiz um intercâmbio ai e comecei a namorar, e ela mora em sp </u>
+            <u who="#a4">Então quando eu formar, vou tentar morar aí um pouco ela formar </u>
+            <u who="#b4">pois é, onde eu moro tá muito difícil. </u>
+            <u who="#b4">ahh então você já veio pro Brasil </u>
+            <u who="#b4">Legal </u>
+            <u who="#b4">tem namorada e tudo kkk </u>
+            <u who="#a4">onde q mora mesmo? </u>
+            <u who="#b4">Paraíba </u>
+            <u who="#a4">É, duas vezes </u>
+            <u who="#a4">Ai legal </u>
+            <u who="#a4">tenho mta vontade de ir </u>
+            <u who="#b4">Aqui tem boas praias </u>
+            <u who="#b4">bastante sol </u>
+            <u who="#a4">kkkkkkk tem </u>
+            <u who="#a4">Mas aí é o mesmo q em Recife? Q n pode entrar na água por causa de tubarão? </u>
+            <u who="#b4">não não </u>
+            <u who="#b4">Aqui não tem tubarão kkkk </u>
+            <u who="#b4">é tranquilo </u>
+            <u who="#a4">ai graças a deus kkkk </u>
+            <u who="#a4">É como é o seu inglês? </u>
+            <u who="#b4">Eu considero avançado </u>
+            <u who="#b4">Morei 16 em Toronto, deu pra aprender muito </u>
+            <u who="#b4">seu português me parece bem bom até agora </u>
+            <u who="#b4">16 meses em Toronto*** </u>
+            <u who="#a4">kkkkk q tempo! </u>
+            <u who="#a4">mais q eu fiquei aí </u>
+            <u who="#a4">brigado, eu preciso praticar mto pra conseguir emprego aí </u>
+            <u who="#a4">quantos anos vc tem? </u>
+            <u who="#b4">Oi me Desculpa. Eu tava com a minha namorada assistindo master chef kkkk </u>
+            <u who="#b4">Eu tenho 25 anos, e vc? </u>
+            <u who="#b4">[link to Firing Squad: Monty Python’s Flying Circus] </u>
+            <u who="#a4">Ah, tbm assistia com a minha. Na temporada q Michele venceu </u>
+            <u who="#a4">tenho 20 </u>
+            <u who="#a4">Kkkk assisti dps das aulas </u>
+            <u who="#b4">okay! Aproveite suas aulas :) </u>
+            <u who="#a4">vc tinha a fazer uma aula q chama equações diferenciais? </u>
+            <u who="#a4">*2 cry laugh* </u>
+            <u who="#b4">Sim sim </u>
+            <u who="#b4">Eu tive esse curso </u>
+            <u who="#b4">vc tá tendo aula de equações diferenciais? </u>
+            <u who="#a4">é, amo a química mas odeio essas matemáticas </u>
+            <u who="#b4">sabe o que é engraçado? Eu adorei estudar equações diferencias! </u>
+            <u who="#b4">como foi seu dia? </u>
+            <u who="#a4">Mas vc prefere isso do q química? </u>
+            <u who="#a4">ah, hj foi um pouco difícil </u>
+            <u who="#b4">Eu prefiro um pouco sim </u>
+            <u who="#a4">só tô estudando pelas provas agora </u>
+            <u who="#a4">quero trabalhar aí por braskem então queros umas notas boas </u>
+            <u who="#b4">hmnnn entendi </u>
+            <u who="#b4">tenho dois conhecidos fazendo estágio lá, mas perdi contato com eles. </u>
+            <u who="#b4">Eu tentei estágio lá, mas não me escolheram :( </u>
+            <u who="#b4">o que vc achou dessas eleições dos Estados Unidos? </u>
+            <u who="#b4">Eu fiquei muito triste com o resultado </u>
+            <u who="#a4">ai q pena, boa sorte procurando </u>
+            <u who="#a4">ué, n gosteu delas </u>
+            <u who="#a4">*n gostei </u>
+            <u who="#b4">pois é </u>
+            <u who="#a4">tbm deve ser a n gosta do seu né? </u>
+            <u who="#b4">Sim!! </u>
+            <u who="#b4">nosso presidente é horrível </u>
+            <u who="#a4">é, sei q talvez vai ser mais difícil eu achar emprego no jeito q tá agora </u>
+            <u who="#b4">talvez agora seja mais difícil mesmo </u>
+            <u who="#b4">vc tá em que ano da escola? </u>
+            <u who="#a4">comecei o meu segundo ano </u>
+            <u who="#a4">realmente só quero formar logo *cry laugh* </u>
+            <u who="#b4">Hahahah calminha </u>
+            <u who="#b4">Tem 3 anos ainda pela frente </u>
+            <u who="#a4">Ah não, 2 e 3/4 *cry laugh* </u>
+            <u who="#a4">por quanto mais vc vai estudar </u>
+            <u who="#b4">Eu já me formei </u>
+            <u who="#b4">vou tentar o Masters </u>
+            <u who="#a4">é, isso </u>
+            <u who="#a4">quanto mais por Masters </u>
+            <u who="#b4">São 2 anos </u>
+            <u who="#a4">nossa nem faço ideia *cry laugh* </u>
+            <u who="#a4">teve q fazer vestibular por isso </u>
+            <u who="#b4">não não </u>
+            <u who="#b4">Eu vou fazer um teste de raciocínio lógico </u>
+            <u who="#b4">depois vai analisar meu currículo da universidade </u>
+            <u who="#b4">só isso mesmo </u>
+            <u who="#b4">Eu vou dormir, boa noite </u>
+            <u who="#a4">Desculpa amigo, tava trabalhando com o meu grupo num projeto de engenheiro </u>
+            <u who="#a4">tem 20 páginas kkkkkk </u>
+            <u who="#a4">mta boa sorte com essas provas então! Deve ser q são bem logos né?</u>
+         </q>
       </body>
    </text>
 </TEI>
