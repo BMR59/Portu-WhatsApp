@@ -133,6 +133,27 @@
                   <graphic url=""/>
                </figure>
             </glyph>
+            <glyph xml:id="pe">
+               <glyphName>PENSIVE EMOJI</glyphName>
+               <figure>
+                  <!--LOCATE AN IMAGE LINK OF THE EMOJI?-->
+                  <graphic url=""/>
+               </figure>
+            </glyph>
+            <glyph xml:id="sune">
+               <glyphName>SUN EMOJI</glyphName>
+               <figure>
+                  <!--LOCATE AN IMAGE LINK OF THE EMOJI?-->
+                  <graphic url=""/>
+               </figure>
+            </glyph>
+            <glyph xml:id="he">
+               <glyphName>HORRIFIED EMOJI</glyphName>
+               <figure>
+                  <!--LOCATE AN IMAGE LINK OF THE EMOJI?-->
+                  <graphic url=""/>
+               </figure>
+            </glyph>
          </charDecl>
       </encodingDesc>
    </teiHeader>
@@ -1001,6 +1022,193 @@
             <u who="#a4">Desculpa amigo, tava trabalhando com o meu grupo num projeto de engenheiro </u>
             <u who="#a4">tem 20 páginas kkkkkk </u>
             <u who="#a4">mta boa sorte com essas provas então! Deve ser q são bem logos né?</u>
+         </q>
+         <q n="5">
+            <u who="#a5">Bom dia <g ref="#sune"/> ___!. Meu nome é ___ e eu sou seu “<foreign xml:lang="en"
+               >conversation partner</foreign>”</u>
+            <u who="#b5">Olá, prazer em conhecê-lo (a).</u>
+            <u who="#a5">A <g ref="#ms">:)</g>
+            </u>
+            <u who="#a5">Você quer praticar inglês, <abbr type="contraction">né</abbr>?</u>
+            <u who="#b5">sim</u>
+            <u who="#b5">always</u>
+            <u who="#a5">Perfeito. É que eu tenho dois companheiros de conversa e não lembrava quem queria
+               falar inglês e quem queria falar espanhol</u>
+            <damage/>
+            <u who="#a5">É você</u>
+            <u who="#b5">Inglês, pela universidade apenas alguns meses, por outros meios, há uns quatro
+               anos.</u>
+            <u who="#a5">É <foreign xml:lang="sp">solo</foreign> estuda inglês na faculdade?</u>
+            <u who="#b5">Por enquanto sim</u>
+            <u who="#a5"><corr type="self">Só</corr>*</u>
+            <u who="#b5">___, estou de saída, para universidade inclusive.. adoraria ficar conversando mas
+               não posso levar o celular. Desculpa, entrarei em contato quando retornar.</u>
+            <u who="#a5"><abbr type="informal">ta</abbr> bom!</u>
+            <u who="#a5">ate logo! <damage/>
+            </u>
+            <u who="#a5">Oi</u>
+            <u who="#a5">Tudo bom?</u>
+            <u who="#b5">Oi</u>
+            <u who="#b5">Tudo sim, e contigo</u>
+            <u who="#a5">Também <g ref="#ms">:)</g></u>
+            <u who="#a5">Vou saindo da universidade e caminho <abbr type="informal">pro</abbr> trabalho
+               agora <g ref="#mf">:(</g></u>
+            <u who="#b5">Acabei de chegar da universidade</u>
+            <u who="#b5">até que horas você trabalha</u>
+            <u who="#a5">Até as 12 da noite <abbr type="textese">hj</abbr> mas os fins de semana eu trabalho
+               até a 1 da manhã</u>
+            <u who="#b5">
+               <g ref="#he"/>
+            </u>
+            <u who="#b5">Não é cansativo não?</u>
+            <u who="#a5">ahahahah é, mas tenho que comer e pagar a renda</u>
+            <u who="#b5">Entendo</u>
+            <u who="#b5">É perto de onde <abbr type="textese">vc</abbr> mora</u>
+            <u who="#b5">o trabalho e/ou a universidade</u>
+            <u who="#a5">não</u>
+            <u who="#a5">Ahah</u>
+            <u who="#b5">como <abbr type="textese">vc</abbr> vai?</u>
+            <u who="#a5">de ônibus</u>
+            <u who="#b5">Hmm</u>
+            <u who="#b5">E Volta de ônibus tambem?</u>
+            <u who="#a5">Para os estudantes da pitt, o sistema de transporte é da graça então eu sempre vou
+               de ônibus para <foreign xml:lang="sp">cualquier</foreign> lugar</u>
+            <u who="#b5">que ótimo.</u>
+            <u who="#a5">Sim, de volta também</u>
+            <u who="#b5">o máximo nos temos aqui é 50% de desconto..</u>
+            <u who="#b5">Aqui na minha cidade, há alguns lugares onde estudantes baixista também...</u>
+            <u who="#a5">Sim, aqui só a pitt tem esse benefício. As outras universidades têm que pagar</u>
+            <u who="#b5">algum motivo específico</u>
+            <u who="#b5">
+               <g ref="#pe"/>
+            </u>
+            <u who="#a5">A pitt é do estado</u>
+            <u who="#a5">as outras não</u>
+            <u who="#a5">elas são privadas</u>
+            <u who="#a5"><abbr type="textese">vc</abbr> tem que pagar pelos estudos na pitt <abbr
+               type="textese">tb</abbr>, não é como as universidades federais brasileiras que <abbr type="textese">tb</abbr> são da
+               fraca, mas tem alguns benefícios como o transporte</u>
+            <u who="#b5">Aah</u>
+            <u who="#b5">Legal</u>
+            <u who="#b5">Que horas começa seu expediente</u>
+            <u who="#a5">as 4:40 da tarde</u>
+            <u who="#a5">Ainda atou no ônibus</u>
+            <u who="#b5">Ah</u>
+            <u who="#b5">Então aí é uma hora mais cedo eu suponho</u>
+            <u who="#b5">Aqui já são 5:28</u>
+            <u who="#a5">Sim Aqui são as 4:39</u>
+            <u who="#b5"><g ref="#se"/></u>
+            <u who="#b5">quando <abbr type="textese">vc</abbr> tem tempo livre?</u>
+            <u who="#a5">As <foreign xml:lang="sp">veces</foreign> eu trabalho na noite e as <foreign xml:lang="sp">veces</foreign> trabalho de manhã, então se eu trabalho na
+               noite eu tenho tempo livre nas manhãs e o contrario se trabalhão de manhã</u>
+         </q>
+         <q n="7">
+            <u who="#a7">Oi ___! Como vai? Sou ___ da universidade de Pittsburgh.</u>
+            <u who="#b7">Olá, ___! Tudo bem, e contigo?</u>
+            <u who="#a7">É tudo bem. <abbr type="textese">Vc</abbr> é aluno não é?</u>
+            <u who="#a7">Eu sou aluno de pós-graduação na aula de português de conversação</u>
+            <u who="#b7">Sou graduando em Ciências econômicas, mas já sou advogado</u>
+            <u who="#b7">você é brasileiro?</u>
+            <u who="#a7">eu conheço algumas pessoas que estudaram economia e agora estão na compliance e a
+               advocacia seja <sic>em América</sic> ou no Brasil</u>
+            <u who="#a7">Não sou brasileiro, sou do Porto Rico mas moro na Pittsburgh</u>
+            <u who="#b7">entendo</u>
+            <u who="#a7">É que eu estudei português em Lisboa</u>
+            <u who="#a7">Quando eu trabalhei para Kroll</u>
+            <u who="#b7">“...advocacia seja <corr type="explicit">na América</corr> ou no Brasil...”</u>
+            <u who="#a7">‘<abbr type="informal">Brigado</abbr></u>
+            <u who="#b7">Tranquilo, cara!</u>
+            <u who="#a7">Kkkk</u>
+            <u who="#b7">Você estuda o que por aí?</u>
+            <u who="#a7">Eu estudo literatura latino-americana na Pittsburgh</u>
+            <u who="#b7">Você já veio ao Brasil? Porque a foto do Bolsonaro?</u>
+            <u who="#a7">Kkkk, é que na Kroll eu estava na equipe de português e <sic>havia</sic> muitos brasileiros</u>
+            <u who="#b7"><corr type="explicit">Haviam</corr>* , pois é plural</u>
+            <u who="#a7">É eles brincavam sobre o bolsomito</u>
+            <u who="#b7">Hum</u>
+            <u who="#b7">Eu já o conheci</u>
+            <u who="#b7">e o filho dele também</u>
+            <u who="#b7">Pois advoguei para o partido Do qual ele faz parte</u>
+            <u who="#a7">O partido progressista</u>
+            <u who="#b7">antes eles era do PP</u>
+            <u who="#b7"><abbr type="textese">hj</abbr> <abbr type="textese">tá</abbr> no psc (partido social cristao)</u>
+            <u who="#a7">é ele e maloco como dizem?</u>
+            <u who="#b7">não não</u>
+            <u who="#b7">maluco não</u>
+            <u who="#b7">Mas ele defende muitas coisas que já possuem outro entendimento</u>
+            <u who="#b7">E há muito exagero no que a mídia veicula</u>
+            <u who="#a7">o que queres dizer com “outro entendimento” ... que ele é conservador e pensa
+               diferentemente dismounts políticos brasileiros?</u>
+            <u who="#b7">Sim</u>
+            <u who="#b7">Vou fazer algumas petições aqui e mais tarde nos falamos, certo?</u>
+            <u who="#b7">Abraço!</u>
+            <u who="#a7"><abbr type="informal">Tá</abbr> bom falamos mais tarde</u>
+            <u who="#b7">Então... me fala mais de você</u>
+            <u who="#a7">Como <abbr type="textese">vc</abbr> já sabe eu sou do Porto Rico mas moro na América... primeiro em Washington
+               DC e agora em Pittsburgh. Eu estudei português noutra universidade e logo trabalhei em
+               compliance nas equipes de português e espanhol por dois anos.</u>
+            <u who="#b7">entendo</u>
+            <u who="#b7">E tem pretensões de vir para o Brasil?</u>
+            <u who="#a7">Sim</u>
+            <u who="#a7">O próximo ano</u>
+            <u who="#a7">Possívelmente <sic>no Santa Catarina</sic></u>
+            <u who="#b7"><corr type="explicit">Em Santa Catarina</corr></u>
+            <u who="#a7">e <abbr type="textese">vc</abbr>? Visitou os Estados Unidos?</u>
+            <u who="#a7"><abbr type="textese">Vc</abbr> trabalha em São Paulo ou outra cidade?</u>
+            <u who="#a7"><abbr type="textese">Vc</abbr> está estudando inglês</u>
+            <u who="#b7">nunca fui aos Estados Unidos</u>
+            <u who="#b7">Tenho pretensão, mas não por hora...</u>
+            <u who="#a7">É por o Donald Trump? Kkk</u>
+            <u who="#a7">Miami seria uma cidade legal <abbr type="textese">pra</abbr> vir</u>
+            <u who="#a7">visitar</u>
+            <u who="#b7">Kkkkkkk</u>
+            <u who="#b7">não não</u>
+            <u who="#a7">kkk</u>
+            <u who="#b7">tenho outros destinos em mente, na verdade</u>
+            <u who="#a7">Quais?</u>
+            <u who="#b7">Europa, África...Ásia</u>
+            <u who="#a7">Eu gostaria ir à China e o Japão</u>
+            <u who="#a7">Mais o Brasil tem prioridade pra mim</u>
+            <u who="#a7">Tá o ___ tenho que fazer algumas coisas. Vc quere “falar” em inglês a próxima vez?</u>
+            <u who="#b7">Eu já falo inglês bem</u>
+            <u who="#b7">Alemão e russo</u>
+            <u who="#b7">um pouco de Frances</u>
+            <u who="#b7">Mas não o espanhol</u>
+            <u who="#a7">Tá podemos em espanhol se quiser</u>
+            <u who="#b7">kkkkk</u>
+            <u who="#a7">?</u>
+            <u who="#b7">claro</u>
+            <u who="#b7">To disposto a falar qualquer idioma</u>
+            <u who="#b7">aprender, sempre</u>
+            <u who="#b7">e, pelo que vi, você tem um excelente domínio do meu idioma</u>
+            <u who="#a7">é que a professora não explicou a regras</u>
+            <u who="#b7">Mas vc conhece as nossas gírias</u>
+            <u who="#b7">expressões?</u>
+            <u who="#b7">acho que seria interessante ver isso antes de praticarmos outro idioma</u>
+            <u who="#a7">Obrigado ___. Um pouco porquê tenho amigos brasileiros</u>
+            <u who="#b7">Tipo...</u>
+            <u who="#b7">Eu estou escrevendo sem abreviações ...</u>
+            <u who="#b7">Mas geralmente eu usaria : vc ao invés de você ....</u>
+            <u who="#a7">tá bom, eu posso entender</u>
+            <u who="#b7">exato....esse tá que é a forma curta</u>
+            <u who="#b7">Kkkk</u>
+            <u who="#b7">E se eu te perguntar:</u>
+            <u who="#b7">Vc conhece a palavra “denda”</u>
+            <u who="#a7">não conheço cara</u>
+            <u who="#b7">muito usado quando vc quer referenciar à algo como: A colher está denda gaveta...</u>
+            <u who="#b7">Sonoramente acaba sendo usado assim</u>
+            <u who="#b7">Kkkkk</u>
+            <u who="#b7">Entende?</u>
+            <u who="#a7">Sim e obrigado! Eu tenho que ir o ___. Desculpa-me pra próxima em espanhol?</u>
+            <u who="#b7">claro</u>
+            <u who="#b7">seria ótimo para mim</u>
+            <u who="#b7">espero não tá sendo chato</u>
+            <u who="#b7">*smiley emoji sweat*</u>
+            <u who="#a7">não claro que não</u>
+            <u who="#a7">Bom dia! Eu pesquisei um pouco mais sobre a palavra “denda” e não é uma contração
+               das palavras “dentro da”? E se tal for o caso eu acho que essa é uma das diferenças mais
+               significativas entre português e espanhol?</u>
+            <u who="#a7">Mas essas contrações são tb</u>
          </q>
       </body>
    </text>
