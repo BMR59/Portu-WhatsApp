@@ -27,8 +27,16 @@ h1{
 #ssi{
     font-family: arial;
     background:#FFBB4A;
+    text-align:center;
+    font-family:Dotum, Century, Arial;
 }
 .description{
-    border:black 2px;
-    border-style:none solid solid solid;
+    background:#8CAFDE;
+    color:black;
+    font-family:Century;
+}
+.main{
+    background-color:#5F8AC6;
+    color: black;
+    font-family:Century;
 }
