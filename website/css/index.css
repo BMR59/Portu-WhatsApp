@@ -40,3 +40,8 @@ h1{
     color: black;
     font-family:Century;
 }
+.data{
+    width: 20%;
+    height: 400px;
+    margin:2%;
+}
