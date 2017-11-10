@@ -23,5 +23,7 @@ a:hover {
 h1{
     color:black;
     font-family:arial, helvetica, sans-serif;
-    
+}
+#ssi{
+    font-family: arial;
 }
