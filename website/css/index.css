@@ -26,4 +26,9 @@ h1{
 }
 #ssi{
     font-family: arial;
+    background:#FFBB4A;
+}
+.description{
+    border:black 2px;
+    border-style:none solid solid solid;
 }
