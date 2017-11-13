@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!--Still working out logistics of the headder-->
 
+<?xml-model href="../odd/out/sampleODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
       <fileDesc>
@@ -12,12 +12,12 @@
             <author>American students of Portuguese at the University of Pittsburgh</author>
             <author>Brazilian students of English</author>
             <sponsor>University of Pittsburgh</sponsor>
-            <principal><persName ref="#ze">Zachary Enick</persName>, <persName ref="#bmr">Brandon
-                  Rodgers</persName>, <persName ref="#pab">Patrick Murray</persName>, <persName
-                  ref="#ttb">Tyler Botak</persName></principal>
+            <principal><name ref="#ze">Zachary Enick</name>, <name ref="#bmr">Brandon
+                  Rodgers</name>, <name ref="#pab">Patrick Murray</name>, <name
+                  ref="#ttb">Tyler Botak</name></principal>
             <respStmt>
                <resp>Transcription and markup by</resp>
-               <persName ref="#bmr">Brandon Rodgers</persName>
+               <name ref="#bmr">Brandon Rodgers</name>
             </respStmt>
          </titleStmt>
 
@@ -59,7 +59,7 @@
          </textDesc>
          <settingDesc>
             <setting>
-               <name/>
+               <name>The name associated with the setting.</name>
                <time/>
             </setting>
          </settingDesc>
@@ -1208,7 +1208,7 @@
             <u who="#b7">Sonoramente acaba sendo usado assim</u>
             <u who="#b7">Kkkkk</u>
             <u who="#b7">Entende<pc type="interrogative">?</pc></u>
-            <u who="#a7">Sim e obrigado! Eu tenho que ir o ___. Desculpa-me <abbr type="contaction">pra</abbr> próxima em espanhol<pc type="interrogative">?</pc></u>
+            <u who="#a7">Sim e obrigado! Eu tenho que ir o ___. Desculpa-me <abbr type="contraction">pra</abbr> próxima em espanhol<pc type="interrogative">?</pc></u>
             <u who="#b7">claro</u>
             <u who="#b7">seria ótimo para mim</u>
             <u who="#b7">espero não <abbr type="informal">tá</abbr> sendo chato</u>

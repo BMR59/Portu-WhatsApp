@@ -25,16 +25,20 @@
   <text>
     <body>
       <schemaSpec ident="oddex1" start="TEI">
-        <moduleRef key="analysis"/>
-        <!-- The syntax behind adding an entire module, or collection of elements. A full list of element modules, with related 
-          elements is available at tei-c.org/Guidelines/Table of Contents/Appendix C: ELements -->
-        <moduleRef key="header"/>
-        <moduleRef key="core"
-          include="abbr add author bibl cit corr date del editor emph foreign gap gloss hi index label l meeting mentioned milestone name note orig p pb ptr pubPlace q quote ref reg resp resp respStmt said sp speaker teiCorpus"/>
+        <moduleRef key="tei"/>
+        <moduleRef key="spoken" include="u"/>
+        <moduleRef key="transcr" include="damage"/>
+        <moduleRef key="analysis" include="pc"/>
+        <moduleRef key="namesdates" include="persName"/>
+        <moduleRef key="figures" include="figure"/>
+        <moduleRef key="corpus" include="channel constitution derivation domain factuality interaction preparedness purpose setting settingDesc textDesc"/>
+        <moduleRef key="header" include="abstract editorialDecl encodingDesc fileDesc langUsage language principal profileDesc projectDesc publicationStmt sourceDesc sponsor teiHeader title titleStmt"/>
+        <moduleRef key="core" include="abbr author corr editor foreign graphic name p q resp respStmt sic time title"/>
         <!-- Selective inclusion of specific elements within a module. The @include attribute says 'include *only* the specific elements that I list in the values,' and the @except 
         attribute would obviously have the opposite effect: 'include every element from the module *except* the ones that I list.-->
-        <moduleRef key="tei"/>
-        <moduleRef key="textstructure"/>
+       <!-- <moduleRef key="tei"/> -->
+        <moduleRef key="gaiji" include="charDecl g glyph glyphName"/>
+        <moduleRef key="textstructure" include="TEI body text"/>
         <constraintSpec scheme="isoschematron" ident="ref-id">
           <constraint>
             <sch:pattern>
@@ -51,16 +55,14 @@
         elements that surround the Schematron rules (and their accompanied attributes whose values you could easily figure out - the value of @scheme is *always* isoschematron
         in this context) the Schematron writing should be rather familiar territory at this point.-->
       </schemaSpec>
-      <elementSpec ident="phr" mode="change" module="analysis">
+      <elementSpec ident="abbr" mode="change" module="core">
         <attList>
           <attDef ident="type" mode="replace">
             <valList type="closed">
-              <valItem ident="corrective"/>
-              <valItem ident="noncorrective"/>
-              <valItem ident="corrected"/>
-              <valItem ident="incorrected"/>
-              <valItem ident="complete"/>
-              <valItem ident="incomplete"/>
+              <valItem ident="informal"/>
+              <valItem ident="textese"/>
+              <valItem ident="contraction"/>
+              <valItem ident="acronym"/>
             </valList>
             <!-- This <elementSpec> element is being used to effectively customize *and* constrain potential attribute values associated with the <phr> element and @type attribute.
             The stock attribute values will be removed from our personal schema, and the values listed above will replace them. Notice the nesting of elements; in <elementSpec
@@ -68,10 +70,15 @@
             modification as "change"; the last one connects the element in question to the module to which it belongs. The <attDef> element has two values, the first of which
             identifies the @attribute whose values we are modifying; the second attribute says we are replacing the TEI values for our own.-->
           </attDef>
-          <attDef ident="valueDatcat" mode="delete"/>
-          <!-- Here is the syntax behind attribute deletion. This selection was completely arbitrary, so use this function as you feel compelled! I just put it in here
-          as a little example.-->
         </attList>
+      </elementSpec>
+      <elementSpec ident="persName" mode="replace" module="namesdates">
+        <valList type="closed">
+          <valItem ident="#ze"/>
+          <valItem ident="#pab"/>
+          <valItem ident="#ttb"/>
+          <valItem ident="#bmr"/>
+        </valList>
       </elementSpec>
     </body>
   </text>
