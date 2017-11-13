@@ -8,25 +8,29 @@ TEI Guide
     <abbr type="informal"> - forms like 'tava' instead of 'estava'; pra for para
     <abbr type="textese"> - texting conventions (vc for voce/td for tudo/etc)
     <abbr type="contraction"> - non-grammatical cntrctns: nao+e/pra+pro
-    <sic type="corrected">
-     <foreign xml:lang=""> - options = pt en sp
-    <sic type="uncorrected">
-     <foreign xml:lang=""> - options = pt en sp
+    <sic type="corrected">*
+     <foreign xml:lang=""> - options = en; sp
+    <sic type="uncorrected">*
+     <foreign xml:lang=""> - options = en; sp
     <corr type="explicit">
-     <foreign xml:lang=""> - options = pt en sp
+     <foreign xml:lang=""> - options = en; sp
     <corr type="implicit">
-     <foreign xml:lang=""> - options = pt en sp
-    <pc type="exclamative n=""> - ex/ !!! n="3"
-    <pc type="interrogative" n=""> - ?? ex/ n="2"
-    <foreign xml:lang=""> - options = pt en sp
-    <emph> - (laughter): lol; hahaha; kkkk; rsrs **?
+     <foreign xml:lang=""> - options = en; sp
+    <pc type="exclamative n="">
+    <pc type="interrogative" n="">
+    <foreign xml:lang=""> - options = en sp
+    <kinesic style="" - American/Brazilian?*
     <g ref="#"/>
     <g ref="#"></g>
    </u>
 
    <damage/>
 
-  
+*<sic> would need to be modified to permit a 'type' attribute  
+*<kinesic> would need to be modified to permit an attribute as well as to allow text within the element
+    styles of laughter are: rsrs and kkkk (Brazilian) or lol and hahah (American)
+      Good attribute to mark these values? Or stick with a 'type' attribute? 
+
 <!--These are the elements being used and explanations behind them.
    <u who="#">
     <abbr type="informal">
