@@ -1,34 +1,95 @@
 TEI Guide 
+
+<!--These are the elements being used throughout markup, how they are nested, and the attributes and values they have, current as of 11-10-2017-->
 <TEI>
  <text>
   <body>
    <u who="#">
     <abbr type="informal"> - forms like 'tava' instead of 'estava'; pra for para
     <abbr type="textese"> - texting conventions (vc for voce/td for tudo/etc)
-    <abbr type="contraction"> - non-grammatical contractions (para + o = pro)
-    <abbr type="acronym"> - i.e. EUA(United States)
-    <sic>
-     <foreign xml:lang="">
+    <abbr type="contraction"> - non-grammatical cntrctns: nao+e/pra+pro
+    <sic type="corrected">*
+     <foreign xml:lang=""> - options = en; sp
+    <sic type="uncorrected">*
+     <foreign xml:lang=""> - options = en; sp
     <corr type="explicit">
+     <foreign xml:lang=""> - options = en; sp
     <corr type="implicit">
-    <pc type="exclamative="" n=""> - ex/ !!! n="3"
-    <pc type="interrogative" n=""> - ?? ex/ n="2"
-    <foreign xml:lang=""> - options = pt en sp
-    <damage>
-   
+     <foreign xml:lang=""> - options = en; sp
+    <pc type="exclamative n="">
+    <pc type="interrogative" n="">
+    <foreign xml:lang=""> - options = en sp
+    <kinesic style="" - American/Brazilian?*
+    <g ref="#"/>
+    <g ref="#"></g>
+   </u>
+
+   <damage/>
+
+*<sic> would need to be modified to permit a 'type' attribute  
+*<kinesic> would need to be modified to permit an attribute as well as to allow text within the element
+    styles of laughter are: rsrs and kkkk (Brazilian) or lol and hahah (American)
+      Good attribute to mark these values? Or stick with a 'type' attribute? 
+
+<!--These are the elements being used and explanations behind them.
+   <u who="#">
+    <abbr type="informal">
+This marks forms that are common in speech, but are perscriptively "forbidden" in writing. Ex/ "tava" in place of "estava" or "pra+verbo" in place of "para+verbo".
+    <abbr type="textese">
+These are strictly texting conventions such as: "td" for "tudo"; "vc" for "voce"; "n" for "nao" and so on.
+    <abbr type="contraction">
+This marks 'non-grammatical' contractions which are acceptable in speech but not formal writing: para+o=pro; para+a=pra; nao+e'=ne'
+    <sic type="corrected">
+Marks and error which was orrected by the Brazilian
+    <sic type="uncorrected">
+Marks an error which was uncorrected by the Brazilian
+    <corr type="explicit">
+The Brazilian directly corrects the error. Ex/ "That verb doesn't fit in that sentence, what you could say is..."
+    <corr type="implicit">
+The Brazilian indirectly corrects the error by using the correct form in a response but without mentioning that an error had been made.
+Ex/ American: Estou *no* universidade     Brazilian: Estou *na* *minha* universidade, tambe'm.
+    <pc type="exclamative" n="">
+Excalamation marks and amount being used.
+    <pc type="interrogative" n="">
+Question marks and the amount being used.
+    <foreign xml:lang="">
+Options are "en" and "sp" for when speakers write a word in English or Spanish. This can be nested within the <sic> element
+    <emph>
+Potential way of marking laughter? Also: potentially use an @ to signify 'american' (lol; hahaha) vs. 'brazilian' (kkkk; rsrs) laughter
+    <g ref="#"/>
+Empty element used for marking emojis. Emoji codes can be found in the TEI header.
+    <g ref="#"></g>
+Used to makr 'manual' smiley such as: :) :( :/
+   </u>
+
+<damage/>
+Empty element nested underneath the <body> element for whenever part of the text has been obscured or omitted.
 
 
-<g>* There is a section for 'glyphs' in the header which will detail the type of emoji or smiley used. For exmaple, :) would be <g ref="#ms">:)</g> 
-(ms stands for MANUAL SMILEY) 
+<!--Unsure how to track laughter - appropriate element which can be nested inside <u> is necessary-->
 
-Unsure how to track laughter - appropriate element which can be nested inside <u> is necessary
-***
-Clarify <abbr type=""> when use for pra and pro:
-In speech, the full word "para" is often pronounced "pra" 
+<!--
+Clarification of the markup of PRA, which differs dependent on how it is used:
+In Portuguese, 'PARA' can be used a number of ways, most commonly as 'to' or 'in order to'.
+In speech, 'PARA' is often shortened to 'PRA' - this is strictly colloquial and considered improper in terms of writing
+  In informal texting, 'PRA' is used often.
 
-Para + a and Para + o becomes pra and pro in speech (this is extremely common, not mandatory per se but expected in speech but too informal for writing)
+Also in speech, 'PARA' contracts with the definite article 'O' and 'A' and becomes 'PRO' or 'PRA', respectively.
+ This is also considered a convention of speech and not permitted in formal writing, but it is used informally in texting.
 
-PARA + VERB =/= PRA - so this <em>could</em> be marked as an error but given the informal nature of texting I'm marking as an <abbr> but for the value of @type being "informal" ?
+So, 'PRA' before a verb or pronoun is mark as <abbr type="informal"> as it is an informal method of speech which has surfaced in texting.
 
-PRA and PRO before a noun I'm marking as <abbr type="textese">
-***
+'PRO/PRA' used before nouns, proper or not, is marked as <abbr type="contraction"> as it is an 'ungrammatical' contraction
+-->
+
+
+
+
+
+
+
+ 
+
+
+
+
