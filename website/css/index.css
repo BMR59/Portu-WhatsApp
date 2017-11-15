@@ -46,7 +46,7 @@ h1{
     height: 400px;
     margin:1%;
 }
-ul {
+ul.menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
