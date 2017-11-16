@@ -54,9 +54,11 @@ ul.menu {
       display: flex;
   justify-content: space-around;
     background-color: #FFBB4A;
+    border: double black 2px;
 }
 li.menu {
     float: left;
+    font-family: Dotum, Century, Arial;
 }
 a.menu {
     display: block;
@@ -65,5 +67,5 @@ a.menu {
     text-decoration: none;
 }
 a:hover {
-    background-color: #111;
+    background-color: #3E6FB1;
 }
