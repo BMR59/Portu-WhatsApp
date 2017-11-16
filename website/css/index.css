@@ -55,10 +55,10 @@ ul.menu {
   justify-content: space-around;
     background-color: #FFBB4A;
 }
-li {
+li.menu {
     float: left;
 }
-a {
+a.menu {
     display: block;
     padding: 8px;
     color: black;
