@@ -71,5 +71,7 @@ a:hover {
 }
 a.internal:hover{
     color:#FFBB4A;
-    
+}
+#dataToC{
+    text-align:center;
 }
