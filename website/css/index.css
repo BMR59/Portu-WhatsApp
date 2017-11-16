@@ -75,3 +75,9 @@ a.internal:hover{
 #dataToC{
     text-align:center;
 }
+u[who="#b1"]{
+    background-color:green;
+}
+u[who="#a1"]{
+    background-color:red;    
+}
