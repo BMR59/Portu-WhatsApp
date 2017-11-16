@@ -69,3 +69,7 @@ a.menu {
 a:hover {
     background-color: #3E6FB1;
 }
+a.internal:hover{
+    color:#FFBB4A;
+    
+}
