@@ -199,7 +199,7 @@
                <damage/></u>
             <u who="#a1">Eu estou de acordo.</u>
             <u who="#a1">Faz mais o menos um ano e meio</u>
-            <u who="b#1">Pouco tempo para tamanha desenvoltura.</u>
+            <u who="#b1">Pouco tempo para tamanha desenvoltura.</u>
             <u who="#a1">Obrigada<pc type="exclamative">!</pc> Porém, antes eu estudei espanhol,
                então me ajudou bastante</u>
             <u who="#a1">E também estudei no Brasil durante o verão por um pouquinho</u>
@@ -547,7 +547,7 @@
             <u who="#b2">Bom, ver seus pais<pc type="interrogative">?</pc></u>
             <u who="#a2">Sim, agora amanhã <damage/></u>
             <u who="#a2">Bom dia ___, espero que você esteja bem</u>
-            <u who="#b2">Bia tarde ___, obrigado. Estou bem e você<pc type="interrogative"
+            <u who="#b2">Boa tarde ___, obrigado. Estou bem e você<pc type="interrogative"
                >?</pc></u>
             <u who="#a2">Eu também estou bem</u>
             <u who="#b2">Bom</u>
@@ -577,7 +577,7 @@
             <u who="#b2">poucos amigos me chamam de ___, <abbr type="textese">pq</abbr> meu nome é
                ___</u>
             <u who="#a2">Ahh Entendo, soa legal</u>
-            <u who="#b2">se quiser pode me chamar <abbr type="informal">tbm</abbr></u>
+            <u who="#b2">se quiser pode me chamar <abbr type="textese">tbm</abbr></u>
             <u who="#b2">de ___</u>
             <u who="#a2">Posso haha</u>
             <u who="#a2">É como “___” nos vídeos <abbr type="contraction">né</abbr></u>
@@ -1112,7 +1112,7 @@
             <u who="#a4">*<abbr type="textese">n</abbr> gostei </u>
             <u who="#b4">pois é </u>
             <u who="#a4"><abbr type="textese">tbm</abbr> deve ser a <abbr type="textese">n</abbr>
-               gosta do seu né<pc type="interrogative">?</pc>
+               gosta do seu <abbr type="contraction">né</abbr><pc type="interrogative">?</pc>
             </u>
             <u who="#b4">Sim<pc type="exclamative">!!</pc>
             </u>
@@ -1123,7 +1123,7 @@
             <u who="#b4"><abbr type="textese">vc</abbr> <abbr type="informal">tá</abbr> em que ano da escola<pc type="interrogative">?</pc>
             </u>
             <u who="#a4">comecei o meu segundo ano </u>
-            <u who="#a4">realmente só quero formar logo *cry laugh* </u>
+            <u who="#a4">realmente só quero formar logo <g ref="#cle"/> </u>
             <u who="#b4">Hahahah calminha </u>
             <u who="#b4">Tem 3 anos ainda pela frente </u>
             <u who="#a4">Ah não, 2 e 3/4 <g ref="#cle"/>" </u>
@@ -1133,7 +1133,7 @@
             <u who="#a4">é, isso </u>
             <u who="#a4">quanto mais por Masters </u>
             <u who="#b4">São 2 anos </u>
-            <u who="#a4">nossa nem faço ideia *cry laugh* </u>
+            <u who="#a4">nossa nem faço ideia <g ref="#cle"/> </u>
             <u who="#a4">teve <abbr type="textese">q</abbr> fazer vestibular por isso </u>
             <u who="#b4">não não </u>
             <u who="#b4">Eu vou fazer um teste de raciocínio lógico </u>
@@ -1142,8 +1142,8 @@
             <u who="#b4">Eu vou dormir, boa noite </u>
             <u who="#a4">Desculpa amigo, <abbr type="informal">tava</abbr> trabalhando com o meu grupo num projeto de engenheiro </u>
             <u who="#a4">tem 20 páginas kkkkkk </u>
-            <u who="#a4">mta boa sorte com essas provas então<pc type="exclamative">!</pc> Deve ser
-               <abbr type="textese">q</abbr> são bem logos né<pc type="interrogative">?</pc></u>
+            <u who="#a4"><abbr type="textese">mta</abbr> boa sorte com essas provas então<pc type="exclamative">!</pc> Deve ser
+               <abbr type="textese">q</abbr> são bem logos <abbr type="contraction">né</abbr><pc type="interrogative">?</pc></u>
          </q>
          <q n="5">
             <u who="#a5">Bom dia <g ref="#sune"/> ___<pc type="exclamative">!</pc>. Meu nome é ___ e
@@ -1154,7 +1154,7 @@
             <u who="#a5">Você quer praticar inglês, <abbr type="contraction">né</abbr><pc
                   type="interrogative">?</pc></u>
             <u who="#b5">sim</u>
-            <u who="#b5">always</u>
+            <u who="#b5"><foreign xml:lang="en">always</foreign></u>
             <u who="#a5">Perfeito. É que eu tenho dois companheiros de conversa e não lembrava quem
                queria falar inglês e quem queria falar espanhol</u>
             <damage/>
@@ -1221,7 +1221,7 @@
             <u who="#b5">Legal</u>
             <u who="#b5">Que horas começa seu expediente</u>
             <u who="#a5">as 4:40 da tarde</u>
-            <u who="#a5">Ainda atou no ônibus</u>
+            <u who="#a5">Ainda estou no ônibus</u>
             <u who="#b5">Ah</u>
             <u who="#b5">Então aí é uma hora mais cedo eu suponho</u>
             <u who="#b5">Aqui já são 5:28</u>
@@ -1232,6 +1232,43 @@
             <u who="#a5">As <foreign xml:lang="sp">veces</foreign> eu trabalho na noite e as
                   <foreign xml:lang="sp">veces</foreign> trabalho de manhã, então se eu trabalho na
                noite eu tenho tempo livre nas manhãs e o contrario se trabalhão de manhã</u>
+         </q>
+         <q n="6">
+            <u who="#a6">Oi, tudo bem<pc type="interrogative">?</pc> Sou ___ da Universidade de Pittsburgh. Como está<pc type="interrogative">?</pc></u>
+            <u who="#a6"><abbr type="textese">Vc</abbr> é estudante <abbr type="textese">tbm</abbr><pc type="interrogative">?</pc></u>
+            <u who="#b6">Olá ___, tudo bem<pc type="interrogative">?</pc></u>
+            <u who="#b6">Tudo perfeito por <sic>aqhj</sic></u>
+            <u who="#b6">Aqui</u>
+            <u who="#b6">Sou estudante sim, mas também trabalho<pc type="exclamative">!</pc></u>
+            <u who="#b6">você estuda o que<pc type="interrogative">?</pc></u>
+            <u who="#a6">Tudo ótimo<pc type="exclamative">!</pc></u>
+            <u who="#a6">Faço o mestrado em políticas públicas e sociais.</u>
+            <u who="#a6">Trabalho também - <abbr type="contraction">pra</abbr> minha universidades o que <abbr type="textese">vc</abbr> estuda<pc type="interrogative">?</pc></u>
+            <u who="#b6">Legal<pc type="exclamative">!</pc></u>
+            <u who="#b6">Eu estou me formando em Engenharia Mecânica na UFCG agora no mês de novembro.</u>
+            <u who="#b6">Mas em fevereiro eu irei me mudar para a cidade de Shanghai na China. Lá eu vou
+               trabalhar em uma Trading Company e também vou fazer mestrado em Negócios Internacionais.</u>
+            <u who="#b6">politicas públicas e sociais é algo muito importante</u>
+            <damage/>
+            <u who="#b6">gosto do tema<pc type="exclamative">!</pc></u>
+            <u who="#b6">a quanto tempo você estuda português</u>
+            <u who="#a6">Me desculpa - demorei porque tive duas reportagens e uma apresentação <abbr type="textese">hj</abbr>, e não
+               tinha bastante tempo <abbr type="informal">pra</abbr> falar.</u>
+            <u who="#a6"><foreign xml:lang="en">wow</foreign><pc type="exclamative">!!</pc> Parabéns<pc type="exclamative">!!</pc> A onde fica UFCG<pc type="interrogative">?</pc></u>
+            <u who="#a6">Morei em Vitoria do ES e</u>
+            <damage/>
+            <u who="#b6">Obrigado<pc type="exclamative">!</pc> A UFCG é a Universidade Federal de Campina Grande, fica na cidade de
+               Campina Grande, no estado da Paraíba, na região nordeste do Brasil. Estou a poucos
+               milímetros de Natal, João Pessoa, Maceió. Acho que essas são as cidades mais famosas aqui
+               próximo. Minha cidade também é muito famosa no Brasil por conta da tradicional festa em
+               homenagem a São João, que também é chamada de festas juninas ou festejos juninos (por que
+               são sempre no mês de Junho = junina,junino,)</u>
+            <u who="#b6">A festa aqui é conhecida como “O maior São João do Mundo” é vem gente do Brasil
+               inteiro. Festa durante 30 dias, com muita cultura popular (do povo).</u>
+            <u who="#b6">Muito legal saber que você morou em Vitoria<pc type="exclamative">!</pc> Muito bom, numa fui em Vitoria mas já
+               ouvi falar muito bem de lá.</u>
+            <u who="#b6">Eu sou nascido aqui em Campina Grande, mas eu fui criado em Porto Velho, no estado
+               de Rondônia. É um estado que fica na região</u>
          </q>
          <q n="7">
             <u who="#a7">Oi ___<pc type="exclamative">!</pc> Como vai<pc type="interrogative">?</pc>
@@ -1402,7 +1439,7 @@
                Porém se <abbr type="textese">vc</abbr> gosta de praias e calor, definitivamente tens
                que conhecer o Nordeste</u>
             <u who="#b8">
-               <corr>tomar não é uma boa tradução aqui. Mesmo sendo uma tradução <abbr
+               <corr type="explicit">tomar não é uma boa tradução aqui. Mesmo sendo uma tradução <abbr
                      type="informal">pra</abbr> “<foreign xml:lang="en">take</foreign>”. Tomar
                   significa beber = ingerir algum alimento líquido (<foreign xml:lang="en"
                      >drink</foreign>). Tomar também pode ter o significado de pegar algo a força ou
@@ -1491,12 +1528,12 @@
          <q n="9">
             <u who="#b9">Entendo<pc type="exclamative">!</pc> Estudar é muito bom, mas é estressante também, tem que ter paciência.</u>
             <u who="#b9">minha pesquisa é relacionado a Inquisição (você sabe o que é<pc type="interrogative">?</pc>).</u>
-            <u who="#a9">me desculpa - despreocuparei together dias reportagens e uma apresentação hj, e não
-               tinha bastante tempo <abbr type="informal">né</abbr> falar.</u>
+            <u who="#a9">me desculpa - demorei porque tive duas reportagens e uma apresentação <abbr type="textese">hj</abbr>, e não
+               tinha bastante tempo <abbr type="contraction">né</abbr> falar.</u>
             <u who="#a9">exatamente<pc type="exclamative">!!</pc> Estudar é trabalhoso, mas vale a pena, <abbr type="contraction">né</abbr><pc type="interrogative">?</pc></u>
-            <u who="#a9">Da Espanha<pc type="interrogative">?</pc> Não sei muito sobre esse tema. Pode explicar porquês <abbr type="textese">né</abbr> tem interesse
+            <u who="#a9">Da Espanha<pc type="interrogative">?</pc> Não sei muito sobre esse tema. Pode explicar porquês <abbr type="contraction">né</abbr> tem interesse
                nesse tópico<pc type="interrogative">?</pc></u>
-            <u who="#a9">É também - a onde <abbr type="textese">né</abbr> mora<pc type="interrogative">?</pc> <abbr type="textese">né</abbr> é de onde<pc type="interrogative">?</pc></u>
+            <u who="#a9">É também - a onde <abbr type="contraction">né</abbr> mora<pc type="interrogative">?</pc> <abbr type="contraction">né</abbr> é de onde<pc type="interrogative">?</pc></u>
             <u who="#b9">Tudo bem, é bastante corrido mesmo. Você é jornalista<pc type="interrogative">?</pc></u>
             <u who="#b9">Sim, muito.</u>
             <u who="#b9">Bom, era também presente na Espanha e Portugal, ou seja, na Península Ibérica. No
@@ -1506,16 +1543,16 @@
                semana<pc type="interrogative">?</pc></u>
             <u who="#a9">Sou um escritor, e gosta muito de escrever - então minha universidade me avisa
                participar no departamento da comunicação. Também, estou tentando receber uma bolsa para
-               fazer o podcast. <abbr type="textese">né</abbr> sabe muito sobre podcasts<pc type="interrogative">?</pc> São muito populares nos Estados Unidos... e
+               fazer o podcast. <abbr type="contraction">né</abbr> sabe muito sobre podcasts<pc type="interrogative">?</pc> São muito populares nos Estados Unidos... e
                muito diversos também. Tem todos temas - da história até cultura até políticas até contas..
                e muito legal.</u>
-            <u who="#a9">posso recomendar alguns podcasts que <abbr type="textese">né</abbr> pode usar praticar inglês. Tem alguns
+            <u who="#a9">posso recomendar alguns podcasts que <abbr type="contraction">né</abbr> pode usar praticar inglês. Tem alguns
                podcasts em português<pc type="interrogative">?</pc></u>
             <u who="#a9">Eu sou do EUA - o estado se chama KY. E formei na sociologia da universidade na
                Carolina do Norte, morei no Brasil em Vitoria por um ano como uma Fulbright, e agora minha
                universidade fica em Pittsburgh; então, moro aqui agora.. não sei a onde vou morar a próxima
                kkkk</u>
-            <u who="#a9">Nunca fui para Campina Grande.. como estão<pc type="interrogative">?</pc> <abbr type="textese">né</abbr> mora com sua família<pc type="interrogative">?</pc> Me fala sobre
+            <u who="#a9">Nunca fui para Campina Grande.. como estão<pc type="interrogative">?</pc> <abbr type="contraction">né</abbr> mora com sua família<pc type="interrogative">?</pc> Me fala sobre
                sua vida a fora da universidade :)</u>
             <u who="#a9">Que interessante<pc type="exclamative">!!</pc> Não sabia muito sobre isso. Fiz uma aula sobre imigração d a
                história do Brasil, mas dava muito explicações simples porque a aula foi para a pessoas
@@ -1554,13 +1591,31 @@
                Know muito unidas.</u>
             <u who="#b9">Então, a carreira docked noivo também não existe na cidade onde eu moro, teremos
                que nos mudar. Ela irá se formar agora em novembro em engenharia de Minas ( se você souber
-               de algo <abbr type="textese">né</abbr>  kkkkk). Daí, provavelmente mudaremos de estado. Mas, ele quer muito ir para o
+               de algo <abbr type="contraction">né</abbr>  kkkkk). Daí, provavelmente mudaremos de estado. Mas, ele quer muito ir para o
                exterior e eu também. <g ref="#he" n="2"/></u>
             <u who="#b9">tudo bem, irei lhe ajudar no que você precisar. Meu inglês não é muito bom também,
                consigo escrever e entender muito bem, porém a fala é complicado para mim. Talvez porque eu
                não tenho prática.</u>
          </q>
-         
+         <q n="10">
+            <u who="#a10">Eu já visto mais neve que eu queria olhar durante minha vida <kinesic type="american">hahaha</kinesic></u>
+            <u who="#b10"><foreign xml:lang="en">It’s very hot here in Brazil, mate.</foreign></u>
+            <u who="#b10"><foreign xml:lang="en">mostly in the region I live</foreign></u>
+            <u who="#a10">Isso é o que me dizem<pc type="exclamative">!</pc> Isto é uma foto durante um jogo de Rugby com neve em
+               <foreign xml:lang="en">Pittsburgh</foreign></u>
+            <u who="#a10">Também, hoje Ana Paula me diz que quando conversamos que temos que falar em só uma
+               língua, osso que podemos falar um dia em português e outro dia em inglês, <abbr type="informal">tá</abbr> bem<pc type="interrogative">?</pc></u>
+            <u who="#b10">tudo bem.</u>
+            <u who="#b10">Como você preferir</u>
+            <u who="#b10">Sou louco pra ver neve, cara</u>
+            <u who="#a10">Oi ___<pc type="exclamative">!</pc> Vocês celebram Halloween o dia das bruxas<pc type="interrogative">?</pc></u>
+            <u who="#b10">Olá Pablo, desculpe não ter te respondido imediatamente</u>
+            <u who="#b10">tive um dia corrido ontem.</u>
+            <u who="#b10">algumas pessoas celebram, porém não é considerado um grande evento</u>
+            <u who="#a10">Oi<pc type="exclamative">!</pc>m tá bem<pc type="exclamative">!</pc> Interessante, você celebra<pc type="interrogative">?</pc> <foreign xml:lang="en">Would you also like to speak English
+               today</foreign><pc type="interrogative">?</pc></u>
+            <u who="#b10">Eu não costumo celebrar, apenas fui a uma festa ano passado</u>
+         </q>
       </body>
    </text>
 </TEI>
