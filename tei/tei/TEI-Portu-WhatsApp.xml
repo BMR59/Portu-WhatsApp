@@ -1015,7 +1015,7 @@
             <u who="#a4">Vou só trabalhar quando formar </u>
             <u who="#a4">vou trabalhar aí </u>
             <u who="#b4">na verdade encestou cansado da universidade, mas tenho que voltar porque
-               não consegui emprego <g ref="mf">:(</g>
+               não consegui emprego <g ref="#mf">:(</g>
             </u>
             <u who="#b4">trabalhar aqui no Brasil<pc type="interrogative">?</pc>
             </u>
@@ -1074,7 +1074,7 @@
                   <abbr type="textese">q</abbr> Michele venceu </u>
             <u who="#a4">tenho 20 </u>
             <u who="#a4">Kkkk assisti <abbr type="textese">dps</abbr> das aulas </u>
-            <u who="#b4">okay<pc type="exclamative">!</pc> Aproveite suas aulas <g ref="ms">:)</g>
+            <u who="#b4">okay<pc type="exclamative">!</pc> Aproveite suas aulas <g ref="#ms">:)</g>
             </u>
             <u who="#a4"><abbr type="textese">vc</abbr> tinha a fazer uma aula <abbr type="textese"
                   >q</abbr> chama equações diferenciais<pc type="interrogative">?</pc>
@@ -1573,7 +1573,7 @@
                vou ter uma outra oportunidade voltar... meus colegas sempre me perguntam se eu gostaria de
                trabalhar lá, porém não sei. Na verdade, depende nas minhas oportunidades depois eu formarei
                em abril. Então se você conhece quem quer contratar uma norte americana com um mestrado em
-               desenvolvimento e políticas sociais me avise... kkkkk :)</u>
+               desenvolvimento e políticas sociais me avise... kkkkk <g ref="#ms">:)</g></u>
             <u who="#a9">Um dia tenho que visitar essa cidade é reunir com você<pc type="exclamative">!</pc> :) e aprender sobre sua
                cidade.</u>
             <u who="#a9">e sinto muito sobre seu pai. Que difícil.. mas também é bom que você more com sua
