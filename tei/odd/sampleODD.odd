@@ -26,14 +26,14 @@
     <body>
       <schemaSpec ident="oddex1" start="TEI">
         <moduleRef key="tei"/>
-        <moduleRef key="spoken" include="u"/>
+        <moduleRef key="spoken" include="u kinesic"/>
         <moduleRef key="transcr" include="damage"/>
         <moduleRef key="analysis" include="pc"/>
         <moduleRef key="namesdates" include="persName"/>
         <moduleRef key="figures" include="figure"/>
         <moduleRef key="corpus" include="channel constitution derivation domain factuality interaction preparedness purpose setting settingDesc textDesc"/>
         <moduleRef key="header" include="abstract editorialDecl encodingDesc fileDesc langUsage language principal profileDesc projectDesc publicationStmt sourceDesc sponsor teiHeader title titleStmt"/>
-        <moduleRef key="core" include="abbr author corr editor foreign graphic name p q resp respStmt sic time title"/>
+        <moduleRef key="core" include="abbr author corr editor foreign graphic name p q resp respStmt sic time title expan"/>
         <!-- Selective inclusion of specific elements within a module. The @include attribute says 'include *only* the specific elements that I list in the values,' and the @except 
         attribute would obviously have the opposite effect: 'include every element from the module *except* the ones that I list.-->
        <!-- <moduleRef key="tei"/> -->
@@ -55,6 +55,17 @@
         elements that surround the Schematron rules (and their accompanied attributes whose values you could easily figure out - the value of @scheme is *always* isoschematron
         in this context) the Schematron writing should be rather familiar territory at this point.-->
       </schemaSpec>
+      <elementSpec ident="expan" mode="change" module="core">
+        <attList>
+          <attDef ident="type" mode="replace">
+            <valList type="closed">
+              <valItem ident="formal"/>
+              <valItem ident="uncontracted"/>
+              <valItem ident="full"/>
+            </valList>
+          </attDef>
+        </attList>
+      </elementSpec>
       <elementSpec ident="abbr" mode="change" module="core">
         <attList>
           <attDef ident="type" mode="replace">
