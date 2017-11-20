@@ -317,7 +317,7 @@
             <u who="#b1"><g ref="#cle"/></u>
             <u who="#b1">Obrigado pelas felicitações. (<corr type="explicit">Você pode dizer
                   “parabéns” também, que tem o mesmo significado e é mais informal</corr>) <g
-                  ref="cgs"/></u>
+                  ref="#cgs"/></u>
             <u who="#a1">Ahh obrigada achei que algo pareceu estranho haha</u>
             <u who="#b1"><g ref="#cle" n="6"/></u>
             <u who="#b1">Normal</u>
@@ -999,7 +999,7 @@
             <damage/>
             <u who="#b4">vou tentar o mestrado </u>
             <u who="#a4">ai sério<pc type="interrogative">?</pc> Deve <abbr type="textese">q</abbr>
-               ser causa disso <abbr type="textese">q</abbr> a professora nos junto <g ref="cle"
+               ser causa disso <abbr type="textese">q</abbr> a professora nos junto <g ref="#cle"
                /></u>
             <u who="#a4">sou aluno de engenharia química </u>
             <u who="#a4">o mestrado<pc type="interrogative">?</pc>
@@ -1079,7 +1079,7 @@
             <u who="#a4"><abbr type="textese">vc</abbr> tinha a fazer uma aula <abbr type="textese"
                   >q</abbr> chama equações diferenciais<pc type="interrogative">?</pc>
             </u>
-            <u who="#a4"><g ref="cle" n="2"/></u>
+            <u who="#a4"><g ref="#cle" n="2"/></u>
             <u who="#b4">Sim sim</u>
             <u who="#b4">Eu <abbr type="informal">tive</abbr> esse curso</u>
             <u who="#b4"><abbr type="textese">vc</abbr>
@@ -1598,7 +1598,7 @@
                não tenho prática.</u>
          </q>
          <q n="10">
-            <u who="#a10">Eu já visto mais neve que eu queria olhar durante minha vida <kinesic type="american">hahaha</kinesic></u>
+            <u who="#a10">Eu já visto mais neve que eu queria olhar durante minha vida hahaha</u>
             <u who="#b10"><foreign xml:lang="en">It’s very hot here in Brazil, mate.</foreign></u>
             <u who="#b10"><foreign xml:lang="en">mostly in the region I live</foreign></u>
             <u who="#a10">Isso é o que me dizem<pc type="exclamative">!</pc> Isto é uma foto durante um jogo de Rugby com neve em
@@ -1616,6 +1616,7 @@
                today</foreign><pc type="interrogative">?</pc></u>
             <u who="#b10">Eu não costumo celebrar, apenas fui a uma festa ano passado</u>
          </q>
+         <!--must address reserved reserved characters through website Zac emailed-->
       </body>
    </text>
 </TEI>
