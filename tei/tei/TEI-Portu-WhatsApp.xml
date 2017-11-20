@@ -258,7 +258,7 @@
             <u who="#a1">Hahah eu sempre faço o mesmo</u>
             <u who="#b1">Sim, todo final de semana, incluindo sábado e domingo</u>
             <u who="#a1">Que legal<pc type="exclamative">!</pc></u>
-            <u who="#b1">As vezes eles vão para o interior, onde tem rios e piscinas.</u>
+            <u who="#b1">As vezes eles vão <expan type>para o</expan> interior, onde tem rios e piscinas.</u>
             <u who="#b1">É bem divertido, exceto pela bagunça que fica. Hahahah</u>
             <u who="#a1">Hahaha isso sempre é o pior parte duma festa</u>
             <u who="#a1">A música e típica da região<pc type="interrogative">?</pc> O Brasil
