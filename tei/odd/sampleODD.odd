@@ -66,6 +66,18 @@
           </attDef>
         </attList>
       </elementSpec>
+      <elementSpec ident="kinesic" mode="change" module="spoken">
+        <attList>
+          <attDef ident="type" mode="replace">
+            <valList type="closed">
+              <valItem ident="k"/>
+              <valItem ident="rs"/>
+              <valItem ident="ha"/>
+              <valItem ident="lol"/>
+            </valList>
+          </attDef>
+        </attList>
+      </elementSpec>
       <elementSpec ident="abbr" mode="change" module="core">
         <attList>
           <attDef ident="type" mode="replace">
