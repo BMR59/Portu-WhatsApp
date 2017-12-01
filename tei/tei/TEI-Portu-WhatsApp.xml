@@ -64,10 +64,11 @@
             </setting>
          </settingDesc>
       </profileDesc>
+      
       <encodingDesc>
          <editorialDecl>
-            <p>Students' spelling, grammar, and punctuation has been retained.</p>
-         </editorialDecl>
+            <p>Students' spelling, grammar, and punctuation have been retained.</p>
+         </editorialDecl>         
          <charDecl>
             <glyph xml:id="cle">
                <glyphName>CRYING LAUGH EMOJI</glyphName>
@@ -172,8 +173,10 @@
          </charDecl>
       </encodingDesc>
    </teiHeader>
+   
    <text>
       <body>
+         
          <q n="1">
             <!--A txt file with some observations and issues (which will be updated continually) will be added into the tei folder-->
             <u who="#a1">Oi __<pc type="exclamative">!</pc> Eu sou __- <expan type="formal">estou</expan> na aula de português na
@@ -187,12 +190,12 @@
             <u who="#b1">Eu <expan type="formal">estou</expan> ótimo. Cheguei em casa tem poucos minutos  <expan type="full">também</expan>. <expan type="formal">estou</expan> com sono
                já. Agora são 8:43pm</u>
             <u who="#b1">Seu português é ótimo<pc type="exclamative">!</pc></u>
-            <u who="#a1">Eu  <expan type="full">também</expan> <expan type="formal">estou</expan> com sono, mas só são 7:50 aqui h<kinesic type="ha"/>aha</u>
+            <u who="#a1">Eu  <expan type="full">também</expan> <expan type="formal">estou</expan> com sono, mas só são 7:50 aqui <hi type="ha"/>haha</hi></u>
             <u who="#b1">Só uma hora de diferença. Pensei <expan type="full">que</expan> fosse mais h<kinesic type="ha"/>ahahaha</u>
             <u who="#a1">Obrigada<pc type="exclamative">!</pc> <expan type="formal">estou</expan> praticando <g ref="#ms"
                >:)</g></u>
             <u who="#a1">h<kinesic type="ha"/>aha sim<pc type="exclamative">!</pc> <expan type="formal">para</expan> estar tão longe, não tem  <expan type="full">muito</expan>
-                     <sic><foreign xml:lang="sp">diferencia</foreign></sic></u>
+                     <sic type="uncorr"><foreign xml:lang="sp">diferencia</foreign></sic></u>
             <u who="#b1"><expan type="full">Voce</expan> estuda inglês<pc type="interrogative">?</pc></u>
             <u who="#b1">Eu já estudei. Participo das “<foreign xml:lang="en">conversation
                   classes</foreign>” com a ___ e a ___, mas ainda acho <expan type="full">que</expan> meu inglês não é
@@ -262,22 +265,22 @@
             <u who="#b1">É bem divertido, exceto pela bagunça <expan type="full">que</expan> fica. h<kinesic type="ha"/>ahahah</u>
             <u who="#a1">h<kinesic type="ha"/>ahaha isso sempre é o pior parte duma festa</u>
             <u who="#a1">A música e típica da região<pc type="interrogative">?</pc> O Brasil
-                  <sic>entero</sic><pc type="interrogative">?</pc></u>
+                  <sic type="impcorr">entero</sic><pc type="interrogative">?</pc></u>
             <u who="#b1">Essa música tem uma abrangência nacional. O Brasil <corr type="implicit"
                   >inteiro</corr> ouve samba e pagode. Mas existem algumas regionais <expan type="full">que</expan> meus
                parentes ouvem  <expan type="full">também</expan>. Essas músicas regionais são chamadas Lambadão ou Rasqueado
-               (nome feio e estranho, eu sei h<kinesic type="ha"/>ahaha).</u>
+               (nome feio e estranho, eu sei <kinesic type="ha"/>hahaha).</u>
             <u who="#b1">Acho <expan type="full">que</expan> daqui a pouco começa a tocar elas, pena <expan type="full">que</expan> tenho <expan type="full">que</expan> sair
                agorinha <g ref="#mf">:(</g></u>
             <u who="#b1">Senão dava me mandar uma parte <expan type="formal">para</expan>  <expan type="full">você</expan> ouvir</u>
             <u who="#a1"><abbr type="textese">Obg</abbr> por mandar<pc type="exclamative">!</pc> Eu
-               gostei <g ref="#ms">:)</g> vou procurar o rasqueado.. <expan type="formal">para</expan> ver <sic>se tenha</sic>
+               gostei <g ref="#ms">:)</g> vou procurar o rasqueado.. <expan type="formal">para</expan> ver <sic type="uncorr">se tenha</sic>
                algo <expan type="full">que</expan> ver como o nome dele h<kinesic type="ha"/>aha</u>
             <u who="#b1">Pesquise “Lambadão cuiabano” e “Rasqueado matogrossense” no YouTube</u>
             <u who="#b1"> <expan type="full">você</expan> vai encontrar umas coisas legais e engraçadas h<kinesic type="ha"/>ahaha</u>
             <u who="#a1">Ah perfeito <g ref="#ms">:)</g> obrigada<pc type="exclamative">!</pc></u>
             <u who="#a1">eu  <expan type="full">também</expan> tenho <expan type="full">que</expan> sair agorinha.. Vou <abbr type="contraction">pro</abbr>
-               aniversário da minha prima- <sic>ela tenha 2 anos agora</sic>
+               aniversário da minha prima- <sic type="impcorr">ela tenha 2 anos agora</sic>
                <g ref="#ms">:)</g></u>
             <u who="#a1">Que <abbr type="textese">vc</abbr> curta o churrasco com a família<pc
                   type="exclamative">!</pc></u>
@@ -303,7 +306,7 @@
                gêneros, lamabadão, rasqueado e Siriri e Cururu (cujas músicas são bem fortes e
                passam  <expan type="full">muita</expan> energia, algo incrível)</u>
             <u who="#a1">Ah <expan type="full">que</expan> legal<pc type="exclamative">!</pc>
-               <sic>Felicitações</sic>!  <expan type="full">você</expan> vai estudar arte em vez da arquitetura<pc
+               <sic type="expcorr">Felicitações</sic>!  <expan type="full">você</expan> vai estudar arte em vez da arquitetura<pc
                   type="interrogative">?</pc></u>
             <u who="#a1">Eu estudo urbanismo <expan type="full">que</expan> tem algo <expan type="full">que</expan> ver com a arquitetura... É bem
                interessante.</u>
@@ -335,7 +338,7 @@
                <expan type="formal">para</expan> ir na casa de uma amiga. Vamos <abbr type="contraction">pra</abbr> balada mais
                tarde <g>pointing up emoji, sunglasses emoji, pointing up emoji</g></u>
             <u who="#b1">h<kinesic type="ha"/>ahahahaha</u>
-            <u who="#a1">Oo <expan type="full">que</expan> legal. Eu quero voltar a<sic>o francês</sic>. Agora <expan type="formal">estou</expan> ajudando a
+            <u who="#a1">Oo <expan type="full">que</expan> legal. Eu quero voltar a<sic type="uncorr">o francês</sic>. Agora <expan type="formal">estou</expan> ajudando a
                minha irmã <expan type="full">que</expan>  <expan type="formal">está</expan> no processo de abrir um restaurante <g ref="#ms">:)</g></u>
             <u who="#a1">eu  <expan type="full">também</expan> vou <abbr type="contraction">pra</abbr> balada com uma amiga
                logo.. Bom sábado</u>
@@ -354,7 +357,7 @@
                   type="exclamative">!</pc> h<kinesic type="ha"/>aha</u>
             <u who="#a1">o meu tênis era velho, então eu  <expan type="formal">estava</expan> confortável <g ref="#ms">:)</g> mas
                a balada foi tranquila, o meu noite terminou às 2</u>
-            <u who="#b1">A minha, apesar de mais ou menos, acabou <sic>as</sic> 6</u>
+            <u who="#b1">A minha, apesar de mais ou menos, acabou as 6</u>
             <u who="#b1">Bebi uma bebida típica aqui, não  <expan type="full">muito</expan> comum em baladas, chamada
                CATUABA</u>
             <u who="#b1">É MALIGNA, SÉRIO</u>
@@ -368,12 +371,13 @@
                problema.</u>
             <u who="#b1">teor alcoólico é a quantidade de álcool na bebida</u>
             <u who="#b1"> <expan type="full">hoje</expan> de manhã eu <abbr type="informal">tava</abbr> bem, só com
-                  <sic>do</sic> de cabeça fraca e sono</u>
+                  <sic type="uncorr">do</sic> de cabeça fraca e sono</u>
             <u who="#b1"><kinesic type="k"/>Kkkkkk</u>
             <u who="#a1">Não tem problema<pc type="exclamative">!</pc> Eu sempre tenho problemas com
-                  <sic>a celular</sic></u>
+                  <sic type="uncorr">a celular</sic></u>
             <u who="#a1">Ahh ok.. Entendi agora</u>
          </q>
+         
          <q n="2">
             <u who="#a2">Oi<pc type="exclamative">!</pc> Tudo bem<pc type="interrogative">?</pc> Eu
                sou ___. Vou ser o seu <foreign xml:lang="en">partner</foreign> do Bate-Papo
@@ -395,7 +399,7 @@
             <u who="#b2">Do Nordeste, um estado chamado Paraíba. Já ouviu falar <pc
                   type="interrogative">?</pc></u>
             <u who="#a2">Sim, ouvi. <expan type="full">que</expan> legal</u>
-            <u who="#a2"><sic>Eu de</sic> Pennsylvania</u>
+            <u who="#a2"><sic type="uncorr">Eu de</sic> Pennsylvania</u>
             <u who="#b2">Aqui é  <expan type="full">muito</expan> quente, as vezes temos uma temperatura de 32°C</u>
             <u who="#b2">Legal, é perto de NY e Washington</u>
             <u who="#a2">Isso é quente demais h<kinesic type="ha"/>aha Aqui é  <expan type="full">muito</expan> menos  <expan type="full">hoje</expan></u>
@@ -430,7 +434,7 @@
             <u who="#a2">Que  <expan type="full">você</expan> comeu<pc type="interrogative">?</pc></u>
             <u who="#b2">Feijão preto, arroz, batata doce e bife ( carne <damage/></u>
             <u who="#b2">E  <expan type="full">você</expan><pc type="interrogative">?</pc></u>
-            <u who="#a2"><sic>Muero</sic> por comer isso h<kinesic type="ha"/>aha. Adoro arroz e feijão</u>
+            <u who="#a2"><sic type="expcorr">Muero</sic> por comer isso <kinesic type="ha"/>haha. Adoro arroz e feijão</u>
             <u who="#a2">Eu <abbr type="informal">tô</abbr> comendo um taco, um hambúrguer, uma
                salada, porco, arroz, e um wrap</u>
             <u who="#b2">Muero<pc type="interrogative">?</pc></u>
@@ -471,7 +475,7 @@
             <u who="#a2"><abbr type="textese">tvz</abbr> mas <abbr type="informal">tô</abbr>
                pensando</u>
             <u who="#b2">em qual<pc type="interrogative">?</pc></u>
-            <u who="#a2">Poderia ser <sic>Brazil</sic>, Japão, Korea do Sul, Espanha</u>
+            <u who="#a2">Poderia ser <sic type="uncorr">Brazil</sic>, Japão, Korea do Sul, Espanha</u>
             <u who="#a2">Agora tem <expan type="full">que</expan> ter cuidado com Japão e Korea</u>
             <u who="#b2">Tem <expan type="full">que</expan> ter cuidado mesmo, <abbr type="textese">vc</abbr> gostaria de fazer
                um mestrado<pc type="interrogative">?</pc></u>
@@ -504,7 +508,7 @@
             <u who="#a2">Bom apetite</u>
             <u who="#b2">[sent a photo of food]</u>
             <u who="#b2">Vamos almoçar</u>
-            <u who="#b2"><g ref="#se"/> A <expan type="full">que</expan> delicia <sic>esa</sic> comida</u>
+            <u who="#b2"><g ref="#se"/> A <expan type="full">que</expan> delicia <sic type="uncorr">esa</sic> comida</u>
             <u who="#b2"> <expan type="formal">está</expan> excelente</u>
             <u who="#b2">Sabe o <expan type="full">que</expan> é isso amarelo<pc type="interrogative">?</pc></u>
             <u who="#a2">É de ovo<pc type="interrogative">?</pc></u>
@@ -619,7 +623,7 @@
             <u who="#b2">vai sim, o <expan type="full">que</expan> eu gostaria mesmo é morar fora</u>
             <u who="#b2">Como eu já te disse, ter uma experiência em outro país, outra cultura,
                outras pessoas</u>
-            <u who="#a2">Sim eu acho isso  <expan type="full">muito</expan> interessante. É um modo <expan type="formal">para</expan> <sic>crecer</sic> duma
+            <u who="#a2">Sim eu acho isso  <expan type="full">muito</expan> interessante. É um modo <expan type="formal">para</expan> <sic type="expcorr">crecer</sic> duma
                maneira diferente  <expan type="full">também</expan> é da oportunidades <expan type="formal">para</expan> pensar desde outras perspectivas</u>
             <u who="#b2"><corr type="explicit">É um modo <expan type="formal">para</expan> crescer, ok<pc type="interrogative"
                      >?</pc></corr></u>
@@ -687,7 +691,7 @@
             <u who="#a2">É h<kinesic type="ha"/>aha mais eu evito “<kinesic type="k"/>kkk” só pq é o nome do grupo de ódio aqui <kinesic type="k"/>kkkk</u>
             <u who="#b2"><kinesic type="k"/>kkkkkkk</u>
             <u who="#b2">é, eu pensei nisso</u>
-            <u who="#a2"><expan type="uncontracted">para a</expan> gente <expan type="full">que</expan> não sabe <expan type="full">que</expan> significa o <kinesic type="k"/>kkkkk <sic>em</sic> Brasil se
+            <u who="#a2"><expan type="uncontracted">para a</expan> gente <expan type="full">que</expan> não sabe <expan type="full">que</expan> significa o <kinesic type="k"/>kkkkk <sic type="uncorr">em</sic> Brasil se
                confunde nas redes no internet vendo comentários de brasileiros dizendo “<kinesic type="k"/>kkk”</u>
             <u who="#b2">É, <abbr type="textese">vcs</abbr> devem ficar confusos</u>
             <u who="#b2">me diga uma música</u>
@@ -728,7 +732,7 @@
             </u>
             <u who="#a3">por exemplo <abbr type="textese">hj</abbr>
                <abbr type="textese">n</abbr> tinha <abbr type="textese">mtas</abbr> aulas mas tenho
-               um <sic>exam</sic> cedo amnhã então só <abbr type="informal">tava</abbr> estudando o
+               um <sic type="uncorr">exam</sic> cedo amnhã então só <abbr type="informal">tava</abbr> estudando o
                dia inteiro</u>
             <u who="#b3">Tipo trocar mensagens pelo WhatsApp</u>
             <u who="#b3">o final de semana é melhor <expan type="formal">para</expan> mim <abbr type="textese">tb</abbr></u>
@@ -802,16 +806,16 @@
             <u who="#b3">pode ser<pc type="interrogative">?</pc></u>
             <u who="#a3">pode ser 6 se quiser trabalhar e fazer mais aulas</u>
             <u who="#b3">Ahh</u>
-            <u who="#a3">É, na <abbr type="textese">vdd</abbr> a maioria são 4 e <sic>meia</sic></u>
+            <u who="#a3">É, na <abbr type="textese">vdd</abbr> a maioria são 4 e <sic type="expcorr">meia</sic></u>
             <u who="#b3">Entendo</u>
             <u who="#b3"><abbr type="textese">Vcs</abbr> estudam cálculo é física no começo do
                curso</u>
             <u who="#b3">Ou já começam com disciplinas específicas</u>
-            <u who="#a3">É <sic>só o</sic> segundo ano <abbr type="textese">q</abbr> a engenharia
+            <u who="#a3">É só <sic type="expcorr">o</sic> segundo ano <abbr type="textese">q</abbr> a engenharia
                começa</u>
             <u who="#a3">Mas ainda por enquanto faço <abbr type="textese">mto</abbr> matemática</u>
             <u who="#a3">agora é o último trimestre disso</u>
-            <u who="#a3">a partir do trimestre <sic>seguinte,</sic> vai ser principalmente
+            <u who="#a3">a partir do trimestre seguinte, vai ser principalmente
                engenharia e química</u>
             <u who="#b3">Entendo, então é bem parecido</u>
             <u who="#b3">Eu tenho alguns amigos <expan type="full">que</expan> estudam engenharia química aqui</u>
@@ -894,7 +898,7 @@
             <u who="#b3">Mas só torço pela seleção</u>
             <u who="#a3">sério<pc type="interrogative">?</pc>
                <abbr type="textese">Tbm</abbr>
-               <sic>só</sic> assim</u>
+               <sic type="expcorr">só</sic> assim</u>
             <u who="#a3">só torço pela seleção</u>
             <u who="#a3">qualquer time daí na <abbr type="textese">vdd</abbr></u>
             <u who="#b3">
@@ -1069,7 +1073,7 @@
             <u who="#b4">Eu tenho 25 anos, e <abbr type="textese">vc</abbr><pc type="interrogative"
                   >?</pc>
             </u>
-            <u who="#b4">[link to Firing Squad: Monty Python’s Flying Circus] </u>
+            <u who="#b4">[sent a link to Firing Squad: Monty Python’s Flying Circus] </u>
             <u who="#a4">Ah, <abbr type="textese">tbm</abbr> assistia com a minha. Na temporada
                   <abbr type="textese">q</abbr> Michele venceu </u>
             <u who="#a4">tenho 20 </u>
@@ -1108,7 +1112,7 @@
             <u who="#b4">Eu fiquei  <expan type="full">muito</expan> triste com o resultado </u>
             <u who="#a4">ai <abbr type="textese">q</abbr> pena, boa sorte procurando </u>
             <u who="#a4">ué, <abbr type="textese">n</abbr>
-               <sic>gosteu</sic> delas </u>
+               <sic type="selfcorr">gosteu</sic> delas </u>
             <u who="#a4">*<abbr type="textese">n</abbr> gostei </u>
             <u who="#b4">pois é </u>
             <u who="#a4"><abbr type="textese">tbm</abbr> deve ser a <abbr type="textese">n</abbr>
@@ -1237,8 +1241,8 @@
             <u who="#a6">Oi, tudo bem<pc type="interrogative">?</pc> Sou ___ da Universidade de Pittsburgh. Como  <expan type="formal">está</expan><pc type="interrogative">?</pc></u>
             <u who="#a6"><abbr type="textese">Vc</abbr> é estudante <abbr type="textese">tbm</abbr><pc type="interrogative">?</pc></u>
             <u who="#b6">Olá ___, tudo bem<pc type="interrogative">?</pc></u>
-            <u who="#b6">Tudo perfeito por <sic>aqhj</sic></u>
-            <u who="#b6">Aqui</u>
+            <u who="#b6">Tudo perfeito por <sic type="selfcorr">aqhj</sic></u>
+            <u who="#b6"><corr type="self">Aqui</corr></u>
             <u who="#b6">Sou estudante sim, mas  <expan type="full">também</expan> trabalho<pc type="exclamative">!</pc></u>
             <u who="#b6"> <expan type="full">você</expan> estuda o que<pc type="interrogative">?</pc></u>
             <u who="#a6">Tudo ótimo<pc type="exclamative">!</pc></u>
@@ -1281,7 +1285,7 @@
             <u who="#b7">Sou graduando em Ciências econômicas, mas já sou advogado</u>
             <u who="#b7"> <expan type="full">você</expan> é brasileiro<pc type="interrogative">?</pc></u>
             <u who="#a7">eu conheço algumas pessoas <expan type="full">que</expan> estudaram economia e agora estão na
-               compliance e a advocacia seja <sic>em América</sic> ou no Brasil</u>
+               compliance e a advocacia seja <sic type="expcorr">em América</sic> ou no Brasil</u>
             <u who="#a7">Não sou brasileiro, sou do Porto Rico mas moro na Pittsburgh</u>
             <u who="#b7">entendo</u>
             <u who="#a7">É <expan type="full">que</expan> eu estudei português em Lisboa</u>
@@ -1295,7 +1299,7 @@
             <u who="#a7">Eu estudo literatura latino-americana na Pittsburgh</u>
             <u who="#b7"> <expan type="full">você</expan> já veio ao Brasil<pc type="interrogative">?</pc> Porque a foto do
                   Bolsonaro<pc type="interrogative">?</pc></u>
-            <u who="#a7"><kinesic type="k"/>Kkkk, é <expan type="full">que</expan> na Kroll eu  <expan type="formal">estava</expan> na equipe de português e <sic>havia</sic>
+            <u who="#a7"><kinesic type="k"/>Kkkk, é <expan type="full">que</expan> na Kroll eu  <expan type="formal">estava</expan> na equipe de português e <sic type="expcorr">havia</sic>
                 <expan type="full">muitos</expan> brasileiros</u>
             <u who="#b7"><corr type="explicit">Haviam</corr>* , pois é plural</u>
             <u who="#a7">É eles brincavam sobre o bolsomito</u>
@@ -1329,7 +1333,7 @@
             <u who="#b7">E tem pretensões de vir <expan type="uncontracted">para o</expan> Brasil<pc type="interrogative">?</pc></u>
             <u who="#a7">Sim</u>
             <u who="#a7">O próximo ano</u>
-            <u who="#a7">Possívelmente <sic>no Santa Catarina</sic></u>
+            <u who="#a7">Possívelmente <sic type="expcorr">no Santa Catarina</sic></u>
             <u who="#b7"><corr type="explicit">Em Santa Catarina</corr></u>
             <u who="#a7">e <abbr type="textese">vc</abbr><pc type="interrogative">?</pc> Visitou os
                Estados Unidos<pc type="interrogative">?</pc></u>
@@ -1351,7 +1355,7 @@
             <u who="#a7">Mais o Brasil tem prioridade <abbr type="informal">pra</abbr> mim</u>
             <u who="#a7"><abbr type="informal">Tá</abbr> o ___ tenho <expan type="full">que</expan> fazer algumas coisas. <abbr
                   type="textese">Vc</abbr>
-               <sic>quere</sic> “falar” em inglês a próxima vez<pc type="interrogative">?</pc></u>
+               <sic type="uncorr">quere</sic> “falar” em inglês a próxima vez<pc type="interrogative">?</pc></u>
             <u who="#b7">Eu já falo inglês bem</u>
             <u who="#b7">Alemão e russo</u>
             <u who="#b7">um pouco de Frances</u>
@@ -1425,11 +1429,11 @@
                <damage/>
             </u>
             <u who="#a8">Ahhhh por favor me desculpe<pc type="exclamative">!</pc> Tinha que
-               <sic>tomar</sic> um exame ontem.</u>
+               <sic type="expcorr">tomar</sic> um exame ontem.</u>
             <u who="#a8">Eu <expan type="full">não</expan> tenho uma parte em particular, mas definitivamente quero ver o Rio e
                a arquitetura na Brasília</u>
             <u who="#a8">A onde <abbr type="textese">vc</abbr> recomenda <expan type="full">que</expan> eu
-               <sic>visitar</sic><pc type="interrogative">?</pc></u>
+               <sic type="uncorr">visitar</sic><pc type="interrogative">?</pc></u>
             <u who="#b8">Sem problemas algum.</u>
             <u who="#b8">Boa noite</u>
             <u who="#b8">Todo mundo quer ir ao Rio. h<kinesic type="ha"/>aha</u>
@@ -1458,7 +1462,7 @@
             <u who="#b8">já escolheu a fantasia<pc type="interrogative">?</pc></u>
             <u who="#b8">Depois me avisa qual o melhor horário/dia <expan type="uncontracted">para a</expan> gente fazer uma chamada de
                vídeo</u>
-            <u who="#a8">[5 áudios]</u>
+            <u who="#a8">[sent 5 áudios]</u>
             <u who="#b8">Boa noiteeeee</u>
             <u who="#b8">A primeira foi de Dolby e a segunda e qual<pc type="interrogative">?</pc>
                Sirena<pc type="interrogative">?</pc></u>
@@ -1473,7 +1477,7 @@
                type="interrogative">?</pc></u>
             <u who="#b8">seu sotaque e bem diferente do de __. <abbr type="textese">Vc</abbr> a
                conhece<pc type="interrogative">?</pc></u>
-            <u who="#a8">[2 audios]</u>
+            <u who="#a8">[sent 2 audios]</u>
             <u who="#b8">Eu <abbr type="textese">n</abbr> consigo te escutar agora <abbr
                type="textese">pq</abbr>  <expan type="formal">está</expan> barulhento onde <expan type="formal">estou</expan>. Mas assim <expan type="full">que</expan> chegar em casa,
                eu escuto e respondo</u>
@@ -1486,16 +1490,16 @@
             <u who="#b8">Ela foi aluna da ___, acredito <expan type="full">que</expan> ela seja de Pittsburgh <abbr
                type="textese">tb</abbr></u>
             <u who="#b8">Foi ele <expan type="full">que</expan> me informou sobre</u>
-            <u who="#b8">[photo of self and friends]</u>
+            <u who="#b8">[sent photo of self and friends]</u>
             <u who="#b8">Este sou eu com alguns amigos. Sou o primeiro da direita <abbr
                type="contraction">pra</abbr> esquerda</u>
             <u who="#b8">____</u>
             <u who="#b8">Eu acho <abbr type="textese">q</abbr> <expan type="formal">estou</expan> com problemas na minha
                internet</u>
             <u who="#a8">tudo bem<pc type="exclamative">!</pc> <kinesic type="rs"/>rsrs tenho <expan type="full">que</expan> fazer uns deveres de
-               casa de <sic>cualquer</sic>
-               <sic>manera</sic> então <expan type="full">não</expan> se preocupe<pc type="exclamative">!</pc></u>
-            <u who="#a8">Podemos fazer <sic>otra</sic> chamada sabado ou domingo esta semana</u>
+               casa de <sic type="uncorr">cualquer</sic>
+               <sic type="uncorr">manera</sic> então <expan type="full">não</expan> se preocupe<pc type="exclamative">!</pc></u>
+            <u who="#a8">Podemos fazer <sic type="uncorr">otra</sic> chamada sabado ou domingo esta semana</u>
             <u who="#b8">Acho <expan type="full">que</expan> <abbr type="informal">tá</abbr> voltando</u>
             <u who="#b8">Desculpa-me</u>
             <u who="#b8">Isso <abbr type="textese">n</abbr> acontece</u>
@@ -1517,9 +1521,9 @@
             <u who="#a8">o <expan type="full">que</expan> <abbr type="textese">vc</abbr> fez  <expan type="full">hoje</expan><pc type="interrogative"
                >?</pc></u>
             <u who="#b8">Desculpa mais uma vez pela demora</u>
-            <u who="#b8">[audio]</u>
+            <u who="#b8">[sent an audio]</u>
             <damage/>
-            <u who="#a8">[photo of Oakland]</u>
+            <u who="#a8">[sent a photo of city]</u>
             <u who="#b8">Parece ser lindo e aconchegante. h<kinesic type="ha"/>ahaha. Adoro esse clima</u>
             <u who="#b8">Boa noite</u>
             <u who="#a8"><kinesic type="ha"/>Ahahaha <expan type="full">nãoooo</expan> é horrível <g ref="#cle"/></u>
@@ -1555,7 +1559,7 @@
             <u who="#a9">Nunca fui <expan type="formal">para</expan> Campina Grande.. como estão<pc type="interrogative">?</pc> <abbr type="contraction">né</abbr> mora com sua família<pc type="interrogative">?</pc> Me fala sobre
                sua vida a fora da universidade :)</u>
             <u who="#a9">Que interessante<pc type="exclamative">!!</pc> Não sabia  <expan type="full">muito</expan> sobre isso. Fiz uma aula sobre imigração d a
-               história do Brasil, mas dava  <expan type="full">muito</expan> explicações simples porque a aula foi <sic><expan type="uncontracted">para a</expan></sic> pessoas
+               história do Brasil, mas dava  <expan type="full">muito</expan> explicações simples porque a aula foi <expan type="uncontracted">para <sic type="uncorr">a</sic></expan> pessoas
                aprendendo português.</u>
             <u who="#b9">Que interessante, eu gostaria  <expan type="full">muito</expan>, posso te mandar alguns em português  <expan type="full">também</expan>..</u>
             <u who="#b9">Que legal,  <expan type="full">você</expan> ter morado no Brasil,  <expan type="full">você</expan> pretende vir mais alguma vez<pc type="interrogative">?</pc></u>
@@ -1603,13 +1607,13 @@
             <u who="#b10"><foreign xml:lang="en">mostly in the region I live</foreign></u>
             <u who="#a10">Isso é o <expan type="full">que</expan> me dizem<pc type="exclamative">!</pc> Isto é uma foto durante um jogo de Rugby com neve em
                <foreign xml:lang="en">Pittsburgh</foreign></u>
-            <u who="#a10"> <expan type="full">também</expan>,  <expan type="full">hoje</expan> Ana Paula me diz <expan type="full">que</expan> quando conversamos <expan type="full">que</expan> temos <expan type="full">que</expan> falar em só uma
+            <u who="#a10"> <expan type="full">também</expan>,  <expan type="full">hoje</expan> ___ me diz <expan type="full">que</expan> quando conversamos <expan type="full">que</expan> temos <expan type="full">que</expan> falar em só uma
                língua, osso <expan type="full">que</expan> podemos falar um dia em português e outro dia em inglês, <abbr type="informal">tá</abbr> bem<pc type="interrogative">?</pc></u>
             <u who="#b10">tudo bem.</u>
             <u who="#b10">Como  <expan type="full">você</expan> preferir</u>
             <u who="#b10">Sou louco pra ver neve, cara</u>
             <u who="#a10">Oi ___<pc type="exclamative">!</pc>  <expan type="full">vocês</expan> celebram Halloween o dia das bruxas<pc type="interrogative">?</pc></u>
-            <u who="#b10">Olá Pablo, desculpe não ter te respondido imediatamente</u>
+            <u who="#b10">Olá ___, desculpe não ter te respondido imediatamente</u>
             <u who="#b10">tive um dia corrido ontem.</u>
             <u who="#b10">algumas pessoas celebram, porém não é considerado um grande evento</u>
             <u who="#a10">Oi<pc type="exclamative">!</pc>m tá bem<pc type="exclamative">!</pc> Interessante,  <expan type="full">você</expan> celebra<pc type="interrogative">?</pc> <foreign xml:lang="en">Would you also like to speak English

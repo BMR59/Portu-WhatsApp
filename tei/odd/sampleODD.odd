@@ -66,7 +66,7 @@
           </attDef>
         </attList>
       </elementSpec>
-      <elementSpec ident="kinesic" mode="change" module="spoken">
+      <elementSpec ident="hi" mode="change" module="core">
         <attList>
           <attDef ident="type" mode="replace">
             <valList type="closed">
@@ -94,6 +94,23 @@
             identifies the @attribute whose values we are modifying; the second attribute says we are replacing the TEI values for our own.-->
           </attDef>
         </attList>
+      </elementSpec>
+        <elementSpec ident="sic" mode="change" module="core">
+          <attList>
+            <attDef ident="type" mode="replace">
+              <valList type="closed">
+                <valItem ident="uncorr"/>
+                <valItem ident="selfcorr"/>
+                <valItem ident="impcorr"/>
+                <valItem ident="expcorr"/>
+              </valList>
+              <!-- This <elementSpec> element is being used to effectively customize *and* constrain potential attribute values associated with the <phr> element and @type attribute.
+            The stock attribute values will be removed from our personal schema, and the values listed above will replace them. Notice the nesting of elements; in <elementSpec
+            there are three attributes.. the first identifies the element with the @attribute whose values we are adding, changing, or deleting; the second one identifies the
+            modification as "change"; the last one connects the element in question to the module to which it belongs. The <attDef> element has two values, the first of which
+            identifies the @attribute whose values we are modifying; the second attribute says we are replacing the TEI values for our own.-->
+            </attDef>
+          </attList>
       </elementSpec>
       <elementSpec ident="persName" mode="replace" module="namesdates">
         <valList type="closed">
