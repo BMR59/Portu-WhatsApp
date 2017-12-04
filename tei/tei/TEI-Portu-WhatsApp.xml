@@ -1615,7 +1615,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
             <u who="br">Olá ___, desculpe não ter te respondido imediatamente</u>
             <u who="br">tive um dia corrido ontem.</u>
             <u who="br">algumas pessoas celebram, porém não é considerado um grande evento</u>
-            <u who="am">Oi<pc type="exclamative">!</pc>m tá bem<pc type="exclamative">!</pc> Interessante,  <expan type="full">você</expan> celebra<pc type="interrogative">?</pc> <foreign xml:lang="en">Would you also like to speak English
+            <u who="am">Oi<pc type="exclamative">!</pc> tá bem<pc type="exclamative">!</pc> Interessante,  <expan type="full">você</expan> celebra<pc type="interrogative">?</pc> <foreign xml:lang="en">Would you also like to speak English
                today</foreign><pc type="interrogative">?</pc></u>
             <u who="br">Eu não costumo celebrar, apenas fui a uma festa ano passado</u>
          </q>
