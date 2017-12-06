@@ -37,15 +37,26 @@ xmlns="http://www.w3.org/2000/svg">
                         <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400 - count(//u[@who='br']//abbr)}" stroke-width="3" stroke="black"/> <!-- Brazilian -->
                         <!-- x axis values -->
                         
-                        <text x="100" y="450">American</text>
-                        <text x="300" y="450">Brazilian</text>
+                        <text x="{10*$xspace}" y="450">American</text>
+                        <text x="{20*$xspace}" y="450">Brazilian</text>
                         <!-- x axis labels -->
                     </g>
                 </svg>
             </div>
             <div id="abbr2"> <!-- types of abbreviation comparison -->
+                <xsl:variable name="contra" select="count(//abbr[@type='contraction'])"/>
+                <xsl:variable name="inf" select="count(//abbr[@type='informal'])"/>
+                <xsl:variable name="txtese" select="count(//abbr[@type='textese'])"/>
+                <xsl:variable name="numVar" select="count(distinct-values(//abbr/@type))"/>
                 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-250 50 1400 250">
                     <g>
+                        <polyline points="0,0 0,400 {15*$xspace*$numVar},400" stroke="black" stroke-width="3" fill="none"/> <!-- graph axis -->
+                        <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$contra}" stroke="black" stroke-width="3" /><!-- contraction -->
+                        <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$inf}" stroke-width="3" stroke="black"/> <!-- informal -->
+                        <line x1="{30*$xspace}" y1="400" x2="{30*$xspace}" y2="{400-$txtese}" stroke="black" stroke-width="3"/><!-- textese -->
+                        <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">Contraction</text>
+                        <text x="{20*$xspace}" y="425" transform="rotate(30 100, 425)">Informal</text>
+                        <text x="{30*$xspace}" y="425" transform="rotate(30 150, 425)">Textese</text>
                         
                     </g>
                 </svg>
