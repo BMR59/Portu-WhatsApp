@@ -15,7 +15,7 @@ xmlns="http://www.w3.org/2000/svg">
         
         <head>
             <title>Analysis</title>
-            <link rel="stylesheet" type="text/css" href="Brooks_SVG4_CSS.css" />
+            <link rel="stylesheet" type="text/css" href="../css/index.css" />
         </head>
         <body>
             <div class="header">
@@ -57,7 +57,7 @@ xmlns="http://www.w3.org/2000/svg">
                 <xsl:variable name="inf" select="count(//abbr[@type='informal'])"/>
                 <xsl:variable name="txtese" select="count(//abbr[@type='textese'])"/>
                 <xsl:variable name="numVar" select="count(distinct-values(//abbr/@type))"/>
-                <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-250 50 1400 250">
+                <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 50 1000 1000">
                     <g>
                         <!-- labels for the graphs -->
                         <text x="25" y="{max(($contra, $inf, $txtese))-25}">Types of Abbreviations Used</text>
