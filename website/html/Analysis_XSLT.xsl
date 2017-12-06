@@ -35,13 +35,16 @@ xmlns="http://www.w3.org/2000/svg">
                         <polyline points="0,0 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
                         <!-- graph axis -->
                         
+                        <text x="50" y="0">The use of Abbreviations by Nationality</text>
+                        <text x="-20" y="400" transform="rotate(-90 -20,400)">The number of Abbreviations Used</text>
+                        <text x="0" y="475">Nationality</text>
                         <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400 - count(//u[@who='am']//abbr)}" stroke-width="3" stroke="black"/> <!-- American -->
-                        <text x="{10*$xspace}" y="450" transform="rotate(30 50,450)">American</text>
+                        <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">American</text>
                         <text x="{10*$xspace}" y="{400-count(//u[@who='am']//abbr)-20}" text-anchor="middle"><xsl:value-of select="count(//u[@who='am']//abbr)"/></text>
                         
                         
                         <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400 - count(//u[@who='br']//abbr)}" stroke-width="3" stroke="black"/> <!-- Brazilian -->
-                        <text x="{20*$xspace}" y="450" transform="rotate(30 100, 450)">Brazilian</text>
+                        <text x="{20*$xspace}" y="425" transform="rotate(30 100, 425)">Brazilian</text>
                         <text x="{20*$xspace}" y="{400-count(//u[@who='br']//abbr)-20}" text-anchor="middle"><xsl:value-of select="count(//u[@who='br']//abbr)"/></text>
                         <!-- x axis labels -->
                     </g>
@@ -54,6 +57,9 @@ xmlns="http://www.w3.org/2000/svg">
                 <xsl:variable name="numVar" select="count(distinct-values(//abbr/@type))"/>
                 <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-250 50 1400 250">
                     <g>
+                        <text x="50" y="0">Types of Abbreviations Used</text>
+                        <text x="-20" y="400" transform="rotate(-90 -20,400)">Number of Each Type of Abbreviation</text>
+                        <text x="0" y="475">Types of Abbreviations</text>
                         <polyline points="0,0 0,400 {15*$xspace*$numVar},400" stroke="black" stroke-width="3" fill="none"/> <!-- graph axis -->
                         <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$contra}" stroke="black" stroke-width="3" /><!-- contraction -->
                         <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">Contraction</text>
