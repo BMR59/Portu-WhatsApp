@@ -23,11 +23,12 @@ xmlns="http://www.w3.org/2000/svg">
                 <hr />
                 
             </div>
-            <div id="abbr">
+            
                 <h2>The Use of Abbreviations in Texting</h2>
                 <div class="description">
                 <p>Below is a graph that represents the amount of times that any notable form of an abbreviation was used within the texting partner groups. This selection is only representative of a few of the converstaions that were captured in the WhatsApp screenshots that we processed.</p>
                 </div>
+            <div id="abbr">
                 <div id="abbr1"> <!-- nationality comparison --> 
                     <xsl:variable name="totabbr" select="count(//abbr)"/>
                     <xsl:variable name="amAbbr" select="count(//u[@who='am']//abbr)"/>

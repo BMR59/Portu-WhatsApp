@@ -78,3 +78,9 @@ u[who="#a1"]{
 pc[type="interrogative"]{
     background-color:cyan;
 }
+#abbr{
+    display:flex
+}
+#abbr1{
+    flex-grow:1;
+}
