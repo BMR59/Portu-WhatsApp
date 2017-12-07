@@ -119,11 +119,12 @@
                     </div>
                     
                 </div>
-                <div id="laughterUse">
+                
                     <h2>The Use of Laughter Notation in Texting</h2>
                     <div class="description">
                         <p>This is the chart talking about the use of Laughter Notation within the corpus</p>
                     </div>
+                <div id="laughterUse">
                     <div id="laughter1">
                         <xsl:variable name="amHi" select="count(//u[@who='am']//hi)"/>
                         <xsl:variable name="brHi" select="count(//u[@who='br']//hi)"/>

@@ -84,3 +84,9 @@ pc[type="interrogative"]{
 #abbr1{
     flex-grow:1;
 }
+#laughterUse{
+    display:flex;
+}
+#laughter1{
+    flex-grow:1;
+}
