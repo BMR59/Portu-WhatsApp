@@ -86,12 +86,48 @@ xmlns="http://www.w3.org/2000/svg">
                 <div class="description">
                     <p>This is the chart talking about the use of Emojis within the corpus</p>
                 </div>
+                <div id="emoji1">
+                    <xsl:variable name="brEmoji" select="count(//u[@who='br']//g)"/>
+                    <xsl:variable name="amEmoji" select="count(//u[@who='am']//g)"/>
+                    <xsl:variable name="emojiNum" select="count(distinct-values(//g/@ref))"/>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500"><!-- nationality comparison -->
+                        <g>
+                            <polyline points="0,{400 - max(($brEmoji, $amEmoji))-10} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/> <!-- graph axis -->
+                            <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$amEmoji}" stroke="black" stroke-width="3"/><!-- american use of emojis -->
+                            <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$brEmoji}" stroke="black" stroke-width="3"/><!-- brazilian use of Emojis -->
+                            <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">American</text><!-- x axis label American -->
+                            <text x="{20*$xspace}" y="425" transform="rotate(30 100, 425)">Brazilian</text><!-- x axis label Brazilian -->
+                        </g>
+                    </svg>
+                </div>
+                <div id="emoji2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
+                        <g>
+                            
+                        </g>
+                    </svg>
+                    
+                </div>
                 
             </div>
             <div id="laughterUse">
                 <h2>The Use of Laughter Notation in Texting</h2>
                 <div class="description">
                     <p>This is the chart talking about the use of Laughter Notation within the corpus</p>
+                </div>
+                <div id="laughter1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
+                        <g>
+                            
+                        </g>
+                    </svg>
+                </div>
+                <div id="laughter2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
+                        <g>
+                            
+                        </g>
+                    </svg>
                 </div>
                 
             </div>
@@ -100,11 +136,39 @@ xmlns="http://www.w3.org/2000/svg">
                 <div class="description">
                     <p>This is the chart talking about the use of Correction within the corpus</p>
                 </div>
+                <div id="correction1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
+                        <g>
+                            
+                        </g>
+                    </svg>
+                </div>
+                <div id="correction2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
+                        <g>
+                            
+                        </g>
+                    </svg>
+                </div>
             </div>
             <div id="expandedForms">
                 <h2>The Use of Expanded Forms in Texting</h2>
                 <div class="description">
                     <p>This is the chart talking about the use of Expanded Forms within the corpus</p>
+                </div>
+                <div id="expanded1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
+                        <g>
+                            
+                        </g>
+                    </svg>
+                </div>
+                <div id="expanded2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
+                        <g>
+                            
+                        </g>
+                    </svg>
                 </div>
             </div>
         </body>
