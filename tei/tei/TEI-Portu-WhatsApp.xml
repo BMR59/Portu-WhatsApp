@@ -191,7 +191,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
             <u who="br">Seu português é ótimo<pc type="exclamative">!</pc></u>
             <u who="am">Eu <expan type="full">também</expan> <expan type="formal">estou</expan> com sono, mas só são 7:50 aqui <hi type="ha">haha</hi></u>
             <u who="br">Só uma hora de diferença. Pensei <expan type="full">que</expan> fosse mais <hi type="ha">hahahaha</hi></u>
-            <u who="am">Obrigada<pc type="exclamative">!</pc> <expan type="formal">estou</expan> praticando <g ref="#ms"
+            <u who="am"><expan type="full">obrigada</expan><pc type="exclamative">!</pc> <expan type="formal">estou</expan> praticando <g ref="#ms"
                >:)</g></u>
             <u who="am"><hi type="ha">haha</hi> sim<pc type="exclamative">!</pc> <expan type="formal">para</expan> estar tão longe, não tem  <expan type="full">muito</expan>
                      <sic type="uncorr"><foreign xml:lang="sp">diferencia</foreign></sic></u>
@@ -202,7 +202,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
             <u who="am">Eu <expan type="formal">estou</expan> de acordo.</u>
             <u who="am">Faz mais o menos um ano e meio</u>
             <u who="br">Pouco tempo <expan type="formal">para</expan> tamanha desenvoltura.</u>
-            <u who="am">Obrigada<pc type="exclamative">!</pc> Porém, antes eu estudei espanhol,
+            <u who="am"><expan type="full">obrigada</expan><pc type="exclamative">!</pc> Porém, antes eu estudei espanhol,
                então me ajudou bastante</u>
             <u who="am">E  <expan type="full">também</expan> estudei no Brasil durante o verão por um pouquinho</u>
             <u who="br">Que fantástico <pc type="exclamative">!</pc></u>
@@ -277,7 +277,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
                algo <expan type="full">que</expan> ver como o nome dele <hi type="ha">haha</hi></u>
             <u who="br">Pesquise “Lambadão cuiabano” e “Rasqueado matogrossense” no YouTube</u>
             <u who="br"> <expan type="full">você</expan> vai encontrar umas coisas legais e engraçadas <hi type="ha">hahaha</hi></u>
-            <u who="am">Ah perfeito <g ref="#ms">:)</g> obrigada<pc type="exclamative">!</pc></u>
+            <u who="am">Ah perfeito <g ref="#ms">:)</g> <expan type="full">obrigada</expan><pc type="exclamative">!</pc></u>
             <u who="am">eu  <expan type="full">também</expan> tenho <expan type="full">que</expan> sair agorinha.. Vou <abbr type="contraction">pro</abbr>
                aniversário da minha prima- <sic type="impcorr">ela tenha 2 anos agora</sic>
                <g ref="#ms">:)</g></u>
@@ -291,7 +291,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
                mais tarde</u>
             <u who="br">Tenha uma ótima tarde e boa festa de aniversário da sua prima.</u>
             <u who="br"><g ref="#rcs"/></u>
-            <u who="am">Obrigada<pc type="exclamative">!</pc>
+            <u who="am"><expan type="full">obrigada</expan><pc type="exclamative">!</pc>
                <abbr type="textese">Vc</abbr>  <expan type="full">também</expan> tenha uma boa tarde <g ref="#ms">:)</g>
                   Tchau<pc type="exclamative">!</pc></u>
             <u who="am">Bom dia<pc type="exclamative">!</pc> Tenho um projeto <abbr
@@ -320,7 +320,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
             <u who="br"><expan type="full">obrigado</expan> pelas felicitações. (<corr type="explicit"> <expan type="full">você</expan> pode dizer
                   “parabéns”  <expan type="full">também</expan>, <expan type="full">que</expan> tem o mesmo significado e é mais informal</corr>) <g
                   ref="#cgs"/></u>
-            <u who="am">Ahh obrigada achei <expan type="full">que</expan> algo pareceu estranho <hi type="ha">haha</hi></u>
+            <u who="am">Ahh <expan type="full">obrigada</expan> achei <expan type="full">que</expan> algo pareceu estranho <hi type="ha">haha</hi></u>
             <u who="br"><g ref="#cle" n="6"/></u>
             <u who="br">Normal</u>
             <u who="br"> <expan type="formal">está</expan> certo, só <expan type="full">que</expan>  <expan type="full">muito</expan> polido</u>
@@ -489,7 +489,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
             <u who="am">Amanhã seria de noite <expan type="formal">para</expan> mim</u>
             <u who="br">Sim, <expan type="full">que</expan> horas <pc type="interrogative">?</pc></u>
             <u who="am">As 8:30PM aqui posso eu acho. 20:30</u>
-            <u who="br">Combinado <sic/></u>
+            <u who="br">Combinado</u>
             <u who="am">Bom dia ___<pc type="exclamative">!</pc></u>
             <u who="br">Boa tarde, ___<pc type="exclamative">!</pc></u>
             <u who="br"><hi type="k">kkk</hi></u>
@@ -1585,7 +1585,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
             <u who="am">Sim por favor. Algumas coisas são culpa de auto correto, mas - por favor. Eu
                preciso melhorar, e agradeço qualquer ajuda  <expan type="full">você</expan> pode oferecer.</u>
             <u who="am">e não se preocupe. Entendi - precisamos ficar presente com nossas vidas  <expan type="full">também</expan>.
-               Obrigada por participar nesse intercâmbio.</u>
+               <expan type="full">obrigada</expan> por participar nesse intercâmbio.</u>
             <u who="br">aviso sim, pode deixar <hi type="k">kkkk</hi>, se  <expan type="full">você</expan> souber de algum programa de intercâmbio em que
                eu possa me encaixar, com bolsa, me avisa  <expan type="full">também</expan>. <hi type="k">kkkkkk</hi></u>
             <u who="br"> <expan type="full">você</expan> será bem vinda, ficaria  <expan type="full">muito</expan> feliz em lhe conhecer e apresentar a cidade para
