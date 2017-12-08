@@ -139,13 +139,14 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et viverra ante, sed iaculis libero. Curabitur vel ligula molestie, iaculis nulla ullamcorper, vehicula nulla. Morbi eleifend suscipit est, a ultrices tellus ultrices eget. In a porttitor tortor, vel tincidunt lorem. Etiam mollis, magna a molestie varius, est turpis auctor nulla, sed pharetra sapien justo in risus. Nunc sed efficitur ipsum. Aliquam ut nunc viverra, sodales turpis id, efficitur odio. Donec non ultricies lorem. Suspendisse potenti. Suspendisse potenti. Fusce tempor sollicitudin viverra. Suspendisse metus nisi, pharetra a lacus vel, mollis imperdiet nisi. Vivamus at volutpat mi. Nulla eget lacus non ex mattis efficitur id vitae justo. Morbi tincidunt purus non mauris posuere, in mattis elit euismod. Nam accumsan enim diam, quis euismod dolor efficitur id. Ut facilisis faucibus quam, at volutpat ex tincidunt sed. Nam ac ipsum orci. Nunc turpis sem, semper et consectetur eu, aliquet ut metus. Sed ultrices tellus sit amet risus feugiat placerat. Curabitur at aliquet diam. Mauris varius ultrices nisl non feugiat. Aliquam condimentum libero eu augue sollicitudin, a molestie nisl finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi egestas efficitur enim, eget posuere odio. Ut vehicula lacus non pulvinar accumsan. Etiam sodales ultrices sapien, sit amet auctor risus cursus quis. Vestibulum vulputate odio ex, sodales lobortis odio tristique dictum. Maecenas vestibulum egestas quam a ultrices. Phasellus bibendum consequat nisi, id viverra ante rutrum at. Aliquam auctor massa sit amet neque elementum, et volutpat odio varius. Nulla nec vestibulum augue. Mauris bibendum purus lacus, sit amet auctor dolor fringilla et. Duis vel viverra dolor. Phasellus accumsan ligula nisl. Suspendisse eget est non diam pharetra malesuada sed a enim. Sed non eros lobortis, maximus libero a, semper dui. Praesent ut nisi et justo tincidunt venenatis in ac neque. In sit amet erat urna. Duis ultricies semper dictum. Duis porta erat vestibulum mauris efficitur pulvinar. Praesent molestie porta lacus, eget convallis augue dictum vel. Morbi id iaculis tellus. Suspendisse auctor accumsan nunc in lacinia. Mauris ut vehicula sem, eget interdum dui. Maecenas vehicula nec risus non ornare. Sed eget viverra ex. Donec interdum elementum tortor, in hendrerit nisl varius in. Nullam vulputate urna ante, et dapibus ex congue vitae. Cras dignissim, odio imperdiet tristique dapibus, tellus tortor porta sem, et sollicitudin diam turpis in tortor. Cras mauris odio, volutpat fringilla sagittis sed, varius in elit. Nulla facilisi. Aliquam condimentum, lorem a mattis laoreet, mi urna rhoncus quam, vitae cursus enim magna non eros. Vivamus tincidunt ultrices consectetur. In hac habitasse platea dictumst. Nullam sed pharetra ante, vel rutrum lacus. Vestibulum ornare dictum risus. Nullam convallis iaculis nisi. Cras semper turpis nec ex aliquam auctor. Vestibulum faucibus, magna eget maximus venenatis, dolor erat rhoncus lectus, id suscipit ante sem ac eros.</p>
                     </div>
                     <a href="#topImg" class="internal">Top</a>
-                    <div id="emojiUse">
+                   
                         <h2>The Use of Emojis in Texting</h2>
                         <div class="description">
                             <p>This is the chart talking about the use of Emojis within the
                                 corpus</p>
                         </div>
-                        <div id="emoji1"><!-- nationality comparison -->
+                         <div id="emojiUse">
+                             <div id="emoji1"><!-- nationality comparison -->
                             <xsl:variable name="brEmoji" select="count(//u[@who = 'br']//g)"/>
                             <xsl:variable name="amEmoji" select="count(//u[@who = 'am']//g)"/>
                             <xsl:variable name="emojiNum" select="count(distinct-values(//g/@ref))"/>
@@ -178,11 +179,11 @@
                             </svg>
                         </div>
                         <div id="emoji2">
-                            <xsl:variable name="cleNumAm"
-                                select="count(//u[@who = 'am']//g[@ref = '#cle'])"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800"
-                                viewBox="-100 100 500 500">
+                            <xsl:variable name="cleNumAm" select="count(//u[@who = 'am']//g[@ref = '#cle'])"/>
+                            <xsl:variable name="emojiNum" select="count(distinct-values(//g/@ref))"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
                                 <g>
+                                    <polyline points="0,0 0,400 {$emojiNum*$xspace*10},400" stroke="black" stroke-width="3" fill="none"/> 
                                 </g>
                             </svg>
                         </div>
@@ -201,24 +202,16 @@
                         <div id="laugh1">
                             <xsl:variable name="amHi" select="count(//u[@who = 'am']//hi)"/>
                             <xsl:variable name="brHi" select="count(//u[@who = 'br']//hi)"/>
-                            <xsl:variable name="amHa"
-                                select="count(//u[@who = 'am']//hi[@type = 'ha'])"/>
-                            <xsl:variable name="brHa"
-                                select="count(//u[@who = 'br']//hi[@type = 'ha'])"/>
-                            <xsl:variable name="amK"
-                                select="count(//u[@who = 'am']//hi[@type = 'k'])"/>
-                            <xsl:variable name="brK"
-                                select="count(//u[@who = 'br']//hi[@type = 'k'])"/>
-                            <xsl:variable name="amRs"
-                                select="count(//u[@who = 'am']//hi[@type = 'rs'])"/>
-                            <xsl:variable name="brRs"
-                                select="count(//u[@who = 'br']//hi[@type = 'rs'])"/>
+                            <xsl:variable name="amHa" select="count(//u[@who = 'am']//hi[@type = 'ha'])"/>
+                            <xsl:variable name="brHa" select="count(//u[@who = 'br']//hi[@type = 'ha'])"/>
+                            <xsl:variable name="amK"  select="count(//u[@who = 'am']//hi[@type = 'k'])"/>
+                            <xsl:variable name="brK"  select="count(//u[@who = 'br']//hi[@type = 'k'])"/>
+                            <xsl:variable name="amRs" select="count(//u[@who = 'am']//hi[@type = 'rs'])"/>
+                            <xsl:variable name="brRs" select="count(//u[@who = 'br']//hi[@type = 'rs'])"/>
                             <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800"
                                 viewBox="-100 100 500 500"><!-- nationality comparrison -->
                                 <g>
-                                    <polyline
-                                        points="0,{400 - max(($amHi, $brHi))-10} 0,400 {30*$xspace},400"
-                                        stroke="black" stroke-width="3" fill="none"/>
+                                    <polyline points="0,{400 - max(($amHi, $brHi))-10} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
                                     <!-- graph axis -->
                                     <!-- bars -->
                                     <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}"
