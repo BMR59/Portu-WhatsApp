@@ -314,7 +314,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
             <u who="br">SÉRIO<pc type="interrogative">?</pc> Meu curso e arquitetura e
                urbanismo</u>
             <u who="br">mas eu falo so arquitetura porque sou preguiçoso</u>
-            <u who="br"><g ref="#ce"/></u>
+            <u who="br"><g ref="#cle"/></u>
             <u who="am"><hi type="ha">hahah</hi> sim, é  <expan type="full">muito</expan> <abbr type="informal">pra</abbr> escrever</u>
             <u who="br"><g ref="#cle"/></u>
             <u who="br"><expan type="full">obrigado</expan> pelas felicitações. (<corr type="explicit"> <expan type="full">você</expan> pode dizer

@@ -146,7 +146,7 @@
                          <div id="emojiUse">
                              <div id="emoji1"><!-- nationality comparison -->
                             <xsl:variable name="brEmoji" select="count(//u[@who = 'br']//g)"/>
-                            <xsl:variable name="amEmoji" select="(count(//u[@who='am']//g)+sum(//u[@who='am']//g/@n)-count(//u[@who='am']//g[@n]))"/>
+                                 <xsl:variable name="amEmoji" select="count(//u[@who='am']/g)+sum(//u[@who='am']/g/@n)-count(//u[@who='am']/g[@n])"/>
                             <xsl:variable name="emojiNum" select="count(distinct-values(//g/@ref))"/>
                             <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800"
                                 viewBox="-100 100 500 500">
