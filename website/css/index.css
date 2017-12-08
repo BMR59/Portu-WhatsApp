@@ -93,3 +93,9 @@ pc[type="interrogative"]{
 #laughter1{
     flex-grow:1;
 }
+#emojiUse{
+    display:flex;
+}
+#emoji1{
+    flex-grow: 1;
+}

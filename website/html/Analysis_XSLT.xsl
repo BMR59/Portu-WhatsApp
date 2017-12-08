@@ -100,12 +100,10 @@
                                 viewBox="-100 100 500 500">
                                 <g>
                                     <!-- labels for the graphs -->
-                                    <text x="25" y="{max(($contra, $inf, $txtese))-25}">Types of
-                                        Abbreviations Used</text>
-                                    <text x="-20" y="400" transform="rotate(-90 -20,400)">Number of
-                                        Each Type of Abbreviation</text>
-                                    <text x="0" y="475">Types of Abbreviations</text> <polyline
-                                        points="0,{max(($contra, $inf, $txtese))-10} 0,400 {15*$xspace*$numVar},400"
+                                    <text x="25" y="{max(($contra, $inf, $txtese))-25}">Types of Abbreviations Used</text>
+                                    <text x="-20" y="400" transform="rotate(-90 -20,400)">Number of Each Type of Abbreviation</text>
+                                    <text x="0" y="480">Types of Abbreviations</text>
+                                    <polyline points="0,{max(($contra, $inf, $txtese))-10} 0,400 {15*$xspace*$numVar},400"
                                         stroke="black" stroke-width="3" fill="none"/>
                                     <!-- graph axis --> <line x1="{10*$xspace}" y1="400"
                                         x2="{10*$xspace}" y2="{400-$contra}" stroke="black"
@@ -148,33 +146,24 @@
                          <div id="emojiUse">
                              <div id="emoji1"><!-- nationality comparison -->
                             <xsl:variable name="brEmoji" select="count(//u[@who = 'br']//g)"/>
-                            <xsl:variable name="amEmoji" select="count(//u[@who = 'am']//g)"/>
+                            <xsl:variable name="amEmoji" select="(count(//u[@who='am']//g)+sum(//u[@who='am']//g/@n)-count(//u[@who='am']//g[@n]))"/>
                             <xsl:variable name="emojiNum" select="count(distinct-values(//g/@ref))"/>
                             <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800"
                                 viewBox="-100 100 500 500">
                                 <g>
                                     <polyline
-                                        points="0,{400 - max(($brEmoji, $amEmoji))-10} 0,400 {30*$xspace},400"
-                                        stroke="black" stroke-width="3" fill="none"/>
+                                        points="0,{400 - max(($brEmoji, $amEmoji))-10} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
                                     <!-- graph axis -->
+                                    
                                     <!-- the bars -->
-                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}"
-                                        y2="{400-$amEmoji}" stroke="black" stroke-width="3"/><!-- american use of emojis -->
-                                    <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}"
-                                        y2="{400-$brEmoji}" stroke="black" stroke-width="3"
-                                    /><!-- brazilian use of Emojis -->
+                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$amEmoji}" stroke="black" stroke-width="3"/><!-- american use of emojis -->
+                                    <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$brEmoji}" stroke="black" stroke-width="3"/><!-- brazilian use of Emojis -->
+                                    
                                     <!-- labels-->
-                                    <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)"
-                                        >American</text><!-- x axis label American -->
-                                    <text x="{20*$xspace}" y="425" transform="rotate(30 100, 425)"
-                                        >Brazilian</text><!-- x axis label Brazilian -->
-                                    <text x="{10*$xspace}" y="{400-$amEmoji -10}"
-                                        text-anchor="middle"><xsl:value-of
-                                            select="count(//u[@who = 'am']//g)"/></text><!-- bar label American -->
-                                    <text x="{20*$xspace}" y="{400-$brEmoji -10}"
-                                        text-anchor="middle"><xsl:value-of
-                                            select="count(//u[@who = 'br']//g)"
-                                    /></text><!-- bar label Brazilian -->
+                                    <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">American</text><!-- x axis label American -->
+                                    <text x="{20*$xspace}" y="425" transform="rotate(30 100, 425)">Brazilian</text><!-- x axis label Brazilian -->
+                                    <text x="{10*$xspace}" y="{400-$amEmoji -10}" text-anchor="middle"><xsl:value-of select="count(//u[@who = 'am']//g)"/></text><!-- bar label American -->
+                                    <text x="{20*$xspace}" y="{400-$brEmoji -10}" text-anchor="middle"><xsl:value-of select="count(//u[@who = 'br']//g)"/></text><!-- bar label Brazilian -->
                                 </g>
                             </svg>
                         </div>
