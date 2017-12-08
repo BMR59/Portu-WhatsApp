@@ -78,13 +78,13 @@ u[who="#a1"]{
 pc[type="interrogative"]{
     background-color:cyan;
 }
-#abbr{
+#abbreviations{
     display:flex
 }
 #abbr1{
     flex-grow:1;
 }
-#laughterUse{
+#laugh{
     display:flex;
 }
 #laughter1{
