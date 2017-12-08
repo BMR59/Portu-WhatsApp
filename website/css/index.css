@@ -72,15 +72,6 @@ a.internal:hover{
 #dataToC{
     text-align:center;
 }
-u[who="#b1"]{
-    background-color:green;
-}
-u[who="#a1"]{
-    background-color:red;    
-}
-pc[type="interrogative"]{
-    background-color:cyan;
-}
 #abbreviations{
     display:flex
 }
@@ -98,4 +89,55 @@ pc[type="interrogative"]{
 }
 #emoji1{
     flex-grow: 1;
+}
+class.conversationHeader:hover{
+        color:#d3d3d3;
+}
+div#thirdThird
+{
+display:none;
+}div#firstFirst
+{
+display:none;
+}div#secondSecond
+{
+display:none;
+}div#fourthFourth
+{
+display:none;
+}div#fifthFifth
+{
+display:none;
+}div#sixthSixth
+{
+display:none;
+}div#seventhSeventh
+{
+display:none;
+}div#eighthEighth
+{
+display:none;
+}div#ninthNinth
+{
+display:none;
+}div#tenthTenth
+{
+display:none;
+}
+#left {
+    width: 20%;
+    top: 50%;
+    position: fixed;
+    outline: 1px solid;
+    background: #FFBB4A;
+}
+#right {
+    width: 75%;
+    height: auto;
+    position: absolute;
+    right: 0;
+}
+#top {
+    width: 100%;
+    height: auto;
 }
