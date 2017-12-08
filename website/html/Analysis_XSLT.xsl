@@ -145,8 +145,8 @@
                         </div>
                          <div id="emojiUse">
                              <div id="emoji1"><!-- nationality comparison -->
-                            <xsl:variable name="brEmoji" select="count(//u[@who = 'br']//g)"/>
-                                 <xsl:variable name="amEmoji" select="count(//u[@who='am']/g)+sum(//u[@who='am']/g/@n)-count(//u[@who='am']/g[@n])"/>
+                                 <xsl:variable name="brEmoji" select="count(.//u[@who='br']/g)+sum(.//u[@who='br']/g/@n)-count(.//u[@who='br']/g[@n])"/>
+                                 <xsl:variable name="amEmoji" select="count(.//u[@who='am']/g)+sum(.//u[@who='am']/g/@n)-count(.//u[@who='am']/g[@n])"/>
                             <xsl:variable name="emojiNum" select="count(distinct-values(//g/@ref))"/>
                             <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800"
                                 viewBox="-100 100 500 500">
@@ -162,8 +162,8 @@
                                     <!-- labels-->
                                     <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">American</text><!-- x axis label American -->
                                     <text x="{20*$xspace}" y="425" transform="rotate(30 100, 425)">Brazilian</text><!-- x axis label Brazilian -->
-                                    <text x="{10*$xspace}" y="{400-$amEmoji -10}" text-anchor="middle"><xsl:value-of select="count(//u[@who = 'am']//g)"/></text><!-- bar label American -->
-                                    <text x="{20*$xspace}" y="{400-$brEmoji -10}" text-anchor="middle"><xsl:value-of select="count(//u[@who = 'br']//g)"/></text><!-- bar label Brazilian -->
+                                    <text x="{10*$xspace}" y="{400-$amEmoji -10}" text-anchor="middle"><xsl:value-of select="$amEmoji"/></text><!-- bar label American -->
+                                    <text x="{20*$xspace}" y="{400-$brEmoji -10}" text-anchor="middle"><xsl:value-of select="$brEmoji"/></text><!-- bar label Brazilian -->
                                 </g>
                             </svg>
                         </div>
