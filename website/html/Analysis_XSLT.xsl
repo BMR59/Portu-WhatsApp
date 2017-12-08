@@ -295,7 +295,7 @@
                                     <!-- graph axis --> </g>
                             </svg>
                         </div>
-                    </div>
+                       </div>
                     <a href="#topImg" class="internal">Top</a>
                     <div id="corrections">
                         <h2>The Use of Corrections in Texting</h2>
