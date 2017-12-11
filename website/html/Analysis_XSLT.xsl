@@ -100,26 +100,28 @@
                                 viewBox="-100 100 500 500">
                                 <g>
                                     <!-- labels for the graphs -->
-                                    <text x="25" y="{max(($contra, $inf, $txtese))-25}">Types of Abbreviations Used</text>
-                                    <text x="-20" y="400" transform="rotate(-90 -20,400)">Number of Each Type of Abbreviation</text>
-                                    <text x="0" y="480">Types of Abbreviations</text>
+                                    <text x="25" y="{max(($contra, $inf, $txtese))-25}">Types of Abbreviations Used</text><!-- chart title -->
+                                    <text x="-20" y="400" transform="rotate(-90 -20,400)">Number of Each Type of Abbreviation</text> <!-- y axis label -->
+                                    <text x="0" y="480">Types of Abbreviations</text> <!-- x axis label -->
+                                    
                                     <polyline points="0,{max(($contra, $inf, $txtese))-10} 0,400 {15*$xspace*$numVar},400" stroke="black" stroke-width="3" fill="none"/>
-                                    <!-- graph axis --> <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$contra}" stroke="black" stroke-width="3"/><!-- contraction -->
-                                    <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">Contraction</text>
-                                    <text x="{10*$xspace}" y="{400-$contra - 10}" text-anchor="middle"><xsl:value-of select="count(//abbr[@type = 'contraction'])"/></text>
-                                        <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$inf}" stroke-width="3" stroke="black"/><!-- informal -->
-                                    <text x="{20*$xspace}" y="425" transform="rotate(30 100, 425)"
-                                        >Informal</text>
-                                    <text x="{20*$xspace}" y="{400-$inf - 25}" text-anchor="middle"
-                                            ><xsl:value-of
-                                            select="count(//abbr[@type = 'informal'])"/></text>
-                                        <line x1="{30*$xspace}" y1="400" x2="{30*$xspace}"
-                                        y2="{400-$txtese}" stroke="black" stroke-width="3"/><!-- textese -->
-                                    <text x="{30*$xspace}" y="425" transform="rotate(30 150, 425)"
-                                        >Textese</text>
-                                    <text x="{30*$xspace}" y="{400-$txtese -25}"
-                                        text-anchor="middle"><xsl:value-of
-                                            select="count(//abbr[@type = 'textese'])"/></text>
+                                    <!-- graph axis --> 
+                                    
+                                    <!-- bars -->
+                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$contra}" stroke="black" stroke-width="3"/><!-- contraction -->
+                                    <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$inf}" stroke-width="3" stroke="black"/><!-- informal -->
+                                    <line x1="{30*$xspace}" y1="400" x2="{30*$xspace}" y2="{400-$txtese}" stroke="black" stroke-width="3"/><!-- textese -->
+                                    
+                                    
+                                    <!-- labels for variabls -->
+                                    <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">Contraction</text><!-- contractions -->
+                                    <text x="{10*$xspace}" y="{400-$contra - 10}" text-anchor="middle"><xsl:value-of select="count(//abbr[@type = 'contraction'])"/></text><!-- contraction values -->
+                                    
+                                    <text x="{20*$xspace}" y="425" transform="rotate(30 100, 425)">Informal</text><!-- informal -->
+                                    <text x="{20*$xspace}" y="{400-$inf - 25}" text-anchor="middle"><xsl:value-of select="count(//abbr[@type = 'informal'])"/></text><!-- informal values -->
+                                    
+                                    <text x="{30*$xspace}" y="425" transform="rotate(30 150, 425)">Textese</text><!-- textese -->
+                                    <text x="{30*$xspace}" y="{400-$txtese -25}" text-anchor="middle"><xsl:value-of select="count(//abbr[@type = 'textese'])"/></text><!-- textese values -->
                                 </g>
                             </svg>
                         </div>
