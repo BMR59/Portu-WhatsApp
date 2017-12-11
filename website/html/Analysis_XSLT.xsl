@@ -103,19 +103,11 @@
                                     <text x="25" y="{max(($contra, $inf, $txtese))-25}">Types of Abbreviations Used</text>
                                     <text x="-20" y="400" transform="rotate(-90 -20,400)">Number of Each Type of Abbreviation</text>
                                     <text x="0" y="480">Types of Abbreviations</text>
-                                    <polyline points="0,{max(($contra, $inf, $txtese))-10} 0,400 {15*$xspace*$numVar},400"
-                                        stroke="black" stroke-width="3" fill="none"/>
-                                    <!-- graph axis --> <line x1="{10*$xspace}" y1="400"
-                                        x2="{10*$xspace}" y2="{400-$contra}" stroke="black"
-                                        stroke-width="3"/><!-- contraction -->
-                                    <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)"
-                                        >Contraction</text>
-                                    <text x="{10*$xspace}" y="{400-$contra - 10}"
-                                        text-anchor="middle"><xsl:value-of
-                                            select="count(//abbr[@type = 'contraction'])"/></text>
-                                        <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}"
-                                        y2="{400-$inf}" stroke-width="3" stroke="black"/>
-                                    <!-- informal -->
+                                    <polyline points="0,{max(($contra, $inf, $txtese))-10} 0,400 {15*$xspace*$numVar},400" stroke="black" stroke-width="3" fill="none"/>
+                                    <!-- graph axis --> <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$contra}" stroke="black" stroke-width="3"/><!-- contraction -->
+                                    <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">Contraction</text>
+                                    <text x="{10*$xspace}" y="{400-$contra - 10}" text-anchor="middle"><xsl:value-of select="count(//abbr[@type = 'contraction'])"/></text>
+                                        <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$inf}" stroke-width="3" stroke="black"/><!-- informal -->
                                     <text x="{20*$xspace}" y="425" transform="rotate(30 100, 425)"
                                         >Informal</text>
                                     <text x="{20*$xspace}" y="{400-$inf - 25}" text-anchor="middle"
@@ -162,12 +154,13 @@
                                     <!-- labels-->
                                     <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">American</text><!-- x axis label American -->
                                     <text x="{20*$xspace}" y="425" transform="rotate(30 100, 425)">Brazilian</text><!-- x axis label Brazilian -->
-                                    <text x="{10*$xspace}" y="{400-$amEmoji -10}" text-anchor="middle"><xsl:value-of select="$amEmoji"/></text><!-- bar label American -->
-                                    <text x="{20*$xspace}" y="{400-$brEmoji -10}" text-anchor="middle"><xsl:value-of select="$brEmoji"/></text><!-- bar label Brazilian -->
+                                    <text x=""></text> <!-- chart title -->
+                                    <text x="{10*$xspace}" y="{400-$amEmoji -10}" text-anchor="middle"><xsl:value-of select="$amEmoji"/></text><!-- num label American -->
+                                    <text x="{20*$xspace}" y="{400-$brEmoji -10}" text-anchor="middle"><xsl:value-of select="$brEmoji"/></text><!-- num label Brazilian -->
                                 </g>
                             </svg>
                         </div>
-                        <div id="emoji2">
+                        <!-- <div id="emoji2">
                             <xsl:variable name="cleNumAm" select="count(//u[@who = 'am']//g[@ref = '#cle'])"/>
                             <xsl:variable name="emojiNum" select="count(distinct-values(//g/@ref))"/>
                             <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
@@ -175,7 +168,7 @@
                                     <polyline points="0,0 0,400 {$emojiNum*$xspace*10},400" stroke="black" stroke-width="3" fill="none"/> 
                                 </g>
                             </svg>
-                        </div>
+                        </div> -->
                         </div>
                   <div id="emojidesc">
                       <p>
