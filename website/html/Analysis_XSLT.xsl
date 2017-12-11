@@ -116,10 +116,8 @@
                                     <!-- labels for variabls -->
                                     <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">Contraction</text><!-- contractions -->
                                     <text x="{10*$xspace}" y="{400-$contra - 10}" text-anchor="middle"><xsl:value-of select="count(//abbr[@type = 'contraction'])"/></text><!-- contraction values -->
-                                    
                                     <text x="{20*$xspace}" y="425" transform="rotate(30 100, 425)">Informal</text><!-- informal -->
                                     <text x="{20*$xspace}" y="{400-$inf - 25}" text-anchor="middle"><xsl:value-of select="count(//abbr[@type = 'informal'])"/></text><!-- informal values -->
-                                    
                                     <text x="{30*$xspace}" y="425" transform="rotate(30 150, 425)">Textese</text><!-- textese -->
                                     <text x="{30*$xspace}" y="{400-$txtese -25}" text-anchor="middle"><xsl:value-of select="count(//abbr[@type = 'textese'])"/></text><!-- textese values -->
                                 </g>
@@ -156,7 +154,7 @@
                                     <!-- labels-->
                                     <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">American</text><!-- x axis label American -->
                                     <text x="{20*$xspace}" y="425" transform="rotate(30 100, 425)">Brazilian</text><!-- x axis label Brazilian -->
-                                    <text x=""></text> <!-- chart title -->
+                                    <text x="25" y="{max(($brEmoji, $amEmoji))-25}">Use of Emojis by Nationality</text> <!-- chart title -->
                                     <text x="{10*$xspace}" y="{400-$amEmoji -10}" text-anchor="middle"><xsl:value-of select="$amEmoji"/></text><!-- num label American -->
                                     <text x="{20*$xspace}" y="{400-$brEmoji -10}" text-anchor="middle"><xsl:value-of select="$brEmoji"/></text><!-- num label Brazilian -->
                                 </g>
