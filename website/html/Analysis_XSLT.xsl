@@ -5,13 +5,13 @@
     <xsl:output method="xml" indent="yes"/>
     <xsl:variable name="xspace" select="5"/>
     <xsl:variable name="yspace" select="5"/>
-
-
-
+    
+    
+    
     <xsl:template match="/">
-
+        
         <html xmlns="http://www.w3.org/1999/xhtml">
-
+            
             <head>
                 <title>Analysis</title>
                 <link rel="stylesheet" type="text/css" href="../css/index.css"/>
@@ -33,7 +33,7 @@
                             pauses between links of text, and any characteristic use of
                             punctuation.</p>
                     </div>
-
+                    
                 </div>
                 <div class="main"> Here we will discuss some of our original research questions. The
                     main topics that we decided to look at within the data include <a class="internal" href="#abbreviations">the use of abbreviations</a>, 
@@ -123,22 +123,22 @@
                                 </g>
                             </svg>
                         </div>
-                        </div>
+                    </div>
                     <div id="abbrDesc">
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et viverra ante, sed iaculis libero. Curabitur vel ligula molestie, iaculis nulla ullamcorper, vehicula nulla. Morbi eleifend suscipit est, a ultrices tellus ultrices eget. In a porttitor tortor, vel tincidunt lorem. Etiam mollis, magna a molestie varius, est turpis auctor nulla, sed pharetra sapien justo in risus. Nunc sed efficitur ipsum. Aliquam ut nunc viverra, sodales turpis id, efficitur odio. Donec non ultricies lorem. Suspendisse potenti. Suspendisse potenti. Fusce tempor sollicitudin viverra. Suspendisse metus nisi, pharetra a lacus vel, mollis imperdiet nisi. Vivamus at volutpat mi. Nulla eget lacus non ex mattis efficitur id vitae justo. Morbi tincidunt purus non mauris posuere, in mattis elit euismod. Nam accumsan enim diam, quis euismod dolor efficitur id. Ut facilisis faucibus quam, at volutpat ex tincidunt sed. Nam ac ipsum orci. Nunc turpis sem, semper et consectetur eu, aliquet ut metus. Sed ultrices tellus sit amet risus feugiat placerat. Curabitur at aliquet diam. Mauris varius ultrices nisl non feugiat. Aliquam condimentum libero eu augue sollicitudin, a molestie nisl finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi egestas efficitur enim, eget posuere odio. Ut vehicula lacus non pulvinar accumsan. Etiam sodales ultrices sapien, sit amet auctor risus cursus quis. Vestibulum vulputate odio ex, sodales lobortis odio tristique dictum. Maecenas vestibulum egestas quam a ultrices. Phasellus bibendum consequat nisi, id viverra ante rutrum at. Aliquam auctor massa sit amet neque elementum, et volutpat odio varius. Nulla nec vestibulum augue. Mauris bibendum purus lacus, sit amet auctor dolor fringilla et. Duis vel viverra dolor. Phasellus accumsan ligula nisl. Suspendisse eget est non diam pharetra malesuada sed a enim. Sed non eros lobortis, maximus libero a, semper dui. Praesent ut nisi et justo tincidunt venenatis in ac neque. In sit amet erat urna. Duis ultricies semper dictum. Duis porta erat vestibulum mauris efficitur pulvinar. Praesent molestie porta lacus, eget convallis augue dictum vel. Morbi id iaculis tellus. Suspendisse auctor accumsan nunc in lacinia. Mauris ut vehicula sem, eget interdum dui. Maecenas vehicula nec risus non ornare. Sed eget viverra ex. Donec interdum elementum tortor, in hendrerit nisl varius in. Nullam vulputate urna ante, et dapibus ex congue vitae. Cras dignissim, odio imperdiet tristique dapibus, tellus tortor porta sem, et sollicitudin diam turpis in tortor. Cras mauris odio, volutpat fringilla sagittis sed, varius in elit. Nulla facilisi. Aliquam condimentum, lorem a mattis laoreet, mi urna rhoncus quam, vitae cursus enim magna non eros. Vivamus tincidunt ultrices consectetur. In hac habitasse platea dictumst. Nullam sed pharetra ante, vel rutrum lacus. Vestibulum ornare dictum risus. Nullam convallis iaculis nisi. Cras semper turpis nec ex aliquam auctor. Vestibulum faucibus, magna eget maximus venenatis, dolor erat rhoncus lectus, id suscipit ante sem ac eros.</p>
                     </div>
                     <a href="#topImg" class="internal">Top</a>
-                   
-                        <h2>The Use of Emojis in Texting</h2>
-                        <div class="description">
-                            <p>This is the chart talking about the use of Emojis within the
-                                corpus</p>
-                        </div>
-                         <div id="emojiUse">
-                             <div id="emoji1"><!-- nationality comparison -->
-                                 <xsl:variable name="brEmoji" select="count(.//u[@who='br']/g)+sum(.//u[@who='br']/g/@n)-count(.//u[@who='br']/g[@n])"/>
-                                 <xsl:variable name="amEmoji" select="count(.//u[@who='am']/g)+sum(.//u[@who='am']/g/@n)-count(.//u[@who='am']/g[@n])"/>
+                    
+                    <h2>The Use of Emojis in Texting</h2>
+                    <div class="description">
+                        <p>This is the chart talking about the use of Emojis within the
+                            corpus</p>
+                    </div>
+                    <div id="emojiUse">
+                        <div id="emoji1"><!-- nationality comparison -->
+                            <xsl:variable name="brEmoji" select="count(.//u[@who='br']/g)+sum(.//u[@who='br']/g/@n)-count(.//u[@who='br']/g[@n])"/>
+                            <xsl:variable name="amEmoji" select="count(.//u[@who='am']/g)+sum(.//u[@who='am']/g/@n)-count(.//u[@who='am']/g[@n])"/>
                             <xsl:variable name="emojiNum" select="count(distinct-values(//g/@ref))"/>
                             <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800"
                                 viewBox="-100 100 500 500">
@@ -154,8 +154,9 @@
                                     <!-- labels-->
                                     <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">American</text><!-- x axis label American -->
                                     <text x="{20*$xspace}" y="425" transform="rotate(30 100, 425)">Brazilian</text><!-- x axis label Brazilian -->
-                                    <text x="25" y="{max(($brEmoji, $amEmoji))-25}" text-anchor="middle">Use of Emojis by Nationality</text> <!-- chart title -->
-                                    <text x=""></text><!-- x axis label nationality -->
+                                    <text x="0" y="{400-max(($brEmoji, $amEmoji))-30}">Use of Emojis by Nationality</text> <!-- chart title -->
+                                    <text x="0" y="450" text-anchor="middle">Nationality</text><!-- x axis label nationality -->
+                                    <text x="-20" y="400" transform="rotate(-90 -20,400)">Number of Emojis Used</text><!-- y axis label -->
                                     <text x="{10*$xspace}" y="{400-$amEmoji -10}" text-anchor="middle"><xsl:value-of select="$amEmoji"/></text><!-- num label American -->
                                     <text x="{20*$xspace}" y="{400-$brEmoji -10}" text-anchor="middle"><xsl:value-of select="$brEmoji"/></text><!-- num label Brazilian -->
                                 </g>
@@ -170,11 +171,11 @@
                                 </g>
                             </svg>
                         </div> -->
-                        </div>
-                  <div id="emojidesc">
-                      <p>
+                    </div>
+                    <div id="emojidesc">
+                        <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et viverra ante, sed iaculis libero. Curabitur vel ligula molestie, iaculis nulla ullamcorper, vehicula nulla. Morbi eleifend suscipit est, a ultrices tellus ultrices eget. In a porttitor tortor, vel tincidunt lorem. Etiam mollis, magna a molestie varius, est turpis auctor nulla, sed pharetra sapien justo in risus. Nunc sed efficitur ipsum. Aliquam ut nunc viverra, sodales turpis id, efficitur odio. Donec non ultricies lorem. Suspendisse potenti. Suspendisse potenti. Fusce tempor sollicitudin viverra. Suspendisse metus nisi, pharetra a lacus vel, mollis imperdiet nisi. Vivamus at volutpat mi. Nulla eget lacus non ex mattis efficitur id vitae justo. Morbi tincidunt purus non mauris posuere, in mattis elit euismod. Nam accumsan enim diam, quis euismod dolor efficitur id. Ut facilisis faucibus quam, at volutpat ex tincidunt sed. Nam ac ipsum orci. Nunc turpis sem, semper et consectetur eu, aliquet ut metus. Sed ultrices tellus sit amet risus feugiat placerat. Curabitur at aliquet diam. Mauris varius ultrices nisl non feugiat. Aliquam condimentum libero eu augue sollicitudin, a molestie nisl finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi egestas efficitur enim, eget posuere odio. Ut vehicula lacus non pulvinar accumsan. Etiam sodales ultrices sapien, sit amet auctor risus cursus quis. Vestibulum vulputate odio ex, sodales lobortis odio tristique dictum. Maecenas vestibulum egestas quam a ultrices. Phasellus bibendum consequat nisi, id viverra ante rutrum at. Aliquam auctor massa sit amet neque elementum, et volutpat odio varius. Nulla nec vestibulum augue. Mauris bibendum purus lacus, sit amet auctor dolor fringilla et. Duis vel viverra dolor. Phasellus accumsan ligula nisl. Suspendisse eget est non diam pharetra malesuada sed a enim. Sed non eros lobortis, maximus libero a, semper dui. Praesent ut nisi et justo tincidunt venenatis in ac neque. In sit amet erat urna. Duis ultricies semper dictum. Duis porta erat vestibulum mauris efficitur pulvinar. Praesent molestie porta lacus, eget convallis augue dictum vel. Morbi id iaculis tellus. Suspendisse auctor accumsan nunc in lacinia. Mauris ut vehicula sem, eget interdum dui. Maecenas vehicula nec risus non ornare. Sed eget viverra ex. Donec interdum elementum tortor, in hendrerit nisl varius in. Nullam vulputate urna ante, et dapibus ex congue vitae. Cras dignissim, odio imperdiet tristique dapibus, tellus tortor porta sem, et sollicitudin diam turpis in tortor. Cras mauris odio, volutpat fringilla sagittis sed, varius in elit. Nulla facilisi. Aliquam condimentum, lorem a mattis laoreet, mi urna rhoncus quam, vitae cursus enim magna non eros. Vivamus tincidunt ultrices consectetur. In hac habitasse platea dictumst. Nullam sed pharetra ante, vel rutrum lacus. Vestibulum ornare dictum risus. Nullam convallis iaculis nisi. Cras semper turpis nec ex aliquam auctor. Vestibulum faucibus, magna eget maximus venenatis, dolor erat rhoncus lectus, id suscipit ante sem ac eros.</p>
-                  </div>  
+                    </div>  
                     <a href="#topImg" class="internal">Top</a>
                     <h2>The Use of Laughter Notation in Texting</h2>
                     <div class="description">
@@ -214,63 +215,42 @@
                         <div id="laughter2"><!-- types of laughter used by each nationality -->
                             <xsl:variable name="amHi" select="count(//u[@who = 'am']//hi)"/>
                             <xsl:variable name="brHi" select="count(//u[@who = 'br']//hi)"/>
-                            <xsl:variable name="amHa"
-                                select="count(//u[@who = 'am']//hi[@type = 'ha'])"/>
-                            <xsl:variable name="brHa"
-                                select="count(//u[@who = 'br']//hi[@type = 'ha'])"/>
-                            <xsl:variable name="amK"
-                                select="count(//u[@who = 'am']//hi[@type = 'k'])"/>
-                            <xsl:variable name="brK"
-                                select="count(//u[@who = 'br']//hi[@type = 'k'])"/>
-                            <xsl:variable name="amRs"
-                                select="count(//u[@who = 'am']//hi[@type = 'rs'])"/>
-                            <xsl:variable name="brRs"
-                                select="count(//u[@who = 'br']//hi[@type = 'rs'])"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800"
-                                viewBox="-100 100 500 500">
+                            <xsl:variable name="amHa" select="count(//u[@who = 'am']//hi[@type = 'ha'])"/>
+                            <xsl:variable name="brHa" select="count(//u[@who = 'br']//hi[@type = 'ha'])"/>
+                            <xsl:variable name="amK" select="count(//u[@who = 'am']//hi[@type = 'k'])"/>
+                            <xsl:variable name="brK" select="count(//u[@who = 'br']//hi[@type = 'k'])"/>
+                            <xsl:variable name="amRs" select="count(//u[@who = 'am']//hi[@type = 'rs'])"/>
+                            <xsl:variable name="brRs" select="count(//u[@who = 'br']//hi[@type = 'rs'])"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
                                 <g>
                                     <!-- bars -->
-                                    <line x1="{5*$xspace}" y1="400" x2="{5*$xspace}"
-                                        y2="{400-$amHa}" stroke="red" stroke-width="3"/><!-- american ha -->
-                                    <line x1="{8*$xspace}" y1="400" x2="{8*$xspace}"
-                                        y2="{400-$brHa}" stroke="black" stroke-width="3"/><!-- brazilian ha -->
-                                    <line x1="{16*$xspace}" y1="400" x2="{16*$xspace}"
-                                        y2="{400-$amK}" stroke="red" stroke-width="3"/><!-- american k -->
-                                    <line x1="{19*$xspace}" y1="400" x2="{19*$xspace}"
-                                        y2="{400-$brK}" stroke="black" stroke-width="3"/><!-- brazilian k -->
-                                    <line x1="{28*$xspace}" y1="400" x2="{28*$xspace}"
-                                        y2="{400-$amRs}" stroke="red" stroke-width="3"/><!-- american rs -->
-                                    <line x1="{31*$xspace}" y1="400" x2="{31*$xspace}"
-                                        y2="{400-$brRs}" stroke="black" stroke-width="3"
-                                    /><!-- brazilian rs -->
+                                    <line x1="{5*$xspace}" y1="400" x2="{5*$xspace}" y2="{400-$amHa}" stroke="red" stroke-width="3"/><!-- american ha -->
+                                    <line x1="{8*$xspace}" y1="400" x2="{8*$xspace}" y2="{400-$brHa}" stroke="black" stroke-width="3"/><!-- brazilian ha -->
+                                    <line x1="{16*$xspace}" y1="400" x2="{16*$xspace}" y2="{400-$amK}" stroke="red" stroke-width="3"/><!-- american k -->
+                                    <line x1="{19*$xspace}" y1="400" x2="{19*$xspace}" y2="{400-$brK}" stroke="black" stroke-width="3"/><!-- brazilian k -->
+                                    <line x1="{28*$xspace}" y1="400" x2="{28*$xspace}" y2="{400-$amRs}" stroke="red" stroke-width="3"/><!-- american rs -->
+                                    <line x1="{31*$xspace}" y1="400" x2="{31*$xspace}" y2="{400-$brRs}" stroke="black" stroke-width="3"/><!-- brazilian rs -->
+                                    
                                     <!-- labels -->
                                     <text x="{6.5*$xspace}" y="425" text-anchor="middle">ha</text><!-- american Ha -->
                                     <text x="{17.5*$xspace}" y="425" text-anchor="middle">k</text><!-- k -->
                                     <text x="{30.5*$xspace}" y="425" text-anchor="middle">rs</text><!-- american rs -->
-                                    <text x="25" y="{400 - max(($amHi, $brHi))-20}">The Varieties of
-                                        Laughter Used</text><!-- Title -->
-                                    <text x="-30" y="360" transform="rotate(-90 0,375)">Instances
-                                        Used</text><!-- y axis -->
+                                    <text x="25" y="{400 - max(($amHi, $brHi))-20}">The Varieties of Laughter Used</text><!-- Title -->
+                                    <text x="-30" y="360" transform="rotate(-90 0,375)">Instances Used</text><!-- y axis -->
                                     <text x="0" y="450">Type of Laughter</text><!-- x axis -->
-                                    <text x="{5*$xspace}" y="{400-$amHa -10}" text-anchor="middle"
-                                            ><xsl:value-of select="$amHa"/></text><!-- a ha count -->
-                                    <text x="{8*$xspace}" y="{400-$brHa -10}" text-anchor="middle"
-                                            ><xsl:value-of select="$brHa"/></text><!-- b ha count -->
-                                    <text x="{16*$xspace}" y="{400-$amK -10}" text-anchor="middle"
-                                            ><xsl:value-of select="$amK"/></text><!-- a k count -->
-                                    <text x="{19*$xspace}" y="{400-$brK -10}" text-anchor="middle"
-                                            ><xsl:value-of select="$brK"/></text><!-- b k count -->
-                                    <text x="{28*$xspace}" y="{400-$amRs -10}" text-anchor="middle"
-                                            ><xsl:value-of select="$amRs"/></text><!-- a rs count -->
-                                    <text x="{31*$xspace}" y="{400-$brRs -10}" text-anchor="middle"
-                                            ><xsl:value-of select="$brRs"
-                                    /></text><!-- b rs count --> <polyline
-                                        points="0,{400 - max(($amHi, $brHi))-10} 0,400 {40*$xspace},400"
-                                        stroke="black" stroke-width="3" fill="none"/>
-                                    <!-- graph axis --> </g>
+                                    <text x="{5*$xspace}" y="{400-$amHa -10}" text-anchor="middle"><xsl:value-of select="$amHa"/></text><!-- a ha count -->
+                                    <text x="{8*$xspace}" y="{400-$brHa -10}" text-anchor="middle"><xsl:value-of select="$brHa"/></text><!-- b ha count -->
+                                    <text x="{16*$xspace}" y="{400-$amK -10}" text-anchor="middle"><xsl:value-of select="$amK"/></text><!-- a k count -->
+                                    <text x="{19*$xspace}" y="{400-$brK -10}" text-anchor="middle"><xsl:value-of select="$brK"/></text><!-- b k count -->
+                                    <text x="{28*$xspace}" y="{400-$amRs -10}" text-anchor="middle"><xsl:value-of select="$amRs"/></text><!-- a rs count -->
+                                    <text x="{31*$xspace}" y="{400-$brRs -10}" text-anchor="middle"><xsl:value-of select="$brRs"/></text><!-- b rs count -->
+                                    
+                                    <!-- graph axis -->
+                                    <polyline points="0,{400 - max(($amHi, $brHi))-10} 0,400 {40*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
+                                </g>
                             </svg>
                         </div>
-                       </div>
+                    </div>
                     <a href="#topImg" class="internal">Top</a>
                     <div id="corrections">
                         <h2>The Use of Corrections in Texting</h2>
