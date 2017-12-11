@@ -154,7 +154,8 @@
                                     <!-- labels-->
                                     <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">American</text><!-- x axis label American -->
                                     <text x="{20*$xspace}" y="425" transform="rotate(30 100, 425)">Brazilian</text><!-- x axis label Brazilian -->
-                                    <text x="25" y="{max(($brEmoji, $amEmoji))-25}">Use of Emojis by Nationality</text> <!-- chart title -->
+                                    <text x="25" y="{max(($brEmoji, $amEmoji))-25}" text-anchor="middle">Use of Emojis by Nationality</text> <!-- chart title -->
+                                    <text x=""></text><!-- x axis label nationality -->
                                     <text x="{10*$xspace}" y="{400-$amEmoji -10}" text-anchor="middle"><xsl:value-of select="$amEmoji"/></text><!-- num label American -->
                                     <text x="{20*$xspace}" y="{400-$brEmoji -10}" text-anchor="middle"><xsl:value-of select="$brEmoji"/></text><!-- num label Brazilian -->
                                 </g>
@@ -195,26 +196,18 @@
                                 <g>
                                     <polyline points="0,{400 - max(($amHi, $brHi))-10} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
                                     <!-- graph axis -->
+                                    
                                     <!-- bars -->
-                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}"
-                                        y2="{400-$amHi}" stroke="black" stroke-width="3"/><!-- American -->
-                                    <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}"
-                                        y2="{400-$brHi}" stroke="black" stroke-width="3"
-                                    /><!-- Brazilian -->
+                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$amHi}" stroke="black" stroke-width="3"/><!-- American -->
+                                    <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$brHi}" stroke="black" stroke-width="3"/><!-- Brazilian -->
+                                    
                                     <!-- Labels -->
-                                    <text x="{10*$xspace}" y="{400-$amHi -10}" text-anchor="middle"
-                                            ><xsl:value-of select="$amHi"/></text><!-- american count -->
-                                    <text x="{20*$xspace}" y="{400-$brHi -10}" text-anchor="middle"
-                                            ><xsl:value-of select="$brHi"/></text><!-- Brazilian Count -->
-                                    <text x="25" y="{400 - max(($amHi, $brHi))-30}">The Occurance of
-                                        Laughter</text>
-                                    <!-- chart title -->
-                                    <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)"
-                                        >American</text><!-- american x axis label -->
-                                    <text x="{20*$xspace}" y="425" transform="rotate(30 100,425)"
-                                        >Brazilian</text><!-- Brazilian x axis label -->
-                                    <text x="0" y="375" transform="rotate(-90 0,400)">Number of
-                                        Instances of Laughter</text><!-- y axis label -->
+                                    <text x="{10*$xspace}" y="{400-$amHi -10}" text-anchor="middle"><xsl:value-of select="$amHi"/></text><!-- american count -->
+                                    <text x="{20*$xspace}" y="{400-$brHi -10}" text-anchor="middle"><xsl:value-of select="$brHi"/></text><!-- Brazilian Count -->
+                                    <text x="25" y="{400 - max(($amHi, $brHi))-30}">The Occurance of Laughter</text><!-- chart title -->
+                                    <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">American</text><!-- american x axis label -->
+                                    <text x="{20*$xspace}" y="425" transform="rotate(30 100,425)">Brazilian</text><!-- Brazilian x axis label -->
+                                    <text x="0" y="375" transform="rotate(-90 0,400)">Number of Instances of Laughter</text><!-- y axis label -->
                                 </g>
                             </svg>
                         </div>
