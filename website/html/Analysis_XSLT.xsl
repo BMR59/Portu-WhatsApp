@@ -179,17 +179,17 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800"
                                 viewBox="-100 100 500 500"><!-- nationality comparrison -->
                                 <g>
-                                    <polyline points="0,{400 - max(($amHi, $brHi))-10} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
+                                    <polyline points="0,{400 - max(($amHi*(.5*$yspace), $brHi*(.5*$yspace)))-10} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
                                     <!-- graph axis -->
                                     
                                     <!-- bars -->
-                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$amHi}" stroke="black" stroke-width="3"/><!-- American -->
-                                    <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$brHi}" stroke="black" stroke-width="3"/><!-- Brazilian -->
+                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$amHi*(.5*$yspace)}" stroke="black" stroke-width="3"/><!-- American -->
+                                    <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$brHi*(.5*$yspace)}" stroke="black" stroke-width="3"/><!-- Brazilian -->
                                     
                                     <!-- Labels -->
-                                    <text x="{10*$xspace}" y="{400-$amHi -10}" text-anchor="middle"><xsl:value-of select="$amHi"/></text><!-- american count -->
-                                    <text x="{20*$xspace}" y="{400-$brHi -10}" text-anchor="middle"><xsl:value-of select="$brHi"/></text><!-- Brazilian Count -->
-                                    <text x="25" y="{400 - max(($amHi, $brHi))-30}">The Occurance of Laughter</text><!-- chart title -->
+                                    <text x="{10*$xspace}" y="{400-$amHi*(.5*$yspace) -10}" text-anchor="middle"><xsl:value-of select="$amHi"/></text><!-- american count -->
+                                    <text x="{20*$xspace}" y="{400-$brHi*(.5*$yspace) -10}" text-anchor="middle"><xsl:value-of select="$brHi"/></text><!-- Brazilian Count -->
+                                    <text x="25" y="{400 - max(($amHi*(.5*$yspace), $brHi*(.5*$yspace)))-30}">The Occurance of Laughter</text><!-- chart title -->
                                     <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">American</text><!-- american x axis label -->
                                     <text x="{20*$xspace}" y="425" transform="rotate(30 100,425)">Brazilian</text><!-- Brazilian x axis label -->
                                     <text x="0" y="375" transform="rotate(-90 0,400)">Number of Instances of Laughter</text><!-- y axis label -->
@@ -208,29 +208,29 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
                                 <g>
                                     <!-- bars -->
-                                    <line x1="{5*$xspace}" y1="400" x2="{5*$xspace}" y2="{400-$amHa}" stroke="red" stroke-width="3"/><!-- american ha -->
-                                    <line x1="{8*$xspace}" y1="400" x2="{8*$xspace}" y2="{400-$brHa}" stroke="black" stroke-width="3"/><!-- brazilian ha -->
-                                    <line x1="{16*$xspace}" y1="400" x2="{16*$xspace}" y2="{400-$amK}" stroke="red" stroke-width="3"/><!-- american k -->
-                                    <line x1="{19*$xspace}" y1="400" x2="{19*$xspace}" y2="{400-$brK}" stroke="black" stroke-width="3"/><!-- brazilian k -->
-                                    <line x1="{28*$xspace}" y1="400" x2="{28*$xspace}" y2="{400-$amRs}" stroke="red" stroke-width="3"/><!-- american rs -->
-                                    <line x1="{31*$xspace}" y1="400" x2="{31*$xspace}" y2="{400-$brRs}" stroke="black" stroke-width="3"/><!-- brazilian rs -->
+                                    <line x1="{5*$xspace}" y1="400" x2="{5*$xspace}" y2="{400-$amHa*(.5*$yspace)}" stroke="red" stroke-width="3"/><!-- american ha -->
+                                    <line x1="{8*$xspace}" y1="400" x2="{8*$xspace}" y2="{400-$brHa*(.5*$yspace)}" stroke="black" stroke-width="3"/><!-- brazilian ha -->
+                                    <line x1="{16*$xspace}" y1="400" x2="{16*$xspace}" y2="{400-$amK*(.5*$yspace)}" stroke="red" stroke-width="3"/><!-- american k -->
+                                    <line x1="{19*$xspace}" y1="400" x2="{19*$xspace}" y2="{400-$brK*(.5*$yspace)}" stroke="black" stroke-width="3"/><!-- brazilian k -->
+                                    <line x1="{28*$xspace}" y1="400" x2="{28*$xspace}" y2="{400-$amRs*(.5*$yspace)}" stroke="red" stroke-width="3"/><!-- american rs -->
+                                    <line x1="{31*$xspace}" y1="400" x2="{31*$xspace}" y2="{400-$brRs*(.5*$yspace)}" stroke="black" stroke-width="3"/><!-- brazilian rs -->
                                     
                                     <!-- labels -->
                                     <text x="{6.5*$xspace}" y="425" text-anchor="middle">ha</text><!-- Ha -->
                                     <text x="{17.5*$xspace}" y="425" text-anchor="middle">k</text><!-- k -->
                                     <text x="{30.5*$xspace}" y="425" text-anchor="middle">rs</text><!-- rs -->
-                                    <text x="25" y="{400 - max(($amHi, $brHi))-20}">The Varieties of Laughter Used</text><!-- Title -->
+                                    <text x="25" y="{400 - max(($amHi*(.5*$yspace), $brHi*(.5*$yspace)))-20}">The Varieties of Laughter Used</text><!-- Title -->
                                     <text x="-30" y="360" transform="rotate(-90 0,375)">Instances Used</text><!-- y axis -->
                                     <text x="0" y="450">Type of Laughter</text><!-- x axis -->
-                                    <text x="{5*$xspace}" y="{400-$amHa -10}" text-anchor="middle"><xsl:value-of select="$amHa"/></text><!-- a ha count -->
-                                    <text x="{8*$xspace}" y="{400-$brHa -10}" text-anchor="middle"><xsl:value-of select="$brHa"/></text><!-- b ha count -->
-                                    <text x="{16*$xspace}" y="{400-$amK -10}" text-anchor="middle"><xsl:value-of select="$amK"/></text><!-- a k count -->
-                                    <text x="{19*$xspace}" y="{400-$brK -10}" text-anchor="middle"><xsl:value-of select="$brK"/></text><!-- b k count -->
-                                    <text x="{28*$xspace}" y="{400-$amRs -10}" text-anchor="middle"><xsl:value-of select="$amRs"/></text><!-- a rs count -->
-                                    <text x="{31*$xspace}" y="{400-$brRs -10}" text-anchor="middle"><xsl:value-of select="$brRs"/></text><!-- b rs count -->
+                                    <text x="{5*$xspace}" y="{400-$amHa*(.5*$yspace) -10}" text-anchor="middle"><xsl:value-of select="$amHa"/></text><!-- a ha count -->
+                                    <text x="{8*$xspace}" y="{400-$brHa*(.5*$yspace) -10}" text-anchor="middle"><xsl:value-of select="$brHa"/></text><!-- b ha count -->
+                                    <text x="{16*$xspace}" y="{400-$amK*(.5*$yspace) -10}" text-anchor="middle"><xsl:value-of select="$amK"/></text><!-- a k count -->
+                                    <text x="{19*$xspace}" y="{400-$brK*(.5*$yspace) -10}" text-anchor="middle"><xsl:value-of select="$brK"/></text><!-- b k count -->
+                                    <text x="{28*$xspace}" y="{400-$amRs*(.5*$yspace) -10}" text-anchor="middle"><xsl:value-of select="$amRs"/></text><!-- a rs count -->
+                                    <text x="{31*$xspace}" y="{400-$brRs*(.5*$yspace) -10}" text-anchor="middle"><xsl:value-of select="$brRs"/></text><!-- b rs count -->
                                     
                                     <!-- graph axis -->
-                                    <polyline points="0,{400 - max(($amHi, $brHi))-10} 0,400 {40*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
+                                    <polyline points="0,{400 - max(($amHi*(.5*$yspace), $brHi*(.5*$yspace)))-10} 0,400 {40*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
                                 </g>
                             </svg>
                         </div>
