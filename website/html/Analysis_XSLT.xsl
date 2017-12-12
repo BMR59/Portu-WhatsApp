@@ -321,28 +321,34 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
                                 <g> 
                                     <!-- graph axis -->
-                                    <polyline points="0,{400-max(($amExpan*(.5), $brExpan*(.5)))-50} 0,400 {10*$xspace*$numVar +10},400" stroke="black" stroke-width="3" fill="none"/>
+                                    <polyline points="0,{400-max(($amExpan*(.5), $brExpan*(.5)))-50} 0,400 {10*$xspace*$numVar +20},400" stroke="black" stroke-width="3" fill="none"/>
                                     
                                     <!-- bars -->
-                                    <line/><!-- American -->
-                                    <line/><!-- brazilian -->
+                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$amExpan*.5}" stroke-width="3" stroke="black"/><!-- American -->
+                                    <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$brExpan*.5}" stroke-width="3" stroke="black"/><!-- brazilian -->
                                     
                                     <!-- labels -->
-                                    <text></text><!-- chart title -->
-                                    <text></text><!-- y axis -->
-                                    <text></text><!-- x axis -->
-                                    <text></text><!-- x axis American -->
-                                    <text></text><!-- x axis Brazilian -->
-                                    <text></text><!-- american Number -->
-                                    <text></text><!-- brazilian Number -->
+                                    <text x="0" y="{400-max(($amExpan*(.5), $brExpan*(.5)))-70}">Expanded Forms by Nationality</text><!-- chart title -->
+                                    <text x="-20" y="400" transform="rotate(-90 -20,400)">Amount of Expanded Forms Used</text><!-- y axis -->
+                                    <text x="0" y="475">Nationality</text><!-- x axis -->
+                                    <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">American</text><!-- x axis American -->
+                                    <text x="{20*$xspace}" y="425" transform="rotate(30 100,425)">Brazilian</text><!-- x axis Brazilian -->
+                                    <text x="{10*$xspace}" y="{(400-$amExpan*.5)-15}" text-anchor="middle"><xsl:value-of select="$amExpan"/></text><!-- american Number -->
+                                    <text x="{20*$xspace}" y="{(400-$brExpan*.5)-15}" text-anchor="middle"><xsl:value-of select="$brExpan"/></text><!-- brazilian Number -->
                                 
                                 </g>
                             </svg>
                         </div>
-                        <div id="expanded2">
+                        <div id="expanded2"> <!-- comparing types of expanded forms -->
+                            <xsl:variable name="exFormal" select="count(//expan[@type='formal'])" />
+                            <xsl:variable name="exFull" select="count(//expan[@type='full'])"/>
+                            <xsl:variable name="exUncon" select="count(//expan[@type='uncontracted'])"/>
+                            <xsl:variable name="numVar" select="count(distinct-values(//expan/@type))"/>
                             <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
                                 <g> 
-                                </g>
+                                    <!-- graph axis -->
+                                    <polyline points="0,{400-max(($exFormal, $exFull, $exUncon))-50} 0,400 {10*$xspace*$numVar +20},400" stroke="black" stroke-width="3" fill="none"/>
+                               </g>
                             </svg>
                             <a href="#topImg" class="internal">Top</a>
                         </div>
