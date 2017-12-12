@@ -32,11 +32,19 @@ h2{
     color:black;
     font-family:Century;
     text-align:justify;
+    padding-left:10px;
+    
+    padding-right:10px;
+    
 }
 .main{
     background-color:#5F8AC6;
     color: black;
     font-family:Century;
+    padding-left:15px;
+    padding-top:15px;
+    padding-right:15px;
+    padding-bottom:15px;
 }
 .data{
     width: 20%;
