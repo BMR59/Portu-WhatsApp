@@ -17,52 +17,15 @@
             <body>
 
                 <h1>Portu-WhatsApp</h1>
-                <p>
-                    <h2>Conversation 1</h2>
-                    <xsl:apply-templates select="//q[@n = '1']"/>
-                </p>
-                <p>
-                    <h2>Conversation 2</h2>
-                    <xsl:apply-templates select="//q[@n = '2']"/>
-                </p>
-                <p>
-                    <h2>Conversation 3</h2>
-                    <xsl:apply-templates select="//q[@n = '3']"/>
-                </p>
-                <p>
-                    <h2>Conversation 4</h2>
-                    <xsl:apply-templates select="//q[@n = '4']"/>
-                </p>
-                <p>
-                    <h2>Conversation 5</h2>
-                    <xsl:apply-templates select="//q[@n = '5']"/>
-                </p>
-                <p>
-                    <h2>Conversation 6</h2>
-                    <xsl:apply-templates select="//q[@n = '6']"/>
-                </p>
-                <p>
-                    <h2>Conversation 7</h2>
-                    <xsl:apply-templates select="//q[@n = '7']"/>
-                </p>
-                <p>
-                    <h2>Conversation 8</h2>
-                    <xsl:apply-templates select="//q[@n = '8']"/>
-                </p>
-                <p>
-                    <h2>Conversation 9</h2>
-                    <xsl:apply-templates select="//q[@n = '9']"/>
-                </p>
-                <p>
-                    <h2>Conversation 10</h2>
-                    <xsl:apply-templates select="//q[@n = '10']"/>
-                </p>
+                <xsl:apply-templates select="//q"/>
             </body>
         </html>
     </xsl:template>
 
     <xsl:template match="q">
-        <xsl:apply-templates/>
+       <div type="converstion">
+           <h2>Conversation <xsl:value-of select="@n"/></h2>
+           <div type="convoTranscript"><xsl:apply-templates/></div></div>
     </xsl:template>
         
         <xsl:template match="u">
@@ -81,17 +44,6 @@
                 <xsl:apply-templates/><xsl:if test="following-sibling::u"><br/></xsl:if>    
             </span>
         </xsl:if>
-
-           
-                <span class="textese">
-                    <xsl:apply-templates select="abbr[@type = 'textese']"/>
-                </span>
-                <span class="informal">
-                    <xsl:apply-templates select="abbr[@type = 'informal']"/>
-                </span>
-                <span class="contraction">
-                    <xsl:apply-templates select="abbr[@type = 'contraction']"/>
-                </span>
         </xsl:template>
     
 
