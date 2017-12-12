@@ -6,13 +6,8 @@
     <xsl:variable name="xspace" select="5"/>
     <xsl:variable name="yspace" select="5"/>
     
-    
-    
-    
     <xsl:template match="/">
-        
         <html xmlns="http://www.w3.org/1999/xhtml">
-            
             <head>
                 <title>Analysis</title>
                 <link rel="stylesheet" type="text/css" href="../css/index.css"/>
@@ -174,8 +169,7 @@
                             <xsl:variable name="brK"  select="count(//u[@who = 'br']//hi[@type = 'k'])"/>
                             <xsl:variable name="amRs" select="count(//u[@who = 'am']//hi[@type = 'rs'])"/>
                             <xsl:variable name="brRs" select="count(//u[@who = 'br']//hi[@type = 'rs'])"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800"
-                                viewBox="-100 100 500 500"><!-- nationality comparrison -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500"><!-- nationality comparrison -->
                                 <g>
                                     <polyline points="0,{400 - max(($amHi*(.5*$yspace), $brHi*(.5*$yspace)))-10} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
                                     <!-- graph axis -->
