@@ -33,7 +33,6 @@ h2{
     font-family:Century;
     text-align:justify;
     padding-left:10px;
-    
     padding-right:10px;
     
 }
@@ -83,12 +82,21 @@ a.internal:hover{
 #abbreviations{
     display:flex;
     justify-content:center;
+    flex:auto;
+    height:auto;
+    width:auto;
 }
 #abbr1{
     justify-content:center;
+    flex: auto;
+    height:auto;
+    width:auto
 }
 #abbr2{
     justify-content:center;
+    flex: auto;
+    height:auto;
+    width:auto
 }
 #laugh{
     display:flex;
@@ -162,14 +170,22 @@ display:none;
 #corrections{
     display:flex;
     justify-content:center;
+     height:auto;
+    width:auto
 }
 #corrections1{
     justify-content:center;
+     height:auto;
+    width:auto
 }
 #expanForms{
     display:flex;
     justify-content:center;
+     height:auto;
+    width:auto
 }
 #expanded1{
     justify-content:center;
+     height:auto;
+    width:auto
 }
