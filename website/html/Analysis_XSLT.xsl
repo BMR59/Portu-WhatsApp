@@ -108,7 +108,7 @@
                     </div>
                     <a href="#topImg" class="internal">Top</a>
                     
-                    <h2>The Use of Emojis in Texting</h2>
+                    <h2>The Use of Emojigs in Texting</h2>
                     <div class="description">
                         <p>This is the chart talking about the use of Emojis within the
                             corpus</p>
@@ -118,7 +118,7 @@
                             <xsl:variable name="brEmoji" select="count(.//u[@who='br']/g)+sum(.//u[@who='br']/g/@n)-count(.//u[@who='br']/g[@n])"/>
                             <xsl:variable name="amEmoji" select="count(.//u[@who='am']/g)+sum(.//u[@who='am']/g/@n)-count(.//u[@who='am']/g[@n])"/>
                             <xsl:variable name="emojiNum" select="count(distinct-values(//g/@ref))"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 100 500 400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="-100 100 500 400">
                                 <g>
                                     <polyline
                                         points="0,{400 - max(($brEmoji*(.5*$yspace), $amEmoji*(.5*$yspace)))-50} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
@@ -337,7 +337,7 @@
                             <xsl:variable name="exFull" select="count(//expan[@type='full'])"/>
                             <xsl:variable name="exUncon" select="count(//expan[@type='uncontracted'])"/>
                             <xsl:variable name="numVar" select="count(distinct-values(//expan/@type))"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" height="800" width="800" viewBox="-100 100 500 400">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 100 500 400">
                                 <g> 
                                     <!-- graph axis -->
                                     <polyline points="0,{400-max(($exFormal*(.5), $exFull*(.5), $exUncon*(.5)))-50} 0,400 {10*$xspace*$numVar +20},400" stroke="black" stroke-width="3" fill="none"/>
