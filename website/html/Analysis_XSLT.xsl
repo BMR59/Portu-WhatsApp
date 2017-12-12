@@ -128,21 +128,21 @@
                                 viewBox="-100 100 500 500">
                                 <g>
                                     <polyline
-                                        points="0,{400 - max(($brEmoji, $amEmoji))-10} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
+                                        points="0,{400 - max(($brEmoji*(.5*$yspace), $amEmoji*(.5*$yspace)))-50} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
                                     <!-- graph axis -->
                                     
                                     <!-- the bars -->
-                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{(400-$amEmoji)}" stroke="black" stroke-width="3"/><!-- american use of emojis -->
-                                    <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$brEmoji}" stroke="black" stroke-width="3"/><!-- brazilian use of Emojis -->
+                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$amEmoji*(.5*$yspace)}" stroke="black" stroke-width="3"/><!-- american use of emojis -->
+                                    <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$brEmoji*(.5*$yspace)}" stroke="black" stroke-width="3"/><!-- brazilian use of Emojis -->
                                     
                                     <!-- labels-->
                                     <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">American</text><!-- x axis label American -->
                                     <text x="{20*$xspace}" y="425" transform="rotate(30 100, 425)">Brazilian</text><!-- x axis label Brazilian -->
-                                    <text x="0" y="{400-max(($brEmoji, $amEmoji))-30}">Use of Emojis by Nationality</text> <!-- chart title -->
+                                    <text x="0" y="{400 - max(($brEmoji*(.5*$yspace), $amEmoji*(.5*$yspace)))-70}">Use of Emojis by Nationality</text> <!-- chart title -->
                                     <text x="37" y="475" text-anchor="middle">Nationality</text><!-- x axis label  -->
                                     <text x="-20" y="400" transform="rotate(-90 -20,400)">Number of Emojis Used</text><!-- y axis label -->
-                                    <text x="{10*$xspace}" y="{400-$amEmoji -10}" text-anchor="middle"><xsl:value-of select="$amEmoji"/></text><!-- num label American -->
-                                    <text x="{20*$xspace}" y="{400-$brEmoji -10}" text-anchor="middle"><xsl:value-of select="$brEmoji"/></text><!-- num label Brazilian -->
+                                    <text x="{10*$xspace}" y="{400-$amEmoji*(.5*$yspace) -10}" text-anchor="middle"><xsl:value-of select="$amEmoji"/></text><!-- num label American -->
+                                    <text x="{20*$xspace}" y="{400-$brEmoji*(.5*$yspace) -10}" text-anchor="middle"><xsl:value-of select="$brEmoji"/></text><!-- num label Brazilian -->
                                 </g>
                             </svg>
                         </div>
