@@ -77,14 +77,11 @@
                         </div>
                         <div id="abbr2">
                             <!-- types of abbreviation comparison -->
-                            <xsl:variable name="contra"
-                                select="count(//abbr[@type = 'contraction'])"/>
+                            <xsl:variable name="contra" select="count(//abbr[@type = 'contraction'])"/>
                             <xsl:variable name="inf" select="count(//abbr[@type = 'informal'])"/>
                             <xsl:variable name="txtese" select="count(//abbr[@type = 'textese'])"/>
-                            <xsl:variable name="numVar"
-                                select="count(distinct-values(//abbr/@type))"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800"
-                                viewBox="-100 100 500 500">
+                            <xsl:variable name="numVar" select="count(distinct-values(//abbr/@type))"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
                                 <g>
                                     <!-- labels for the graphs -->
                                     <text x="25" y="{max(($contra, $inf, $txtese))-25}">Types of Abbreviations Used</text><!-- chart title -->
@@ -142,7 +139,7 @@
                                     <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">American</text><!-- x axis label American -->
                                     <text x="{20*$xspace}" y="425" transform="rotate(30 100, 425)">Brazilian</text><!-- x axis label Brazilian -->
                                     <text x="0" y="{400-max(($brEmoji, $amEmoji))-30}">Use of Emojis by Nationality</text> <!-- chart title -->
-                                    <text x="0" y="450" text-anchor="middle">Nationality</text><!-- x axis label nationality -->
+                                    <text x="37" y="475" text-anchor="middle">Nationality</text><!-- x axis label  -->
                                     <text x="-20" y="400" transform="rotate(-90 -20,400)">Number of Emojis Used</text><!-- y axis label -->
                                     <text x="{10*$xspace}" y="{400-$amEmoji -10}" text-anchor="middle"><xsl:value-of select="$amEmoji"/></text><!-- num label American -->
                                     <text x="{20*$xspace}" y="{400-$brEmoji -10}" text-anchor="middle"><xsl:value-of select="$brEmoji"/></text><!-- num label Brazilian -->
@@ -251,8 +248,9 @@
                             
                             <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500"><!-- nationality comparon -->
                                 <g>
-                                    <polyline points="0,{400 - max(($amCorr, $brCorr))*$yspace -50} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
                                     <!-- graph axis -->
+                                    <polyline points="0,{400 - max(($amCorr, $brCorr))*$yspace -50} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
+                                    
                                     
                                     <!-- Bars -->
                                     <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{(400-$amCorr*$yspace)}" stroke="black" stroke-width="3"/><!-- american -->
@@ -264,8 +262,8 @@
                                     <text x="{10*$xspace}" y="{400-$amCorr*$yspace -15}" text-anchor="middle"><xsl:value-of select="$amCorr"/></text><!-- american number -->
                                     <text x="{20*$xspace}" y="{400-$brCorr*$yspace -15}" text-anchor="middle"><xsl:value-of select="$brCorr"/></text><!-- brazilian Number -->
                                     <text x="25" y="{400 - max(($amCorr, $brCorr))*$yspace -70}">The Use of Corrections</text><!-- chart title -->
-                                    <text x="5" y="475">Nationality</text><!-- y axis -->
-                                    <text></text><!-- x axis -->
+                                    <text x="0" y="475">Nationality</text><!-- x axis -->
+                                    <text x="-20" y="400" transform="rotate(-90 -20,400)">Amount of Corrections</text><!-- y axis -->
                                     
                                 </g>
                             </svg>
