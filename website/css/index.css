@@ -81,22 +81,32 @@ a.internal:hover{
     text-align:center;
 }
 #abbreviations{
-    display:flex
+    display:flex;
+    justify-content:center;
 }
 #abbr1{
-    flex-grow:1;
+    justify-content:center;
+}
+#abbr2{
+    justify-content:center;
 }
 #laugh{
     display:flex;
+    justify-content:center;
 }
 #laughter1{
     flex-grow:1;
+    justify-content:center;
 }
 #emojiUse{
     display:flex;
+    justify-content:center;
+    
 }
 #emoji1{
-    flex-grow: 1;
+   justify-content:center;
+    
+    
 }
 class.conversationHeader:hover{
         color:#d3d3d3;
@@ -151,13 +161,15 @@ display:none;
 }
 #corrections{
     display:flex;
+    justify-content:center;
 }
 #corrections1{
-    flex-grow:1;
+    justify-content:center;
 }
 #expanForms{
     display:flex;
+    justify-content:center;
 }
 #expanded1{
-    flex-grow:1;
+    justify-content:center;
 }
