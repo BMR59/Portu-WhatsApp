@@ -17,52 +17,15 @@
             <body>
                 
                 <h1>Portu-WhatsApp</h1>
-                <div id="convo1">
-                    <h2>Conversation 1</h2>
-                    <xsl:apply-templates select="//q[@n = '1']"/>
-                </div>
-                <div id="convo2">
-                    <h2>Conversation 2</h2>
-                    <xsl:apply-templates select="//q[@n = '2']"/>
-                </div>
-                <div id="convo3">
-                    <h2>Conversation 3</h2>
-                    <xsl:apply-templates select="//q[@n = '3']"/>
-                </div>
-                <div id="convo4">
-                    <h2>Conversation 4</h2>
-                    <xsl:apply-templates select="//q[@n = '4']"/>
-                </div>
-                <div id="convo5">
-                    <h2>Conversation 5</h2>
-                    <xsl:apply-templates select="//q[@n = '5']"/>
-                </div>
-                <div id="convo6">
-                    <h2>Conversation 6</h2>
-                    <xsl:apply-templates select="//q[@n = '6']"/>
-                </div>
-                <div id="convo7">
-                    <h2>Conversation 7</h2>
-                    <xsl:apply-templates select="//q[@n = '7']"/>
-                </div>
-                <div id="convo8">
-                    <h2>Conversation 8</h2>
-                    <xsl:apply-templates select="//q[@n = '8']"/>
-                </div>
-                <div id="convo9">
-                    <h2>Conversation 9</h2>
-                    <xsl:apply-templates select="//q[@n = '9']"/>
-                </div>
-                <div id="convo10">
-                    <h2>Conversation 10</h2>
-                    <xsl:apply-templates select="//q[@n = '10']"/>
-                </div>
+                <xsl:apply-templates select="//q"/>
             </body>
         </html>
     </xsl:template>
     
     <xsl:template match="q">
-        <xsl:apply-templates/>
+        <div type="converstion">
+            <h2>Conversation <xsl:value-of select="@n"/></h2>
+            <div type="convoTranscript"><xsl:apply-templates/></div></div>
     </xsl:template>
     
     <xsl:template match="u">
