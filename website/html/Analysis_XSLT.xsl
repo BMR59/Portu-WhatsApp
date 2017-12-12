@@ -118,7 +118,7 @@
                             <xsl:variable name="brEmoji" select="count(.//u[@who='br']/g)+sum(.//u[@who='br']/g/@n)-count(.//u[@who='br']/g[@n])"/>
                             <xsl:variable name="amEmoji" select="count(.//u[@who='am']/g)+sum(.//u[@who='am']/g/@n)-count(.//u[@who='am']/g[@n])"/>
                             <xsl:variable name="emojiNum" select="count(distinct-values(//g/@ref))"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="-100 100 500 400">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 100 500 400">
                                 <g>
                                     <polyline
                                         points="0,{400 - max(($brEmoji*(.5*$yspace), $amEmoji*(.5*$yspace)))-50} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
