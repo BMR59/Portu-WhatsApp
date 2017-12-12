@@ -218,8 +218,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
             <u who="br"><foreign xml:lang="en">Yeah</foreign></u>
             <u who="br"> <expan type="full">hoje</expan> vai ter algumas festas temáticas pela cidade</u>
             <u who="am">Ah <expan type="full">que</expan> legal<pc type="exclamative">!</pc>  <expan type="full">você</expan> tem uma fantasia<pc
-                  type="interrogative">?</pc> Então, eu não comprei nada. <g>face w bead of sweat
-                  and closed eyes</g></u>
+                  type="interrogative">?</pc> Então, eu não comprei nada. <g ref="#se"/></u>
             <u who="am">Ah, e onde <abbr type="textese">vc</abbr>  <expan type="formal">está</expan> no Brasil<pc
                   type="interrogative">?</pc> <hi type="ha">haha</hi> uma pergunta básica <expan type="formal">para</expan> <expan type="full">que</expan> nós nos
                conheçamos</u>

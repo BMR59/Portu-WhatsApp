@@ -60,893 +60,93 @@
             </body>
         </html>
     </xsl:template>
-    <!--Convo ONE-->
-    <xsl:template match="q[1]/u[@who = 'am']"> American: <span class="american"
+    
+    <xsl:template match="q/u[@who = 'am']"> American: <span class="american"
             ><xsl:apply-templates/></span>
         <xsl:if test="following-sibling::u"><br/></xsl:if>
     </xsl:template>
-    <xsl:template match="q[1]/u[@who = 'br']"> Brazilian: <span class="brazilian"
+    <xsl:template match="q/u[@who = 'br']"> Brazilian: <span class="brazilian"
             ><xsl:apply-templates/></span><br/>
     </xsl:template>
-    <xsl:template match="q[1]/u/abbr[@type = 'textese']">
+    <xsl:template match="q/u/abbr[@type = 'textese']">
         <span class="textese">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="q[1]/u/abbr[@type = 'informal']">
+    <xsl:template match="q/u/abbr[@type = 'informal']">
         <span class="informal">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="q[1]/u/abbr[@type = 'contraction']">
+    <xsl:template match="q/u/abbr[@type = 'contraction']">
         <span class="contraction">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="q[1]/u/expan[@type = 'full']">
+    <xsl:template match="q/u/expan[@type = 'full']">
         <span class="full">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="q[1]/u/expan[@type = 'formal']">
+    <xsl:template match="q/u/expan[@type = 'formal']">
         <span class="formal">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="q[1]/u/abbr[@type = 'uncontracted']">
+    <xsl:template match="q/u/abbr[@type = 'uncontracted']">
         <span class="uncontracted">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="q[1]/u/pc">
+    <xsl:template match="q/u/pc">
         <span class="pc">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="q[1]/u/hi[@type = 'k | rs']">
+    <xsl:template match="q/u/hi[@type = 'k | rs']">
         <span class="blaughter">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="q[1]/u/hi[@type = 'ha | lol']">
+    <xsl:template match="q/u/hi[@type = 'ha | lol']">
         <span class="alaughter">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="q[1]/u/sic[@type = 'selfcorr']">
+    <xsl:template match="q/u/sic[@type = 'selfcorr']">
         <span class="selfcorr">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="q[1]/u/sic[@type = 'impcorr']">
+    <xsl:template match="q/u/sic[@type = 'impcorr']">
         <span class="impcorr">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="q[1]/u/sic[@type = 'expcorr']">
+    <xsl:template match="q/u/sic[@type = 'expcorr']">
         <span class="expcorr">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="q[1]/u/sic[@type = 'uncorr']">
+    <xsl:template match="q/u/sic[@type = 'uncorr']">
         <span class="uncorr">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="q[1]/u/corr[@type = 'explicit']">
+    <xsl:template match="q/u/corr[@type = 'explicit']">
         <span class="explicit">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="q[1]/u/corr[@type = 'implicit']">
+    <xsl:template match="q/u/corr[@type = 'implicit']">
         <span class="implicit">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-    <xsl:template match="q[1]/u/foreign">
+    <xsl:template match="q/u/foreign">
         <span class="foreign">
             <xsl:apply-templates/>
         </span>
     </xsl:template>
-
-    <!--Convo TWO-->
-    <xsl:template match="q[2]/u[@who = 'am']"> American: <span class="american"
-            ><xsl:apply-templates/></span>
-        <xsl:if test="following-sibling::u"><br/></xsl:if>
-    </xsl:template>
-    <xsl:template match="q[2]/u[@who = 'br']"> Brazilian: <span class="brazilian"
-            ><xsl:apply-templates/></span><br/>
-    </xsl:template>
-    <xsl:template match="q[2]/u/abbr[@type = 'textese']">
-        <span class="textese">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[2]/u/abbr[@type = 'informal']">
-        <span class="informal">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[2]/u/abbr[@type = 'contraction']">
-        <span class="contraction">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[2]/u/expan[@type = 'full']">
-        <span class="full">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[2]/u/expan[@type = 'formal']">
-        <span class="formal">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[2]/u/abbr[@type = 'uncontracted']">
-        <span class="uncontracted">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[2]/u/pc">
-        <span class="pc">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[2]/u/hi[@type = 'k | rs']">
-        <span class="blaughter">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[2]/u/hi[@type = 'ha | lol']">
-        <span class="alaughter">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[2]/u/sic[@type = 'selfcorr']">
-        <span class="selfcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[2]/u/sic[@type = 'impcorr']">
-        <span class="impcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[2]/u/sic[@type = 'expcorr']">
-        <span class="expcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[2]/u/sic[@type = 'uncorr']">
-        <span class="uncorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[2]/u/corr[@type = 'explicit']">
-        <span class="explicit">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[2]/u/corr[@type = 'implicit']">
-        <span class="implicit">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[2]/u/foreign">
-        <span class="foreign">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-
-    <!--Convo THREE-->
-    <xsl:template match="q[3]/u[@who = 'am']"> American: <span class="american"
-            ><xsl:apply-templates/></span>
-        <xsl:if test="following-sibling::u"><br/></xsl:if>
-    </xsl:template>
-    <xsl:template match="q[3]/u[@who = 'br']"> Brazilian: <span class="brazilian"
-            ><xsl:apply-templates/></span><br/>
-    </xsl:template>
-    <xsl:template match="q[3]/u/abbr[@type = 'textese']">
-        <span class="textese">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[3]/u/abbr[@type = 'informal']">
-        <span class="informal">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[3]/u/abbr[@type = 'contraction']">
-        <span class="contraction">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[3]/u/expan[@type = 'full']">
-        <span class="full">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[3]/u/expan[@type = 'formal']">
-        <span class="formal">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[3]/u/abbr[@type = 'uncontracted']">
-        <span class="uncontracted">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[3]/u/pc">
-        <span class="pc">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[3]/u/hi[@type = 'k | rs']">
-        <span class="blaughter">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[3]/u/hi[@type = 'ha | lol']">
-        <span class="alaughter">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[3]/u/sic[@type = 'selfcorr']">
-        <span class="selfcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[3]/u/sic[@type = 'impcorr']">
-        <span class="impcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[3]/u/sic[@type = 'expcorr']">
-        <span class="expcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[3]/u/sic[@type = 'uncorr']">
-        <span class="uncorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[3]/u/corr[@type = 'explicit']">
-        <span class="explicit">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[3]/u/corr[@type = 'implicit']">
-        <span class="implicit">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[3]/u/foreign">
-        <span class="foreign">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-
-    <!--Convo FOUR-->
-    <xsl:template match="q[4]/u[@who = 'am']"> American: <span class="american"
-            ><xsl:apply-templates/></span>
-        <xsl:if test="following-sibling::u"><br/></xsl:if>
-    </xsl:template>
-    <xsl:template match="q[4]/u[@who = 'br']"> Brazilian: <span class="brazilian"
-            ><xsl:apply-templates/></span><br/>
-    </xsl:template>
-    <xsl:template match="q[4]/u/abbr[@type = 'textese']">
-        <span class="textese">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[4]/u/abbr[@type = 'informal']">
-        <span class="informal">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[4]/u/abbr[@type = 'contraction']">
-        <span class="contraction">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[4]/u/expan[@type = 'full']">
-        <span class="full">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[4]/u/expan[@type = 'formal']">
-        <span class="formal">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[4]/u/abbr[@type = 'uncontracted']">
-        <span class="uncontracted">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[4]/u/pc">
-        <span class="pc">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[4]/u/hi[@type = 'k | rs']">
-        <span class="blaughter">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[4]/u/hi[@type = 'ha | lol']">
-        <span class="alaughter">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[4]/u/sic[@type = 'selfcorr']">
-        <span class="selfcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[4]/u/sic[@type = 'impcorr']">
-        <span class="impcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[4]/u/sic[@type = 'expcorr']">
-        <span class="expcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[4]/u/sic[@type = 'uncorr']">
-        <span class="uncorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[4]/u/corr[@type = 'explicit']">
-        <span class="explicit">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[4]/u/corr[@type = 'implicit']">
-        <span class="implicit">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[4]/u/foreign">
-        <span class="foreign">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-
-    <!--Convo FIVE-->
-    <xsl:template match="q[5]/u[@who = 'am']"> American: <span class="american"
-            ><xsl:apply-templates/></span>
-        <xsl:if test="following-sibling::u"><br/></xsl:if>
-    </xsl:template>
-    <xsl:template match="q[5]/u[@who = 'br']"> Brazilian: <span class="brazilian"
-            ><xsl:apply-templates/></span><br/>
-    </xsl:template>
-    <xsl:template match="q[5]/u/abbr[@type = 'textese']">
-        <span class="textese">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[5]/u/abbr[@type = 'informal']">
-        <span class="informal">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[5]/u/abbr[@type = 'contraction']">
-        <span class="contraction">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[5]/u/expan[@type = 'full']">
-        <span class="full">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[5]/u/expan[@type = 'formal']">
-        <span class="formal">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[5]/u/abbr[@type = 'uncontracted']">
-        <span class="uncontracted">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[5]/u/pc">
-        <span class="pc">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[5]/u/hi[@type = 'k | rs']">
-        <span class="blaughter">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[5]/u/hi[@type = 'ha | lol']">
-        <span class="alaughter">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[5]/u/sic[@type = 'selfcorr']">
-        <span class="selfcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[5]/u/sic[@type = 'impcorr']">
-        <span class="impcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[5]/u/sic[@type = 'expcorr']">
-        <span class="expcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[5]/u/sic[@type = 'uncorr']">
-        <span class="uncorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[5]/u/corr[@type = 'explicit']">
-        <span class="explicit">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[5]/u/corr[@type = 'implicit']">
-        <span class="implicit">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[5]/u/foreign">
-        <span class="foreign">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-
-    <!--Convo SIX-->
-    <xsl:template match="q[6]/u[@who = 'am']"> American: <span class="american"
-            ><xsl:apply-templates/></span>
-        <xsl:if test="following-sibling::u"><br/></xsl:if>
-    </xsl:template>
-    <xsl:template match="q[6]/u[@who = 'br']"> Brazilian: <span class="brazilian"
-            ><xsl:apply-templates/></span><br/>
-    </xsl:template>
-    <xsl:template match="q[6]/u/abbr[@type = 'textese']">
-        <span class="textese">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[6]/u/abbr[@type = 'informal']">
-        <span class="informal">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[6]/u/abbr[@type = 'contraction']">
-        <span class="contraction">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[6]/u/expan[@type = 'full']">
-        <span class="full">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[6]/u/expan[@type = 'formal']">
-        <span class="formal">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[6]/u/abbr[@type = 'uncontracted']">
-        <span class="uncontracted">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[6]/u/pc">
-        <span class="pc">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[6]/u/hi[@type = 'k | rs']">
-        <span class="blaughter">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[6]/u/hi[@type = 'ha | lol']">
-        <span class="alaughter">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[6]/u/sic[@type = 'selfcorr']">
-        <span class="selfcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[6]/u/sic[@type = 'impcorr']">
-        <span class="impcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[6]/u/sic[@type = 'expcorr']">
-        <span class="expcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[6]/u/sic[@type = 'uncorr']">
-        <span class="uncorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[6]/u/corr[@type = 'explicit']">
-        <span class="explicit">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[6]/u/corr[@type = 'implicit']">
-        <span class="implicit">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[6]/u/foreign">
-        <span class="foreign">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-
-    <!--Convo SEVEN-->
-    <xsl:template match="q[7]/u[@who = 'am']"> American: <span class="american"
-            ><xsl:apply-templates/></span>
-        <xsl:if test="following-sibling::u"><br/></xsl:if>
-    </xsl:template>
-    <xsl:template match="q[7]/u[@who = 'br']"> Brazilian: <span class="brazilian"
-            ><xsl:apply-templates/></span><br/>
-    </xsl:template>
-    <xsl:template match="q[7]/u/abbr[@type = 'textese']">
-        <span class="textese">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[7]/u/abbr[@type = 'informal']">
-        <span class="informal">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[7]/u/abbr[@type = 'contraction']">
-        <span class="contraction">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[7]/u/expan[@type = 'full']">
-        <span class="full">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[7]/u/expan[@type = 'formal']">
-        <span class="formal">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[7]/u/abbr[@type = 'uncontracted']">
-        <span class="uncontracted">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[7]/u/pc">
-        <span class="pc">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[7]/u/hi[@type = 'k | rs']">
-        <span class="blaughter">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[7]/u/hi[@type = 'ha | lol']">
-        <span class="alaughter">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[7]/u/sic[@type = 'selfcorr']">
-        <span class="selfcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[7]/u/sic[@type = 'impcorr']">
-        <span class="impcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[7]/u/sic[@type = 'expcorr']">
-        <span class="expcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[7]/u/sic[@type = 'uncorr']">
-        <span class="uncorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[7]/u/corr[@type = 'explicit']">
-        <span class="explicit">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[7]/u/corr[@type = 'implicit']">
-        <span class="implicit">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[7]/u/foreign">
-        <span class="foreign">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-
-    <!--Convo EIGHT-->
-    <xsl:template match="q[8]/u[@who = 'am']"> American: <span class="american"
-            ><xsl:apply-templates/></span>
-        <xsl:if test="following-sibling::u"><br/></xsl:if>
-    </xsl:template>
-    <xsl:template match="q[8]/u[@who = 'br']"> Brazilian: <span class="brazilian"
-            ><xsl:apply-templates/></span><br/>
-    </xsl:template>
-    <xsl:template match="q[8]/u/abbr[@type = 'textese']">
-        <span class="textese">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[8]/u/abbr[@type = 'informal']">
-        <span class="informal">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[8]/u/abbr[@type = 'contraction']">
-        <span class="contraction">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[8]/u/expan[@type = 'full']">
-        <span class="full">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[8]/u/expan[@type = 'formal']">
-        <span class="formal">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[8]/u/abbr[@type = 'uncontracted']">
-        <span class="uncontracted">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[8]/u/pc">
-        <span class="pc">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[8]/u/hi[@type = 'k | rs']">
-        <span class="blaughter">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[8]/u/hi[@type = 'ha | lol']">
-        <span class="alaughter">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[8]/u/sic[@type = 'selfcorr']">
-        <span class="selfcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[8]/u/sic[@type = 'impcorr']">
-        <span class="impcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[8]/u/sic[@type = 'expcorr']">
-        <span class="expcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[8]/u/sic[@type = 'uncorr']">
-        <span class="uncorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[8]/u/corr[@type = 'explicit']">
-        <span class="explicit">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[8]/u/corr[@type = 'implicit']">
-        <span class="implicit">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[8]/u/foreign">
-        <span class="foreign">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-
-    <!--Convo NINE-->
-    <xsl:template match="q[9]/u[@who = 'am']"> American: <span class="american"
-            ><xsl:apply-templates/></span>
-        <xsl:if test="following-sibling::u"><br/></xsl:if>
-    </xsl:template>
-    <xsl:template match="q[9]/u[@who = 'br']"> Brazilian: <span class="brazilian"
-            ><xsl:apply-templates/></span><br/>
-    </xsl:template>
-    <xsl:template match="q[9]/u/abbr[@type = 'textese']">
-        <span class="textese">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[9]/u/abbr[@type = 'informal']">
-        <span class="informal">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[9]/u/abbr[@type = 'contraction']">
-        <span class="contraction">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[9]/u/expan[@type = 'full']">
-        <span class="full">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[9]/u/expan[@type = 'formal']">
-        <span class="formal">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[9]/u/abbr[@type = 'uncontracted']">
-        <span class="uncontracted">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[9]/u/pc">
-        <span class="pc">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[9]/u/hi[@type = 'k | rs']">
-        <span class="blaughter">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[9]/u/hi[@type = 'ha | lol']">
-        <span class="alaughter">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[9]/u/sic[@type = 'selfcorr']">
-        <span class="selfcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[9]/u/sic[@type = 'impcorr']">
-        <span class="impcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[9]/u/sic[@type = 'expcorr']">
-        <span class="expcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[9]/u/sic[@type = 'uncorr']">
-        <span class="uncorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[9]/u/corr[@type = 'explicit']">
-        <span class="explicit">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[9]/u/corr[@type = 'implicit']">
-        <span class="implicit">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[9]/u/foreign">
-        <span class="foreign">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-
-    <!--Convo TEN-->
-    <xsl:template match="q[10]/u[@who = 'am']"> American: <span class="american"
-            ><xsl:apply-templates/></span>
-        <xsl:if test="following-sibling::u"><br/></xsl:if>
-    </xsl:template>
-    <xsl:template match="q[10]/u[@who = 'br']"> Brazilian: <span class="brazilian"
-            ><xsl:apply-templates/></span><br/>
-    </xsl:template>
-    <xsl:template match="q[10]/u/abbr[@type = 'textese']">
-        <span class="textese">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[10]/u/abbr[@type = 'informal']">
-        <span class="informal">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[10]/u/abbr[@type = 'contraction']">
-        <span class="contraction">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[10]/u/expan[@type = 'full']">
-        <span class="full">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[10]/u/expan[@type = 'formal']">
-        <span class="formal">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[10]/u/abbr[@type = 'uncontracted']">
-        <span class="uncontracted">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[10]/u/pc">
-        <span class="pc">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[10]/u/hi[@type = 'k | rs']">
-        <span class="blaughter">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[10]/u/hi[@type = 'ha | lol']">
-        <span class="alaughter">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[10]/u/sic[@type = 'selfcorr']">
-        <span class="selfcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[10]/u/sic[@type = 'impcorr']">
-        <span class="impcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[10]/u/sic[@type = 'expcorr']">
-        <span class="expcorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[10]/u/sic[@type = 'uncorr']">
-        <span class="uncorr">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[10]/u/corr[@type = 'explicit']">
-        <span class="explicit">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[10]/u/corr[@type = 'implicit']">
-        <span class="implicit">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
-    <xsl:template match="q[10]/u/foreign">
-        <span class="foreign">
-            <xsl:apply-templates/>
-        </span>
-    </xsl:template>
+    
 </xsl:stylesheet>
