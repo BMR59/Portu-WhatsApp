@@ -49,7 +49,7 @@
                             <xsl:variable name="totabbr" select="count(//abbr)"/>
                             <xsl:variable name="amAbbr" select="count(//u[@who = 'am']//abbr)"/>
                             <xsl:variable name="brAbbr" select="count(//u[@who = 'br']//abbr)"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 150 200 500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 100 500 500">
                                 <g>
                                     <polyline points="0,{max(($amAbbr, $brAbbr))-10} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
                                     <!-- graph axis -->
@@ -118,7 +118,7 @@
                             <xsl:variable name="brEmoji" select="count(.//u[@who='br']/g)+sum(.//u[@who='br']/g/@n)-count(.//u[@who='br']/g[@n])"/>
                             <xsl:variable name="amEmoji" select="count(.//u[@who='am']/g)+sum(.//u[@who='am']/g/@n)-count(.//u[@who='am']/g[@n])"/>
                             <xsl:variable name="emojiNum" select="count(distinct-values(//g/@ref))"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 100 500 500">
                                 <g>
                                     <polyline
                                         points="0,{400 - max(($brEmoji*(.5*$yspace), $amEmoji*(.5*$yspace)))-50} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
@@ -169,7 +169,7 @@
                             <xsl:variable name="brK"  select="count(//u[@who = 'br']//hi[@type = 'k'])"/>
                             <xsl:variable name="amRs" select="count(//u[@who = 'am']//hi[@type = 'rs'])"/>
                             <xsl:variable name="brRs" select="count(//u[@who = 'br']//hi[@type = 'rs'])"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500"><!-- nationality comparrison -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 100 500 500"><!-- nationality comparrison -->
                                 <g>
                                     <polyline points="0,{400 - max(($amHi*(.5*$yspace), $brHi*(.5*$yspace)))-10} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
                                     <!-- graph axis -->
@@ -198,7 +198,7 @@
                             <xsl:variable name="brK" select="count(//u[@who = 'br']//hi[@type = 'k'])"/>
                             <xsl:variable name="amRs" select="count(//u[@who = 'am']//hi[@type = 'rs'])"/>
                             <xsl:variable name="brRs" select="count(//u[@who = 'br']//hi[@type = 'rs'])"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 100 500 500">
                                 <g>
                                     <!-- bars -->
                                     <line x1="{5*$xspace}" y1="400" x2="{5*$xspace}" y2="{400-$amHa*(.5*$yspace)}" stroke="red" stroke-width="3"/><!-- american ha -->
@@ -243,7 +243,7 @@
                             <xsl:variable name="amCorr" select="count(//u[@who='am']/corr)"/>
                             <xsl:variable name="brCorr" select="count(//u[@who='br']/corr)"/>
                             
-                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500"><!-- nationality comparon -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 100 500 500"><!-- nationality comparon -->
                                 <g>
                                     <!-- graph axis -->
                                     <polyline points="0,{400 - max(($amCorr, $brCorr))*$yspace -50} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
@@ -270,7 +270,7 @@
                             <xsl:variable name="imp" select="count(//corr[@type='implicit'])"/>
                             <xsl:variable name="self" select="count(//corr[@type='self'])"/>
                             <xsl:variable name="varNum" select="count(distinct-values(//corr/@type))"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500"><!-- types of corrections comparrison -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 100 500 500"><!-- types of corrections comparrison -->
                                 <g> 
                                     <!-- graph axis -->
                                     <polyline points="0,{400 - max(($exp, $imp, $self))*$yspace -50} 0,400 {10*$xspace*$varNum +10},400" stroke="black" stroke-width="3" fill="none"/>
@@ -311,7 +311,7 @@
                             <xsl:variable name="amExpan" select="count(//u[@who='am']//expan)"/>
                             <xsl:variable name="brExpan" select="count(//u[@who='br']//expan)"/>
                             <xsl:variable name="numVar" select="count(distinct-values(//u/@who))"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 100 500 500">
                                 <g> 
                                     <!-- graph axis -->
                                     <polyline points="0,{400-max(($amExpan*(.5), $brExpan*(.5)))-50} 0,400 {10*$xspace*$numVar +20},400" stroke="black" stroke-width="3" fill="none"/>
@@ -337,7 +337,7 @@
                             <xsl:variable name="exFull" select="count(//expan[@type='full'])"/>
                             <xsl:variable name="exUncon" select="count(//expan[@type='uncontracted'])"/>
                             <xsl:variable name="numVar" select="count(distinct-values(//expan/@type))"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 100 500 500">
                                 <g> 
                                     <!-- graph axis -->
                                     <polyline points="0,{400-max(($exFormal*(.5), $exFull*(.5), $exUncon*(.5)))-50} 0,400 {10*$xspace*$numVar +20},400" stroke="black" stroke-width="3" fill="none"/>
