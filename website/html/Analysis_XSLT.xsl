@@ -347,7 +347,24 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
                                 <g> 
                                     <!-- graph axis -->
-                                    <polyline points="0,{400-max(($exFormal, $exFull, $exUncon))-50} 0,400 {10*$xspace*$numVar +20},400" stroke="black" stroke-width="3" fill="none"/>
+                                    <polyline points="0,{400-max(($exFormal*(.5), $exFull*(.5), $exUncon*(.5)))-50} 0,400 {10*$xspace*$numVar +20},400" stroke="black" stroke-width="3" fill="none"/>
+                                    
+                                    <!-- bars -->
+                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$exFormal*(.5)}" stroke="black" stroke-width="3"/><!-- formal -->
+                                    <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$exFull*(.5)}" stroke="black" stroke-width="3"/><!-- full -->
+                                    <line x1="{30*$xspace}" y1="400" x2="{30*$xspace}" y2="{400-$exUncon*(.5)}" stroke="black" stroke-width="3"/><!-- uncontracted -->
+                                    
+                                    <!-- labels -->
+                                    <text x="15" y="{400-max(($exFormal*(.5), $exFull*(.5), $exUncon*(.5)))-50}">Types of Expanded Forms</text><!-- chart title -->
+                                    <text x="-20" y="400" transform="rotate(-90 -20, 400)">Amount of Expanded Forms Used</text><!-- y axis -->
+                                    <text x="0" y="475">Type of Expanded Form</text><!-- x axis -->
+                                    <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">Formal</text><!-- x axis formal -->
+                                    <text x="{20*$xspace}" y="425" transform="rotate(30 100,425)">Full</text><!-- x axis full -->
+                                    <text x="{30*$xspace}" y="425" transform="rotate(30 150,425)">Uncontracted</text><!-- x axis uncontracted -->
+                                    <text x="{10*$xspace}" y="{400-$exFormal*(.5)-15}" text-anchor="middle"><xsl:value-of select="$exFormal"/></text><!-- formal number -->
+                                    <text x="{20*$xspace}" y="{400-$exFull*(.5)-15}" text-anchor="middle"><xsl:value-of select="$exFull"/></text><!-- full number -->
+                                    <text x="{30*$xspace}" y="{400-$exUncon*(.5)-15}" text-anchor="middle"><xsl:value-of select="$exUncon"/></text><!-- uncontracted number -->
+                                   
                                </g>
                             </svg>
                             <a href="#topImg" class="internal">Top</a>
