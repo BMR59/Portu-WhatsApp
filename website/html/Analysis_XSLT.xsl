@@ -190,7 +190,8 @@
                                     <text x="25" y="{400 - max(($amHi*(.5*$yspace), $brHi*(.5*$yspace)))-30}">The Occurance of Laughter</text><!-- chart title -->
                                     <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">American</text><!-- american x axis label -->
                                     <text x="{20*$xspace}" y="425" transform="rotate(30 100,425)">Brazilian</text><!-- Brazilian x axis label -->
-                                    <text x="0" y="375" transform="rotate(-90 0,400)">Number of Instances of Laughter</text><!-- y axis label -->
+                                    <text x="0" y="375" transform="rotate(-90 0,400)">Instances of Laughter</text><!-- y axis label -->
+                                    <text x="0" y="475">Nationality</text><!-- x axis -->
                                 </g>
                             </svg>
                         </div>
