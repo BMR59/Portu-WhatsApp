@@ -1,104 +1,24 @@
-function myFunction() {
-var x = document.getElementById("thirdThird")
-if (x.style.display == 'none') {
-    x.style.display='block';
-    } else {
-        x.style.display='none';
+window.addEventListener('DOMContentLoaded', init, false);
+function init() {
+    var triggers = document.querySelectorAll('section.conversation > h2');
+    for (var i = 0, len = triggers.length; i < len; i++) {
+        triggers[i].addEventListener('click', toggle, false);
     }
- }
+}
 function toggle() {
-    var x = document.getElementById("firstFirst");
-    if (x.style.display === "block") {
-        x.style.display = "none";
+    if (this.nextElementSibling.style.display == 'block') {
+        this.nextElementSibling.style.display = 'none';
     } else {
-        x.style.display = "block";
+        this.nextElementSibling.style.display = 'block';
     }
-}
-function showhide() {
-    var x = document.getElementById("secondSecond");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-function toggle4() {
-    var x = document.getElementById("fourthFourth");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-function toggle5() {
-    var x = document.getElementById("fifthFifth");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-function toggle6() {
-    var x = document.getElementById("sixthSixth");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-function toggle7() {
-    var x = document.getElementById("sevenSeventh");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-function toggle8() {
-    var x = document.getElementById("eighthEighth");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-function toggle9() {
-    var x = document.getElementById("ninthNinth");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-function toggle0() {
-    var x = document.getElementById("tenTenth");
-    if (x.style.display === "none") {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-}
-function contraction()
-{
-var chars = document.getElementsByClassName ("contraction")
-if (chars[0].style.color != "#FF3300")
-{
-for (var i = 0, length = chars.length; i < length; i++) {
-            chars[i].style.color = "#FF3300";
-}
-}
-else {
-  for (var i = 0, length = chars.length; i < length; i++) 
-{chars[i].style.color = "";}  
-}
 }
 function textese()
 {
 var chars = document.getElementsByClassName ("textese")
-if (chars[0].style.color != "blue")
+if (chars[0].style.color != "lime")
 {
 for (var i = 0, length = chars.length; i < length; i++) {
-            chars[i].style.color = "blue";
+            chars[i].style.color = "lime";
 }
 }
 else {
@@ -118,5 +38,62 @@ for (var i = 0, length = chars.length; i < length; i++) {
 else {
   for (var i = 0, length = chars.length; i < length; i++) 
 {chars[i].style.color = "";}  
+}
+}
+function contraction()
+{
+var chars = document.getElementsByClassName ("contraction")
+if (chars[0].style.color != "red")
+{
+for (var i = 0, length = chars.length; i < length; i++) {
+            chars[i].style.color = "red";
+}
+}
+else {
+  for (var i = 0, length = chars.length; i < length; i++) 
+{chars[i].style.color = "";}  
+}
+}
+function expanded()
+{
+var chars = document.getElementsByClassName ("full")
+if (chars[0].style.color != "#ffe4b5")
+{
+for (var i = 0, length = chars.length; i < length; i++) {
+            chars[i].style.color = "#ffe4b5";
+}
+}
+else {
+  for (var i = 0, length = chars.length; i < length; i++) 
+{chars[i].style.color = "";}  
+}
+}
+function uncorrMist()
+{
+var chars = document.getElementsByClassName ("uncorr", "expcorr", "selfcorr", "impcor")
+if (chars[0].style.color != "yellow")
+{
+for (var i = 0, length = chars.length; i < length; i++) {
+            chars[i].style.color = "yellow";
+}
+}
+else {
+  for (var i = 0, length = chars.length; i < length; i++) 
+{chars[i].style.color = "";}  
+}
+}
+function correction()
+{
+var chars = document.getElementsByClassName ("explicit", "implicit")
+if (chars[0].style.color != "#afeeee")
+{
+for (var i = 0, length = chars.length; i < length; i++) {
+            chars[i].style.color = "#afeeee";
+}
+}
+else {
+  for (var i = 0, length = chars.length; i < length; i++) 
+{chars[i].style.color = "";}  
+}
 }
 }
