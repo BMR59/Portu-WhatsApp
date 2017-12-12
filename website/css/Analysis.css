@@ -145,7 +145,7 @@ a.internal:hover{
     flex: auto;
     height:auto;
     width:auto;
-     padding-bottom:0px;
+    padding-bottom:0px;
     
     
 }
@@ -187,9 +187,9 @@ a.internal:hover{
      padding-bottom:0px;
 }
 #expanded2{
-     justify-content:center;
+    justify-content:center;
     flex: auto;
     height:auto;
     width:auto;
-     padding-bottom:0px;
+    padding-bottom:0px;
 }
