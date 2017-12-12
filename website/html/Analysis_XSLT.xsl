@@ -8,6 +8,7 @@
     
     
     
+    
     <xsl:template match="/">
         
         <html xmlns="http://www.w3.org/1999/xhtml">
@@ -56,15 +57,11 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800"
                                 viewBox="-100 100 500 500">
                                 <g>
-                                    <polyline
-                                        points="0,{max(($amAbbr, $brAbbr))-10} 0,400 {30*$xspace},400"
-                                        stroke="black" stroke-width="3" fill="none"/>
+                                    <polyline points="0,{max(($amAbbr, $brAbbr))-10} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
                                     <!-- graph axis -->
+                                    
                                     <!-- Labels -->
-                                    <text x="20" y="{max(($amAbbr, $brAbbr))-20}">The use of
-                                        Abbreviations by Nationality</text><!-- title -->
-                                    <text x="-20" y="400" transform="rotate(-90 -20,400)">The number
-                                        of Abbreviations Used</text><!-- y axis -->
+                                    <text x="20" y="{max(($amAbbr, $brAbbr))-20}">The use of Abbreviations by Nationality</text><!-- title -->
                                     <text x="0" y="475">Nationality</text><!-- x axis -->
                                     <text x="{10*$xspace}" y="{400-count(//u[@who='am']//abbr)-20}"
                                         text-anchor="middle"><xsl:value-of
@@ -264,20 +261,20 @@
                             
                             <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500"><!-- nationality comparon -->
                                 <g>
-                                    <polyline points="0,{400 - max(($amCorr, $brCorr))-100} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
+                                    <polyline points="0,{400 - max(($amCorr, $brCorr))*$yspace -50} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
                                     <!-- graph axis -->
                                     
                                     <!-- Bars -->
-                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$amCorr -100}" stroke="black" stroke-width="3"/><!-- american -->
-                                    <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$brCorr -100}" stroke="black" stroke-width="3"/><!-- brazilian -->
+                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{(400-$amCorr*$yspace)}" stroke="black" stroke-width="3"/><!-- american -->
+                                    <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$brCorr*$yspace}" stroke="black" stroke-width="3"/><!-- brazilian -->
                                     
                                     <!-- labels -->
                                     <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">American</text> <!-- american x axis -->
                                     <text x="{20*$xspace}" y="425" transform="rotate(30 100,425)">Brazilian</text><!-- brazilian x axis -->
-                                    <text x="{10*$xspace}" y="{400-$amCorr -115}" text-anchor="middle"><xsl:value-of select="$amCorr"/></text><!-- american number -->
-                                    <text x="{20*$xspace}" y="{400-$brCorr -115}" text-anchor="middle"><xsl:value-of select="$brCorr"/></text><!-- brazilian Number -->
-                                    <text></text><!-- chart title -->
-                                    <text></text><!-- y axis -->
+                                    <text x="{10*$xspace}" y="{400-$amCorr*$yspace -15}" text-anchor="middle"><xsl:value-of select="$amCorr"/></text><!-- american number -->
+                                    <text x="{20*$xspace}" y="{400-$brCorr*$yspace -15}" text-anchor="middle"><xsl:value-of select="$brCorr"/></text><!-- brazilian Number -->
+                                    <text x="25" y="{400 - max(($amCorr, $brCorr))*$yspace -70}">The Use of Corrections</text><!-- chart title -->
+                                    <text x="5" y="475">Nationality</text><!-- y axis -->
                                     <text></text><!-- x axis -->
                                     
                                 </g>
