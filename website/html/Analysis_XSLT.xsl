@@ -307,15 +307,34 @@
                         
                     </div>
                     <a href="#topImg" class="internal">Top</a>
-                    <div id="expanForms">
+                    
                         <h2>The Use of Expanded Forms in Texting</h2>
                         <div class="description">
                             <p>This is the chart talking about the use of Expanded Forms within the
                                 corpus</p>
                         </div>
-                        <div id="expanded1">
+                    <div id="expanForms">
+                        <div id="expanded1"><!-- nationality comparrison -->
+                            <xsl:variable name="amExpan" select="count(//u[@who='am']//expan)"/>
+                            <xsl:variable name="brExpan" select="count(//u[@who='br']//expan)"/>
+                            <xsl:variable name="numVar" select="count(distinct-values(//u/@who))"/>
                             <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
                                 <g> 
+                                    <!-- graph axis -->
+                                    <polyline points="0,{400-max(($amExpan*(.5), $brExpan*(.5)))-50} 0,400 {10*$xspace*$numVar +10},400" stroke="black" stroke-width="3" fill="none"/>
+                                    
+                                    <!-- bars -->
+                                    <line/><!-- American -->
+                                    <line/><!-- brazilian -->
+                                    
+                                    <!-- labels -->
+                                    <text></text><!-- chart title -->
+                                    <text></text><!-- y axis -->
+                                    <text></text><!-- x axis -->
+                                    <text></text><!-- x axis American -->
+                                    <text></text><!-- x axis Brazilian -->
+                                    <text></text><!-- american Number -->
+                                    <text></text><!-- brazilian Number -->
                                 
                                 </g>
                             </svg>
