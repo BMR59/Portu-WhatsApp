@@ -116,39 +116,11 @@ a.internal:hover{
     
     
 }
-class.conversationHeader:hover{
-        color:#d3d3d3;
+.convoHeader:hover{
+        color:#808080;
 }
-div#thirdThird
-{
-display:none;
-}div#firstFirst
-{
-display:none;
-}div#secondSecond
-{
-display:none;
-}div#fourthFourth
-{
-display:none;
-}div#fifthFifth
-{
-display:none;
-}div#sixthSixth
-{
-display:none;
-}div#seventhSeventh
-{
-display:none;
-}div#eighthEighth
-{
-display:none;
-}div#ninthNinth
-{
-display:none;
-}div#tenthTenth
-{
-display:none;
+section.conversation > div {
+    display: none;
 }
 #left {
     width: 20%;
@@ -166,6 +138,9 @@ display:none;
 #top {
     width: 100%;
     height: auto;
+}
+ul {
+  list-style-type: none;
 }
 #corrections{
     display:flex;
