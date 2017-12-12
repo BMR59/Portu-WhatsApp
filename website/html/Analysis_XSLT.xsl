@@ -236,12 +236,13 @@
                         </div>
                     </div>
                     <a href="#topImg" class="internal">Top</a>
-                    <div id="corrections">
+                    
                         <h2>The Use of Corrections in Texting</h2>
                         <div class="description">
                             <p>This is the chart talking about the use of Correction within the
                                 corpus</p>
                         </div>
+                    <div id="corrections">
                         <div id="correction1">
                             <xsl:variable name="amCorr" select="count(//u[@who='am']/corr)"/>
                             <xsl:variable name="brCorr" select="count(//u[@who='br']/corr)"/>
@@ -296,8 +297,9 @@
                                     
                                 </g>
                             </svg>
-                        </div><a href="#topImg" class="internal">Top</a>
+                        </div>
                     </div>
+                    <a href="#topImg" class="internal">Top</a>
                     <div id="expanForms">
                         <h2>The Use of Expanded Forms in Texting</h2>
                         <div class="description">
