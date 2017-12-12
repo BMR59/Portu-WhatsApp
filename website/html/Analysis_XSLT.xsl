@@ -266,6 +266,20 @@
                                 <g>
                                     <polyline points="0,{400 - max(($amCorr, $brCorr))-100} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
                                     <!-- graph axis -->
+                                    
+                                    <!-- Bars -->
+                                    <line x1="{5*$xspace}" y1="400" x2="{5*$xspace}" y2="{400-$amCorr -100}" stroke="black" stroke-width="3"/><!-- american -->
+                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$brCorr -100}" stroke="black" stroke-width="3"/><!-- brazilian -->
+                                    
+                                    <!-- labels -->
+                                    <text></text> <!-- american x axis -->
+                                    <text></text><!-- brazilian x axis -->
+                                    <text></text><!-- american number -->
+                                    <text></text><!-- brazilian Number -->
+                                    <text></text><!-- chart title -->
+                                    <text></text><!-- y axis -->
+                                    <text></text><!-- x axis -->
+                                    
                                 </g>
                             </svg>
                         </div>
