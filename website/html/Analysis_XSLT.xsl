@@ -268,13 +268,20 @@
                                 </g>
                             </svg>
                         </div>
-                        <div id="correction2">
+                        <div id="correction2"> 
                             <xsl:variable name="exp" select="count(//corr[@type='explicit'])"/>
                             <xsl:variable name="imp" select="count(//corr[@type='implicit'])"/>
                             <xsl:variable name="self" select="count(//corr[@type='self'])"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
+                            <xsl:variable name="varNum" select="count(distinct-values(//corr/@type))"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500"><!-- types of corrections comparrison -->
                                 <g> 
-                                
+                                    <!-- graph axis -->
+                                    <polyline points="0,{400 - max(($exp, $imp, $self))*$yspace -50} 0,400 {10*$xspace*$varNum +10},400" stroke="black" stroke-width="3" fill="none"/>
+                                    
+                                    <!-- bars -->
+                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$exp*$yspace}" stroke="black" stroke-width="3"/><!-- explicit corrections -->
+                                    <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$imp*$yspace}" stroke="black" stroke-width="3"/><!-- implicit corrections -->
+                                    <line x1="{30*$xspace}" y1="400" x2="{30*$xspace}" y2="{400-$self*$yspace}" stroke="black" stroke-width="3"/><!-- self corrections -->
                                 </g>
                             </svg>
                         </div><a href="#topImg" class="internal">Top</a>
