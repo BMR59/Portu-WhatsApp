@@ -62,26 +62,16 @@
                                     
                                     <!-- Labels -->
                                     <text x="20" y="{max(($amAbbr, $brAbbr))-20}">The use of Abbreviations by Nationality</text><!-- title -->
+                                    <text x="-20" y="400" transform="rotate(-90 -20,400)">The number of Abbreviations Used</text><!-- y axis -->
                                     <text x="0" y="475">Nationality</text><!-- x axis -->
-                                    <text x="{10*$xspace}" y="{400-count(//u[@who='am']//abbr)-20}"
-                                        text-anchor="middle"><xsl:value-of
-                                            select="count(//u[@who = 'am']//abbr)"/></text><!-- Am Count -->
-                                    <text x="{20*$xspace}" y="{400-count(//u[@who='br']//abbr)-20}"
-                                        text-anchor="middle"><xsl:value-of
-                                            select="count(//u[@who = 'br']//abbr)"/></text><!-- Br Count -->
-                                    <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)"
-                                        >American</text><!-- x axis variable American -->
-                                    <text x="{20*$xspace}" y="425" transform="rotate(30 100, 425)"
-                                        >Brazilian</text><!-- x axis variable Brazilian -->
+                                    <text x="{10*$xspace}" y="{400-count(//u[@who='am']//abbr)-20}" text-anchor="middle"><xsl:value-of select="count(//u[@who = 'am']//abbr)"/></text><!-- Am Count -->
+                                    <text x="{20*$xspace}" y="{400-count(//u[@who='br']//abbr)-20}" text-anchor="middle"><xsl:value-of select="count(//u[@who = 'br']//abbr)"/></text><!-- Br Count -->
+                                    <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">American</text><!-- x axis variable American -->
+                                    <text x="{20*$xspace}" y="425" transform="rotate(30 100, 425)">Brazilian</text><!-- x axis variable Brazilian -->
+                                    
                                     <!-- Bars -->
-                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}"
-                                        y2="{400 - count(//u[@who='am']//abbr)}" stroke-width="3"
-                                        stroke="black"/>
-                                    <!-- American -->
-                                    <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}"
-                                        y2="{400 - count(//u[@who='br']//abbr)}" stroke-width="3"
-                                        stroke="black"/>
-                                    <!-- Brazilian -->
+                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400 - count(//u[@who='am']//abbr)}" stroke-width="3" stroke="black"/><!-- American -->
+                                    <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400 - count(//u[@who='br']//abbr)}" stroke-width="3" stroke="black"/><!-- Brazilian -->
                                 </g>
                             </svg>
                         </div>
