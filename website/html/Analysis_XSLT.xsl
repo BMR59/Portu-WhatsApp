@@ -282,6 +282,18 @@
                                     <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$exp*$yspace}" stroke="black" stroke-width="3"/><!-- explicit corrections -->
                                     <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$imp*$yspace}" stroke="black" stroke-width="3"/><!-- implicit corrections -->
                                     <line x1="{30*$xspace}" y1="400" x2="{30*$xspace}" y2="{400-$self*$yspace}" stroke="black" stroke-width="3"/><!-- self corrections -->
+                                    
+                                    <!-- labels -->
+                                    <text x="25" y="{400 - max(($exp, $imp, $self))*$yspace -70}">Types of Corrections Used</text><!-- title -->
+                                    <text x="-20" y="400" transform="rotate(-90 -20,400)">Amount of Corrections</text><!-- y axis -->
+                                    <text x="0" y="475"></text><!-- x axis -->
+                                    <text x="{10*$xspace}" y="425" transform="rotate(30 50, 425)">Explicit</text><!-- x axis exp -->
+                                    <text x="{20*$xspace}" y="425" transform="rotate(30 100, 425)">Implicit</text><!-- x axis imp -->
+                                    <text x="{30*$xspace}" y="425" transform="rotate(30 150, 425)">Self</text><!-- x axis self -->
+                                    <text x="{10*$xspace}" y="{400-$exp*$yspace -15}" text-anchor="middle"><xsl:value-of select="$exp"/></text><!-- exp number -->
+                                    <text x="{20*$xspace}" y="{400-$imp*$yspace -15}" text-anchor="middle"><xsl:value-of select="$imp"/></text><!-- imp number -->
+                                    <text x="{30*$xspace}" y="{400-$self*$yspace -15}" text-anchor="middle"><xsl:value-of select="$self"/></text><!-- self number -->
+                                    
                                 </g>
                             </svg>
                         </div><a href="#topImg" class="internal">Top</a>
