@@ -11,6 +11,11 @@ img {
     max-width: 100%; 
     height: auto; 
 }
+svg{
+display: block;
+    width: 100%;
+    height: auto;
+}
 a:link {
     color: #D8D5CC;
 }

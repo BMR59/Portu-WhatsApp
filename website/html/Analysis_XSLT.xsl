@@ -49,7 +49,7 @@
                             <xsl:variable name="totabbr" select="count(//abbr)"/>
                             <xsl:variable name="amAbbr" select="count(//u[@who = 'am']//abbr)"/>
                             <xsl:variable name="brAbbr" select="count(//u[@who = 'br']//abbr)"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-50 150 200 500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 150 200 500">
                                 <g>
                                     <polyline points="0,{max(($amAbbr, $brAbbr))-10} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
                                     <!-- graph axis -->
@@ -75,7 +75,7 @@
                             <xsl:variable name="inf" select="count(//abbr[@type = 'informal'])"/>
                             <xsl:variable name="txtese" select="count(//abbr[@type = 'textese'])"/>
                             <xsl:variable name="numVar" select="count(distinct-values(//abbr/@type))"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 100 500 500">
                                 <g>
                                     <!-- labels for the graphs -->
                                     <text x="25" y="{max(($contra, $inf, $txtese))-25}">Types of Abbreviations Used</text><!-- chart title -->
