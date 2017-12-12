@@ -232,9 +232,9 @@
                                     <line x1="{31*$xspace}" y1="400" x2="{31*$xspace}" y2="{400-$brRs}" stroke="black" stroke-width="3"/><!-- brazilian rs -->
                                     
                                     <!-- labels -->
-                                    <text x="{6.5*$xspace}" y="425" text-anchor="middle">ha</text><!-- american Ha -->
+                                    <text x="{6.5*$xspace}" y="425" text-anchor="middle">ha</text><!-- Ha -->
                                     <text x="{17.5*$xspace}" y="425" text-anchor="middle">k</text><!-- k -->
-                                    <text x="{30.5*$xspace}" y="425" text-anchor="middle">rs</text><!-- american rs -->
+                                    <text x="{30.5*$xspace}" y="425" text-anchor="middle">rs</text><!-- rs -->
                                     <text x="25" y="{400 - max(($amHi, $brHi))-20}">The Varieties of Laughter Used</text><!-- Title -->
                                     <text x="-30" y="360" transform="rotate(-90 0,375)">Instances Used</text><!-- y axis -->
                                     <text x="0" y="450">Type of Laughter</text><!-- x axis -->
@@ -262,18 +262,18 @@
                             <xsl:variable name="amCorr" select="count(//u[@who='am']/corr)"/>
                             <xsl:variable name="brCorr" select="count(//u[@who='br']/corr)"/>
                             
-                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500"><!-- nationality comparon -->
                                 <g>
                                     <polyline points="0,{400 - max(($amCorr, $brCorr))-100} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
                                     <!-- graph axis -->
                                     
                                     <!-- Bars -->
-                                    <line x1="{5*$xspace}" y1="400" x2="{5*$xspace}" y2="{400-$amCorr -100}" stroke="black" stroke-width="3"/><!-- american -->
-                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$brCorr -100}" stroke="black" stroke-width="3"/><!-- brazilian -->
+                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$amCorr -100}" stroke="black" stroke-width="3"/><!-- american -->
+                                    <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$brCorr -100}" stroke="black" stroke-width="3"/><!-- brazilian -->
                                     
                                     <!-- labels -->
-                                    <text></text> <!-- american x axis -->
-                                    <text></text><!-- brazilian x axis -->
+                                    <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">American</text> <!-- american x axis -->
+                                    <text x="{20*$xspace}" y="425" transform="rotate(30 100,425)">Brazilian</text><!-- brazilian x axis -->
                                     <text></text><!-- american number -->
                                     <text></text><!-- brazilian Number -->
                                     <text></text><!-- chart title -->
