@@ -54,14 +54,13 @@
                             <xsl:variable name="totabbr" select="count(//abbr)"/>
                             <xsl:variable name="amAbbr" select="count(//u[@who = 'am']//abbr)"/>
                             <xsl:variable name="brAbbr" select="count(//u[@who = 'br']//abbr)"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800"
-                                viewBox="-100 100 500 500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-50 150 200 500">
                                 <g>
                                     <polyline points="0,{max(($amAbbr, $brAbbr))-10} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
                                     <!-- graph axis -->
                                     
                                     <!-- Labels -->
-                                    <text x="20" y="{max(($amAbbr, $brAbbr))-20}">The use of Abbreviations by Nationality</text><!-- title -->
+                                    <text x="20" y="{max(($amAbbr, $brAbbr))-20}">Abbreviations by Nationality</text><!-- title -->
                                     <text x="-20" y="400" transform="rotate(-90 -20,400)">The number of Abbreviations Used</text><!-- y axis -->
                                     <text x="0" y="475">Nationality</text><!-- x axis -->
                                     <text x="{10*$xspace}" y="{400-count(//u[@who='am']//abbr)-20}" text-anchor="middle"><xsl:value-of select="count(//u[@who = 'am']//abbr)"/></text><!-- Am Count -->
@@ -124,8 +123,7 @@
                             <xsl:variable name="brEmoji" select="count(.//u[@who='br']/g)+sum(.//u[@who='br']/g/@n)-count(.//u[@who='br']/g[@n])"/>
                             <xsl:variable name="amEmoji" select="count(.//u[@who='am']/g)+sum(.//u[@who='am']/g/@n)-count(.//u[@who='am']/g[@n])"/>
                             <xsl:variable name="emojiNum" select="count(distinct-values(//g/@ref))"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800"
-                                viewBox="-100 100 500 500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
                                 <g>
                                     <polyline
                                         points="0,{400 - max(($brEmoji*(.5*$yspace), $amEmoji*(.5*$yspace)))-50} 0,400 {30*$xspace},400" stroke="black" stroke-width="3" fill="none"/>
