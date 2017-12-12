@@ -147,3 +147,9 @@ display:none;
 #corrections1{
     flex-grow:1;
 }
+#expanForms{
+    display:flex;
+}
+#expanded1{
+    flex-grow:1;
+}
