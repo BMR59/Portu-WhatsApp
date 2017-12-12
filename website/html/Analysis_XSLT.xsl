@@ -274,8 +274,8 @@
                                     <!-- labels -->
                                     <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">American</text> <!-- american x axis -->
                                     <text x="{20*$xspace}" y="425" transform="rotate(30 100,425)">Brazilian</text><!-- brazilian x axis -->
-                                    <text></text><!-- american number -->
-                                    <text></text><!-- brazilian Number -->
+                                    <text x="{10*$xspace}" y="{400-$amCorr -115}" text-anchor="middle"><xsl:value-of select="$amCorr"/></text><!-- american number -->
+                                    <text x="{20*$xspace}" y="{400-$brCorr -115}" text-anchor="middle"><xsl:value-of select="$brCorr"/></text><!-- brazilian Number -->
                                     <text></text><!-- chart title -->
                                     <text></text><!-- y axis -->
                                     <text></text><!-- x axis -->
