@@ -13,8 +13,8 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
             <author>Brazilian students of English</author>
             <sponsor>University of Pittsburgh</sponsor>
             <principal><name ref="#ze">Zachary Enick</name>, <name ref="#bmr">Brandon
-                  Rodgers</name>, <name ref="#pab">Patrick Murray</name>, <name
-                  ref="#ttb">Tyler Botak</name></principal>
+                  Rodgers</name>, <name ref="#pab">Patrick Brooks</name>, <name
+                  ref="#ttb">Tyler Bokan</name></principal>
             <respStmt>
                <resp>Transcription and markup by</resp>
                <name ref="#bmr">Brandon Rodgers</name>
