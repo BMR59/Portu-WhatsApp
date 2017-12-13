@@ -139,15 +139,15 @@
                                 </g>
                             </svg>
                         </div>
-                        <!-- <div id="emoji2">
+                        <div id="emoji2">
                             <xsl:variable name="cleNumAm" select="count(//u[@who = 'am']//g[@ref = '#cle'])"/>
                             <xsl:variable name="emojiNum" select="count(distinct-values(//g/@ref))"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="-100 100 500 500">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 100 500 400">
                                 <g>
-                                    <polyline points="0,0 0,400 {$emojiNum*$xspace*10},400" stroke="black" stroke-width="3" fill="none"/> 
+                                    <polyline points="0,200 0,400 100,400" stroke="black" stroke-width="3" fill="none"/> 
                                 </g>
                             </svg>
-                        </div> -->
+                        </div>
                     </div>
                     <div id="emojidesc">
                         <p>

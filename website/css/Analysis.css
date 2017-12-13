@@ -150,6 +150,15 @@ a.internal:hover{
     
     
 }
+#emoji2{
+  justify-content:center;
+    flex: auto;
+    height:auto;
+    width:auto;
+     padding-bottom:0px;
+    
+    
+}
 #corrections{
      display:flex;
     justify-content:center;
