@@ -144,7 +144,7 @@
                             <xsl:variable name="emojiNum" select="count(distinct-values(//g/@ref))"/>
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 100 500 400">
                                 <g>
-                                    <polyline points="0,200 0,400 100,400" stroke="black" stroke-width="3" fill="none"/> 
+                                    <polyline points="0,200 0,400 100,400" stroke="#5F8AC6" stroke-width="3" fill="none"/> 
                                 </g>
                             </svg>
                         </div>
