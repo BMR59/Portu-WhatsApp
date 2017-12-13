@@ -5,7 +5,7 @@ body {
     text-align: center;
 }
 body {
-    color: #1C233E
+    color: #1C233E;
 }
 img { 
     max-width: 100%; 
@@ -13,7 +13,7 @@ img {
 }
 svg{
     display: block;
-    width: 100%;
+    width: auto;
     height: auto;
 }
 a:link {
@@ -138,6 +138,7 @@ a.internal:hover{
     height:auto;
     width:auto;
     padding-bottom:0px;
+    
     
 }
 #emoji1{
