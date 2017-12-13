@@ -8,23 +8,23 @@
     color:magenta;
 }
 .checkbox4{
-    color:#ffe4b5;
+    color:cyan;
 }
 .checkbox5{
-    color:#afeeee;
+    color:navajowhite;
 }
 .checkbox6{
     color:yellow;
 }
-.convoHeader:hover{
-        color:#808080;
+h2:hover{
+        color:#FFBB4A;
 }
 section.conversation > div {
     display: none;
 }
 #left {
     width: 20%;
-    top: 50%;
+    top: 55%;
     position: fixed;
     outline: 1px solid;
     background: #FFBB4A;
