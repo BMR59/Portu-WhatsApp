@@ -38,11 +38,13 @@ display: block;
     display:flex;
     flex-grow:2;
     padding-left: 15px;
+    
 }
 #flagPic{
     flex-grow:1;
     height:500px;
     width:0px;
+    
 }
 a:link {
     color: #D8D5CC;
