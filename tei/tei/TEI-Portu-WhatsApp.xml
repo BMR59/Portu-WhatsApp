@@ -679,7 +679,7 @@ schematypens="http://purl.oclc.org/dsdl/schematron"?>
             <u who="br">ou “<hi type="k">kkkk”</hi> ou “”</u>
             <u who="br">sabe</u>
             <u who="am">Sim entendo</u>
-            <u who="am">É tipo <hi type="ha">lol</hi></u>
+            <u who="am">É tipo <hi type="lol">lol</hi></u>
             <u who="am"><hi type="ha">hahaha</hi></u>
             <u who="am">Assim mesmo</u>
             <u who="br">é</u>
