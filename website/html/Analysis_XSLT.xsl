@@ -33,16 +33,16 @@
                 </div>
                 <div class="main"> Here we will discuss some of our original research questions. The
                     main topics that we decided to look at within the data include <a class="internal" href="#abbreviations">the use of abbreviations</a>, 
-                    <a href="#emojiUse" class="internal">speech errors</a> made by the non-native speaker, <a href="#laugh" class="internal">usage of laughter</a> between links
+                    <a href="#emojiUse" class="internal">use of Emojis</a> made by the non-native speaker, <a href="#laugh" class="internal">usage of laughter</a> between links
                     of text, and <a href="#corrections" class="internal">any corrections</a>, and the use of <a class="internal" href="#expanForms"
                         >expanded forms</a>
                     <h2>The Use of Abbreviations in Texting</h2>
-                    <div class="description">
+                   <!--  <div class="description">
                         <p>Below is a graph that represents the amount of times that any notable
                             form of an abbreviation was used within the texting partner groups. This
                             selection is only representative of a few of the converstaions that were
                             captured in the WhatsApp screenshots that we processed.</p>
-                    </div>
+                    </div> -->
                     <div id="abbreviations">
                         <div id="abbr1">
                             <!-- nationality comparison -->
@@ -104,15 +104,15 @@
                     </div>
                     <div id="abbrDesc">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et viverra ante, sed iaculis libero. Curabitur vel ligula molestie, iaculis nulla ullamcorper, vehicula nulla. Morbi eleifend suscipit est, a ultrices tellus ultrices eget. In a porttitor tortor, vel tincidunt lorem. Etiam mollis, magna a molestie varius, est turpis auctor nulla, sed pharetra sapien justo in risus. Nunc sed efficitur ipsum. Aliquam ut nunc viverra, sodales turpis id, efficitur odio. Donec non ultricies lorem. Suspendisse potenti. Suspendisse potenti. Fusce tempor sollicitudin viverra. Suspendisse metus nisi, pharetra a lacus vel, mollis imperdiet nisi. Vivamus at volutpat mi. Nulla eget lacus non ex mattis efficitur id vitae justo. Morbi tincidunt purus non mauris posuere, in mattis elit euismod. Nam accumsan enim diam, quis euismod dolor efficitur id. Ut facilisis faucibus quam, at volutpat ex tincidunt sed. Nam ac ipsum orci. Nunc turpis sem, semper et consectetur eu, aliquet ut metus. Sed ultrices tellus sit amet risus feugiat placerat. Curabitur at aliquet diam. Mauris varius ultrices nisl non feugiat. Aliquam condimentum libero eu augue sollicitudin, a molestie nisl finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi egestas efficitur enim, eget posuere odio. Ut vehicula lacus non pulvinar accumsan. Etiam sodales ultrices sapien, sit amet auctor risus cursus quis. Vestibulum vulputate odio ex, sodales lobortis odio tristique dictum. Maecenas vestibulum egestas quam a ultrices. Phasellus bibendum consequat nisi, id viverra ante rutrum at. Aliquam auctor massa sit amet neque elementum, et volutpat odio varius. Nulla nec vestibulum augue. Mauris bibendum purus lacus, sit amet auctor dolor fringilla et. Duis vel viverra dolor. Phasellus accumsan ligula nisl. Suspendisse eget est non diam pharetra malesuada sed a enim. Sed non eros lobortis, maximus libero a, semper dui. Praesent ut nisi et justo tincidunt venenatis in ac neque. In sit amet erat urna. Duis ultricies semper dictum. Duis porta erat vestibulum mauris efficitur pulvinar. Praesent molestie porta lacus, eget convallis augue dictum vel. Morbi id iaculis tellus. Suspendisse auctor accumsan nunc in lacinia. Mauris ut vehicula sem, eget interdum dui. Maecenas vehicula nec risus non ornare. Sed eget viverra ex. Donec interdum elementum tortor, in hendrerit nisl varius in. Nullam vulputate urna ante, et dapibus ex congue vitae. Cras dignissim, odio imperdiet tristique dapibus, tellus tortor porta sem, et sollicitudin diam turpis in tortor. Cras mauris odio, volutpat fringilla sagittis sed, varius in elit. Nulla facilisi. Aliquam condimentum, lorem a mattis laoreet, mi urna rhoncus quam, vitae cursus enim magna non eros. Vivamus tincidunt ultrices consectetur. In hac habitasse platea dictumst. Nullam sed pharetra ante, vel rutrum lacus. Vestibulum ornare dictum risus. Nullam convallis iaculis nisi. Cras semper turpis nec ex aliquam auctor. Vestibulum faucibus, magna eget maximus venenatis, dolor erat rhoncus lectus, id suscipit ante sem ac eros.</p>
+                            This is where we are discussing the idea of the different usages of abbreviations within the corpus.</p>
                     </div>
                     <a href="#topImg" class="internal">Top</a>
                     
                     <h2>The Use of Emojigs in Texting</h2>
-                    <div class="description">
+                    <!-- <div class="description">
                         <p>This is the chart talking about the use of Emojis within the
                             corpus</p>
-                    </div>
+                    </div> -->
                     <div id="emojiUse">
                         <div id="emoji1"><!-- nationality comparison -->
                             <xsl:variable name="brEmoji" select="count(.//u[@who='br']/g)+sum(.//u[@who='br']/g/@n)-count(.//u[@who='br']/g[@n])"/>
@@ -155,10 +155,10 @@
                     </div>  
                     <a href="#topImg" class="internal">Top</a>
                     <h2>The Use of Laughter Notation in Texting</h2>
-                    <div class="description">
+                    <!-- <div class="description">
                         <p>This is the chart talking about the use of Laughter Notation within the
                             corpus</p>
-                    </div>
+                    </div> -->
                     <div id="laugh">
                         <div id="laugh1">
                             <xsl:variable name="amHi" select="count(//u[@who = 'am']//hi)"/>
@@ -234,10 +234,10 @@
                     <a href="#topImg" class="internal">Top</a>
                     
                         <h2>The Use of Corrections in Texting</h2>
-                        <div class="description">
+                       <!-- <div class="description">
                             <p>This is the chart talking about the use of Correction within the
                                 corpus</p>
-                        </div>
+                        </div> -->
                     <div id="corrections">
                         <div id="corrections1">
                             <xsl:variable name="amCorr" select="count(//u[@who='am']/corr)"/>
@@ -302,10 +302,10 @@
                     <a href="#topImg" class="internal">Top</a>
                     
                         <h2>The Use of Expanded Forms in Texting</h2>
-                        <div class="description">
+                       <!-- <div class="description">
                             <p>This is the chart talking about the use of Expanded Forms within the
                                 corpus</p>
-                        </div>
+                        </div> -->
                     <div id="expanForms">
                         <div id="expanded1"><!-- nationality comparrison -->
                             <xsl:variable name="amExpan" select="count(//u[@who='am']//expan)"/>
