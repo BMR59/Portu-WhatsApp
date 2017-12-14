@@ -11,21 +11,22 @@
     <xsl:template match="/">
         <html>
             <head>
-                <title>Portu-WhatsApp Corpus</title>
-                <link rel="stylesheet" type="text/css" href="rodgers_11-03_xslt-07.css"/>
+                <title>Corpus</title>
+                <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+                <script type="text/javascript" src="Untitled1.js">/**/</script>
             </head>
             <body>
                 
-                <h1>Portu-WhatsApp</h1>
+                <h1>Corpus</h1>
                 <xsl:apply-templates select="//q"/>
             </body>
         </html>
     </xsl:template>
     
     <xsl:template match="q">
-        <div type="converstion">
+        <section class="conversation">
             <h2>Conversation <xsl:value-of select="@n"/></h2>
-            <div type="convoTranscript"><xsl:apply-templates/></div></div>
+            <div type="convoTranscript"><xsl:apply-templates/></div></section>
     </xsl:template>
     
     <xsl:template match="u">
@@ -125,5 +126,8 @@
         <span class="foreign">
             <xsl:apply-templates/>
         </span>
+    </xsl:template>
+    <xsl:template match="corr[@type= 'self']">
+        <span class="self"><xsl:apply-templates/></span>
     </xsl:template>
 </xsl:stylesheet>
