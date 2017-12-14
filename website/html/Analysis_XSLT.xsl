@@ -394,7 +394,8 @@
                         </div>
                     <a href="#topImg" class="internal">Top</a>
                     
-                </div>   
+                </div> 
+                <!--#include virtual="../ssi/creativeCommons.html" -->
             </body>
         </html>
     </xsl:template>
