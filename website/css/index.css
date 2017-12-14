@@ -84,65 +84,8 @@ a.internal:hover{
 #dataToC{
     text-align:center;
 }
-#abbreviations{
-    display:flex;
-    justify-content:center;
-    flex:auto;
-    height:auto;
-    width:auto;
-}
-#abbr1{
-    justify-content:center;
-    flex: auto;
-    height:auto;
-    width:auto
-}
-#abbr2{
-    justify-content:center;
-    flex: auto;
-    height:auto;
-    width:auto
-}
-#laugh{
-    display:flex;
-    justify-content:center;
-}
-#laughter1{
-    flex-grow:1;
-    justify-content:center;
-}
-#emojiUse{
-    display:flex;
-    justify-content:center;
-    
-}
-#emoji1{
-   justify-content:center;
-    
-    
-}
-#corrections{
-    display:flex;
-    justify-content:center;
-     height:auto;
-    width:auto
-}
-#corrections1{
-    justify-content:center;
-     height:auto;
-    width:auto
-}
-#expanForms{
-    display:flex;
-    justify-content:center;
-     height:auto;
-    width:auto
-}
-#expanded1{
-    justify-content:center;
-     height:auto;
-    width:auto
-}
+
 code{
     color:#FFBB4A;
+    font-size:12pt;
 }
