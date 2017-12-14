@@ -56,7 +56,7 @@ else {
 
 function uncorrMist()
 {
-var chars = document.getElementsByClassName ("uncorr", "expcorr", "selfcorr", "impcor")
+var chars = document.querySelectorAll('.uncorr, .expcorr, .selfcorr, .imcor')
 if (chars[0].style.color != "yellow")
 {
 for (var i = 0, length = chars.length; i < length; i++) {
@@ -85,7 +85,7 @@ else {
 }
 function correction()
 {
-var chars = document.getElementsByClassName ("implicit", "explicit")
+var chars = document.querySelectorAll ('.implicit, .explicit')
 if (chars[0].style.color != "navajowhite")
 {
 for (var i = 0, length = chars.length; i < length; i++) {
