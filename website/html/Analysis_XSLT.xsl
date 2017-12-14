@@ -387,7 +387,7 @@
                         
                     </div>
                     <div id="totalAnalysis">
-                            <h2>Sweeping Genralizations</h2>
+                            <h2>Sweeping Genralizations and Blanket Statements</h2>
                             <p>
                                 Americans seem to do more texting conventions
                             </p>
