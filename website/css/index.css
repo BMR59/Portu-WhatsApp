@@ -18,20 +18,26 @@ display: block;
 }
 .sideXside{
     display:flex;
+    padding-top:10px;
 }
 
 #indexMain{
     flex-grow:1;
     display:flex;
     justify-content:center;
+    border-style: solid;
+    border-width: 15px;
+    flex-wrap:wrap;
+    padding-top:10px;
 }
 #contactInfo{
     flex-grow:1;
+    
 }
 #flag{
     display:flex;
     flex-grow:2;
-    background:black;
+    padding-left: 15px;
 }
 #flagPic{
     flex-grow:1;
@@ -86,7 +92,9 @@ h2{
     font-family:Century;
     text-align:justify;
     padding-left:10px;
-    padding-right:10px;   
+    padding-right:10px;
+    padding-top:5px;
+    padding-bottom:5px;
 }
 .main{
     background-color:#5F8AC6;
