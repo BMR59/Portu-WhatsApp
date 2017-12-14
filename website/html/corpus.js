@@ -12,20 +12,19 @@ function toggle() {
         this.nextElementSibling.style.display = 'block';
     }
 }
-function textese()
-{
+
+function textese() {
 var chars = document.getElementsByClassName ("textese")
-if (chars[0].style.color != "lime")
-{
+if (chars[0].style.color != "lime") {
 for (var i = 0, length = chars.length; i < length; i++) {
-            chars[i].style.color = "lime";
-}
-}
+            chars[i].style.color = "lime"; }
+            }
 else {
   for (var i = 0, length = chars.length; i < length; i++) 
 {chars[i].style.color = "";}  
 }
 }
+
 function informal()
 {
 var chars = document.getElementsByClassName ("informal")
@@ -54,20 +53,7 @@ else {
 {chars[i].style.color = "";}  
 }
 }
-function expanded()
-{
-var chars = document.getElementsByClassName ("full")
-if (chars[0].style.color != "#ffe4b5")
-{
-for (var i = 0, length = chars.length; i < length; i++) {
-            chars[i].style.color = "#ffe4b5";
-}
-}
-else {
-  for (var i = 0, length = chars.length; i < length; i++) 
-{chars[i].style.color = "";}  
-}
-}
+
 function uncorrMist()
 {
 var chars = document.getElementsByClassName ("uncorr", "expcorr", "selfcorr", "impcor")
@@ -82,13 +68,14 @@ else {
 {chars[i].style.color = "";}  
 }
 }
-function correction()
+
+function expanded()
 {
-var chars = document.getElementsByClassName ("explicit", "implicit")
-if (chars[0].style.color != "#afeeee")
+var chars = document.getElementsByClassName ("full")
+if (chars[0].style.color != "cyan")
 {
 for (var i = 0, length = chars.length; i < length; i++) {
-            chars[i].style.color = "#afeeee";
+            chars[i].style.color = "cyan";
 }
 }
 else {
@@ -96,4 +83,17 @@ else {
 {chars[i].style.color = "";}  
 }
 }
-
+function correction()
+{
+var chars = document.getElementsByClassName ("implicit", "explicit")
+if (chars[0].style.color != "navajowhite")
+{
+for (var i = 0, length = chars.length; i < length; i++) {
+            chars[i].style.color = "navajowhite";
+}
+}
+else {
+  for (var i = 0, length = chars.length; i < length; i++) 
+{chars[i].style.color = "";}  
+}
+}
