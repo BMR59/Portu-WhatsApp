@@ -107,7 +107,75 @@
                             This is where we are discussing the idea of the different usages of abbreviations within the corpus. WHen looking at the raw text of the corpus when we received it, we noticed that there was a fair amount of abbreviation being used throughout the text by all the users and we thought thtat it would interesting to see who used it and how it was used. in decyphering the different types of abbreviations that were used, it was determined that the majority of the abbreviations fell into 3 categories: those that were contractions, those that were informal, and those that were abbreviations that matched ordinary texting conventions.</p>
                     </div>
                     <a href="#topImg" class="internal">Top</a>
+                           <h2>The Use of Expanded Forms in Texting</h2>
+                       <!-- <div class="description">
+                            <p>This is the chart talking about the use of Expanded Forms within the
+                                corpus</p>
+                        </div> -->
+                    <div id="expanForms">
+                        <div id="expanded1"><!-- nationality comparrison -->
+                            <xsl:variable name="amExpan" select="count(//u[@who='am']//expan)"/>
+                            <xsl:variable name="brExpan" select="count(//u[@who='br']//expan)"/>
+                            <xsl:variable name="numVar" select="count(distinct-values(//u/@who))"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 100 500 400">
+                                <g> 
+                                    <!-- graph axis -->
+                                    <polyline points="0,{400-max(($amExpan*(.5), $brExpan*(.5)))-50} 0,400 {10*$xspace*$numVar +20},400" stroke="black" stroke-width="3" fill="none"/>
+                                    
+                                    <!-- bars -->
+                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$amExpan*.5}" stroke-width="3" stroke="black"/><!-- American -->
+                                    <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$brExpan*.5}" stroke-width="3" stroke="black"/><!-- brazilian -->
+                                    
+                                    <!-- labels -->
+                                    <text x="0" y="{400-max(($amExpan*(.5), $brExpan*(.5)))-70}">Expanded Forms by Nationality</text><!-- chart title -->
+                                    <text x="-20" y="400" transform="rotate(-90 -20,400)">Amount of Expanded Forms Used</text><!-- y axis -->
+                                    <text x="0" y="475">Nationality</text><!-- x axis -->
+                                    <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">American</text><!-- x axis American -->
+                                    <text x="{20*$xspace}" y="425" transform="rotate(30 100,425)">Brazilian</text><!-- x axis Brazilian -->
+                                    <text x="{10*$xspace}" y="{(400-$amExpan*.5)-15}" text-anchor="middle"><xsl:value-of select="$amExpan"/></text><!-- american Number -->
+                                    <text x="{20*$xspace}" y="{(400-$brExpan*.5)-15}" text-anchor="middle"><xsl:value-of select="$brExpan"/></text><!-- brazilian Number -->
+                                
+                                </g>
+                            </svg>
+                        </div>
+                        <div id="expanded2"> <!-- comparing types of expanded forms -->
+                            <xsl:variable name="exFormal" select="count(//expan[@type='formal'])" />
+                            <xsl:variable name="exFull" select="count(//expan[@type='full'])"/>
+                            <xsl:variable name="exUncon" select="count(//expan[@type='uncontracted'])"/>
+                            <xsl:variable name="numVar" select="count(distinct-values(//expan/@type))"/>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 100 500 400">
+                                <g> 
+                                    <!-- graph axis -->
+                                    <polyline points="0,{400-max(($exFormal*(.5), $exFull*(.5), $exUncon*(.5)))-50} 0,400 {10*$xspace*$numVar +20},400" stroke="black" stroke-width="3" fill="none"/>
+                                    
+                                    <!-- bars -->
+                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$exFormal*(.5)}" stroke="black" stroke-width="3"/><!-- formal -->
+                                    <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$exFull*(.5)}" stroke="black" stroke-width="3"/><!-- full -->
+                                    <line x1="{30*$xspace}" y1="400" x2="{30*$xspace}" y2="{400-$exUncon*(.5)}" stroke="black" stroke-width="3"/><!-- uncontracted -->
+                                    
+                                    <!-- labels -->
+                                    <text x="15" y="{400-max(($exFormal*(.5), $exFull*(.5), $exUncon*(.5)))-50}">Types of Expanded Forms</text><!-- chart title -->
+                                    <text x="-20" y="400" transform="rotate(-90 -20, 400)">Amount of Expanded Forms Used</text><!-- y axis -->
+                                    <text x="0" y="475">Type of Expanded Form</text><!-- x axis -->
+                                    <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">Formal</text><!-- x axis formal -->
+                                    <text x="{20*$xspace}" y="425" transform="rotate(30 100,425)">Full</text><!-- x axis full -->
+                                    <text x="{30*$xspace}" y="425" transform="rotate(30 150,425)">Uncontracted</text><!-- x axis uncontracted -->
+                                    <text x="{10*$xspace}" y="{400-$exFormal*(.5)-15}" text-anchor="middle"><xsl:value-of select="$exFormal"/></text><!-- formal number -->
+                                    <text x="{20*$xspace}" y="{400-$exFull*(.5)-15}" text-anchor="middle"><xsl:value-of select="$exFull"/></text><!-- full number -->
+                                    <text x="{30*$xspace}" y="{400-$exUncon*(.5)-15}" text-anchor="middle"><xsl:value-of select="$exUncon"/></text><!-- uncontracted number -->
+                                   
+                               </g>
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="expanDisc">
+                            <p>
+                                In contrast with the use of abbreviations, we thought that it would be a good idea to look at the use of expanded forms of words as well. It wouldn't be out of line to expect a trend inversely related to what is shown in the abbreviations charts where Americans tended to use more abbreviations than the Brazilians. In fact, this is a very similar trend as the Brazilians tended to use more expanded forms than the Americans but not overwhemlingly so. 
+                            </p>
+                        </div>
                     
+                    <a href="#topImg" class="internal">Top</a>
+                
                     <h2>The Use of Emojis in Texting</h2>
                     <!-- <div class="description">
                         <p>This is the chart talking about the use of Emojis within the
@@ -315,82 +383,15 @@
                         
                         
                     </div>
-                    <a href="#topImg" class="internal">Top</a>
-                    
-                        <h2>The Use of Expanded Forms in Texting</h2>
-                       <!-- <div class="description">
-                            <p>This is the chart talking about the use of Expanded Forms within the
-                                corpus</p>
-                        </div> -->
-                    <div id="expanForms">
-                        <div id="expanded1"><!-- nationality comparrison -->
-                            <xsl:variable name="amExpan" select="count(//u[@who='am']//expan)"/>
-                            <xsl:variable name="brExpan" select="count(//u[@who='br']//expan)"/>
-                            <xsl:variable name="numVar" select="count(distinct-values(//u/@who))"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 100 500 400">
-                                <g> 
-                                    <!-- graph axis -->
-                                    <polyline points="0,{400-max(($amExpan*(.5), $brExpan*(.5)))-50} 0,400 {10*$xspace*$numVar +20},400" stroke="black" stroke-width="3" fill="none"/>
-                                    
-                                    <!-- bars -->
-                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$amExpan*.5}" stroke-width="3" stroke="black"/><!-- American -->
-                                    <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$brExpan*.5}" stroke-width="3" stroke="black"/><!-- brazilian -->
-                                    
-                                    <!-- labels -->
-                                    <text x="0" y="{400-max(($amExpan*(.5), $brExpan*(.5)))-70}">Expanded Forms by Nationality</text><!-- chart title -->
-                                    <text x="-20" y="400" transform="rotate(-90 -20,400)">Amount of Expanded Forms Used</text><!-- y axis -->
-                                    <text x="0" y="475">Nationality</text><!-- x axis -->
-                                    <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">American</text><!-- x axis American -->
-                                    <text x="{20*$xspace}" y="425" transform="rotate(30 100,425)">Brazilian</text><!-- x axis Brazilian -->
-                                    <text x="{10*$xspace}" y="{(400-$amExpan*.5)-15}" text-anchor="middle"><xsl:value-of select="$amExpan"/></text><!-- american Number -->
-                                    <text x="{20*$xspace}" y="{(400-$brExpan*.5)-15}" text-anchor="middle"><xsl:value-of select="$brExpan"/></text><!-- brazilian Number -->
-                                
-                                </g>
-                            </svg>
-                        </div>
-                        <div id="expanded2"> <!-- comparing types of expanded forms -->
-                            <xsl:variable name="exFormal" select="count(//expan[@type='formal'])" />
-                            <xsl:variable name="exFull" select="count(//expan[@type='full'])"/>
-                            <xsl:variable name="exUncon" select="count(//expan[@type='uncontracted'])"/>
-                            <xsl:variable name="numVar" select="count(distinct-values(//expan/@type))"/>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-100 100 500 400">
-                                <g> 
-                                    <!-- graph axis -->
-                                    <polyline points="0,{400-max(($exFormal*(.5), $exFull*(.5), $exUncon*(.5)))-50} 0,400 {10*$xspace*$numVar +20},400" stroke="black" stroke-width="3" fill="none"/>
-                                    
-                                    <!-- bars -->
-                                    <line x1="{10*$xspace}" y1="400" x2="{10*$xspace}" y2="{400-$exFormal*(.5)}" stroke="black" stroke-width="3"/><!-- formal -->
-                                    <line x1="{20*$xspace}" y1="400" x2="{20*$xspace}" y2="{400-$exFull*(.5)}" stroke="black" stroke-width="3"/><!-- full -->
-                                    <line x1="{30*$xspace}" y1="400" x2="{30*$xspace}" y2="{400-$exUncon*(.5)}" stroke="black" stroke-width="3"/><!-- uncontracted -->
-                                    
-                                    <!-- labels -->
-                                    <text x="15" y="{400-max(($exFormal*(.5), $exFull*(.5), $exUncon*(.5)))-50}">Types of Expanded Forms</text><!-- chart title -->
-                                    <text x="-20" y="400" transform="rotate(-90 -20, 400)">Amount of Expanded Forms Used</text><!-- y axis -->
-                                    <text x="0" y="475">Type of Expanded Form</text><!-- x axis -->
-                                    <text x="{10*$xspace}" y="425" transform="rotate(30 50,425)">Formal</text><!-- x axis formal -->
-                                    <text x="{20*$xspace}" y="425" transform="rotate(30 100,425)">Full</text><!-- x axis full -->
-                                    <text x="{30*$xspace}" y="425" transform="rotate(30 150,425)">Uncontracted</text><!-- x axis uncontracted -->
-                                    <text x="{10*$xspace}" y="{400-$exFormal*(.5)-15}" text-anchor="middle"><xsl:value-of select="$exFormal"/></text><!-- formal number -->
-                                    <text x="{20*$xspace}" y="{400-$exFull*(.5)-15}" text-anchor="middle"><xsl:value-of select="$exFull"/></text><!-- full number -->
-                                    <text x="{30*$xspace}" y="{400-$exUncon*(.5)-15}" text-anchor="middle"><xsl:value-of select="$exUncon"/></text><!-- uncontracted number -->
-                                   
-                               </g>
-                            </svg>
-                        </div>
-                    </div>
-                    <div id="expanDisc">
+                    <div id="totalAnalysis">
+                            <h2>Sweeping Genralizations</h2>
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et viverra ante, sed iaculis libero. Curabitur vel ligula molestie, iaculis nulla ullamcorper, vehicula nulla. Morbi eleifend suscipit est, a ultrices tellus ultrices eget. In a porttitor tortor, vel tincidunt lorem. Etiam mollis, magna a molestie varius, est turpis auctor nulla, sed pharetra sapien justo in risus. Nunc sed efficitur ipsum. Aliquam ut nunc viverra, sodales turpis id, efficitur odio. Donec non ultricies lorem. Suspendisse potenti. Suspendisse potenti. Fusce tempor sollicitudin viverra. Suspendisse metus nisi, pharetra a lacus vel, mollis imperdiet nisi. Vivamus at volutpat mi. Nulla eget lacus non ex mattis efficitur id vitae justo. Morbi tincidunt purus non mauris posuere, in mattis elit euismod. Nam accumsan enim diam, quis euismod dolor efficitur id. Ut facilisis faucibus quam, at volutpat ex tincidunt sed. Nam ac ipsum orci. Nunc turpis sem, semper et consectetur eu, aliquet ut metus. Sed ultrices tellus sit amet risus feugiat placerat. Curabitur at aliquet diam. Mauris varius ultrices nisl non feugiat. Aliquam condimentum libero eu augue sollicitudin, a molestie nisl finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi egestas efficitur enim, eget posuere odio. Ut vehicula lacus non pulvinar accumsan. Etiam sodales ultrices sapien, sit amet auctor risus cursus quis. Vestibulum vulputate odio ex, sodales lobortis odio tristique dictum. Maecenas vestibulum egestas quam a ultrices. Phasellus bibendum consequat nisi, id viverra ante rutrum at. Aliquam auctor massa sit amet neque elementum, et volutpat odio varius. Nulla nec vestibulum augue. Mauris bibendum purus lacus, sit amet auctor dolor fringilla et. Duis vel viverra dolor. Phasellus accumsan ligula nisl. Suspendisse eget est non diam pharetra malesuada sed a enim. Sed non eros lobortis, maximus libero a, semper dui. Praesent ut nisi et justo tincidunt venenatis in ac neque. In sit amet erat urna. Duis ultricies semper dictum. Duis porta erat vestibulum mauris efficitur pulvinar. Praesent molestie porta lacus, eget convallis augue dictum vel. Morbi id iaculis tellus. Suspendisse auctor accumsan nunc in lacinia. Mauris ut vehicula sem, eget interdum dui. Maecenas vehicula nec risus non ornare. Sed eget viverra ex. Donec interdum elementum tortor, in hendrerit nisl varius in. Nullam vulputate urna ante, et dapibus ex congue vitae. Cras dignissim, odio imperdiet tristique dapibus, tellus tortor porta sem, et sollicitudin diam turpis in tortor. Cras mauris odio, volutpat fringilla sagittis sed, varius in elit. Nulla facilisi. Aliquam condimentum, lorem a mattis laoreet, mi urna rhoncus quam, vitae cursus enim magna non eros. Vivamus tincidunt ultrices consectetur. In hac habitasse platea dictumst. Nullam sed pharetra ante, vel rutrum lacus. Vestibulum ornare dictum risus. Nullam convallis iaculis nisi. Cras semper turpis nec ex aliquam auctor. Vestibulum faucibus, magna eget maximus venenatis, dolor erat rhoncus lectus, id suscipit ante sem ac eros. 
+                                Americans seem to do more texting conventions
                             </p>
                         </div>
-                    <div id="totalAnalysis">
-                        <h2>Sweeping Genralizations</h2>
-                        <p>
-                            Americans seem to do more texting conventions
-                        </p>
-                    </div>
                     <a href="#topImg" class="internal">Top</a>
-                </div>
+                    
+                </div>   
             </body>
         </html>
     </xsl:template>
