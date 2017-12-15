@@ -21,7 +21,7 @@ display: block;
     padding-top:10px;
 }
 
-#indexMain{
+#leftSide{
     flex-grow:1;
     display:flex;
     justify-content:center;
@@ -34,9 +34,9 @@ display: block;
     flex-grow:1;
     
 }
-#flag{
+#rightSide{
     display:flex;
-    flex-grow:2;
+    flex-grow:1;
     padding-left: 15px;
     
 }
