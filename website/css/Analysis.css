@@ -33,12 +33,16 @@ h2{
     text-align: center;
 }
 .description{
-    background: #8CAFDE;
+    background: #3eb180;
     color: black;
     font-family: Century;
     text-align: justify;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: 4cm;
+    margin-right: 4cm;
 
 }
 .main{
@@ -205,7 +209,10 @@ a.internal:hover{
     padding-bottom: 0px;
 }
 #textTable tr:nth-child(even){
-    background-color: #3E6FB1;
+    background-color: #8CAFDE;
+}
+#textTable tr:nth-child(odd){
+    background-color: #3eb180;
 }
 
 #textTable tr:hover{
@@ -216,7 +223,7 @@ a.internal:hover{
     padding-top: 8px;
     padding-bottom: 8px;
     text-align: center;
-    background-color: #FFBB4A;
+    background-color: #3E6FB1;
     color: white;
 }
 table,
