@@ -22,7 +22,7 @@ display: block;
 }
 
 #leftSide{
-    flex-grow:1;
+   width: 55%;
     display:flex;
     justify-content:center;
     border-style: solid;
@@ -34,17 +34,15 @@ display: block;
     flex-grow:1;
     
 }
-#rightSide{
+ #rightSide{
+    width: 35%;
     display:flex;
     flex-grow:1;
     padding-left: 15px;
     
-}
-#flagPic{
-    flex-grow:1;
-    height:500px;
-    width:0px;
-    
+} 
+#flagPic{;
+    height:500px;;
 }
 a:link {
     color: #D8D5CC;
